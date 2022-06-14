@@ -7,29 +7,40 @@ package com.facebank.enterprises;
 @javax.persistence.Entity
 public class ValidDataList implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "VALIDDATALIST_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "VALIDDATALIST_ID_SEQ", name = "VALIDDATALIST_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "VALIDDATALIST_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "VALIDDATALIST_ID_SEQ", name = "VALIDDATALIST_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public ValidDataList() {
-    }
-    
-    public ValidDataList(java.lang.Long id) {
-        this.id = id;
-    }
+	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
+	private java.util.List<com.facebank.enterprises.ValidData> validData;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	public ValidDataList() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
 
+	public java.util.List<com.facebank.enterprises.ValidData> getValidData() {
+		return this.validData;
+	}
+
+	public void setValidData(
+			java.util.List<com.facebank.enterprises.ValidData> validData) {
+		this.validData = validData;
+	}
+
+	public ValidDataList(java.lang.Long id,
+			java.util.List<com.facebank.enterprises.ValidData> validData) {
+		this.id = id;
+		this.validData = validData;
+	}
 
 }
