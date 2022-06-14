@@ -5,7 +5,6 @@
         <jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
         <class>com.test.enterprises.EnterpriseData</class>
         <class>com.test.enterprises.ShareholdersData</class>
-        <class>com.test.enterprises.ShareholdersDataList</class>
         <class>com.facebank.enterprises.AuthorizedDataList</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
