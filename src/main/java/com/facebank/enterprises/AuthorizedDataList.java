@@ -15,7 +15,7 @@ public class AuthorizedDataList implements java.io.Serializable {
 	private java.lang.Long id;
 
 	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
-	private java.util.List<com.facebank.enterprises.AuthorizedData> authorizedDataList;
+	private java.util.List<com.facebank.enterprises.AuthorizedData> authorizedData;
 
 	public AuthorizedDataList() {
 	}
@@ -28,20 +28,20 @@ public class AuthorizedDataList implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public java.util.List<com.facebank.enterprises.AuthorizedData> getAuthorizedDataList() {
-		return this.authorizedDataList;
+	public java.util.List<com.facebank.enterprises.AuthorizedData> getAuthorizedData() {
+		return this.authorizedData;
 	}
 
-	public void setAuthorizedDataList(
-			java.util.List<com.facebank.enterprises.AuthorizedData> authorizedDataList) {
-		this.authorizedDataList = authorizedDataList;
+	public void setAuthorizedData(
+			java.util.List<com.facebank.enterprises.AuthorizedData> authorizedData) {
+		this.authorizedData = authorizedData;
 	}
 
 	public AuthorizedDataList(
 			java.lang.Long id,
-			java.util.List<com.facebank.enterprises.AuthorizedData> authorizedDataList) {
+			java.util.List<com.facebank.enterprises.AuthorizedData> authorizedData) {
 		this.id = id;
-		this.authorizedDataList = authorizedDataList;
+		this.authorizedData = authorizedData;
 	}
 
 }
