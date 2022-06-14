@@ -5,7 +5,7 @@ package com.facebank.enterprises;
  */
 
 @javax.persistence.Entity
-public class Authorized implements java.io.Serializable {
+public class AuthorizedData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -20,7 +20,7 @@ public class Authorized implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(sequenceName = "AUTHORIZED_ID_SEQ", name = "AUTHORIZED_ID_GENERATOR")
 	private java.lang.Long id;
 
-	public Authorized() {
+	public AuthorizedData() {
 	}
 
 	public java.lang.String getName() {
@@ -55,8 +55,9 @@ public class Authorized implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public Authorized(java.lang.String name, java.lang.String signatureType,
-			java.lang.String role, java.lang.Long id) {
+	public AuthorizedData(java.lang.String name,
+			java.lang.String signatureType, java.lang.String role,
+			java.lang.Long id) {
 		this.name = name;
 		this.signatureType = signatureType;
 		this.role = role;
