@@ -7,29 +7,41 @@ package com.facebank.enterprises;
 @javax.persistence.Entity
 public class ShareholdersDataList implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "SHAREHOLDERSDATALIST_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "SHAREHOLDERSDATALIST_ID_SEQ", name = "SHAREHOLDERSDATALIST_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "SHAREHOLDERSDATALIST_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "SHAREHOLDERSDATALIST_ID_SEQ", name = "SHAREHOLDERSDATALIST_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public ShareholdersDataList() {
-    }
-    
-    public ShareholdersDataList(java.lang.Long id) {
-        this.id = id;
-    }
+	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
+	private java.util.List<com.facebank.enterprises.ShareholdersData> shareholdersData;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	public ShareholdersDataList() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
 
+	public java.util.List<com.facebank.enterprises.ShareholdersData> getShareholdersData() {
+		return this.shareholdersData;
+	}
+
+	public void setShareholdersData(
+			java.util.List<com.facebank.enterprises.ShareholdersData> shareholdersData) {
+		this.shareholdersData = shareholdersData;
+	}
+
+	public ShareholdersDataList(
+			java.lang.Long id,
+			java.util.List<com.facebank.enterprises.ShareholdersData> shareholdersData) {
+		this.id = id;
+		this.shareholdersData = shareholdersData;
+	}
 
 }
