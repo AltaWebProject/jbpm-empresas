@@ -7,29 +7,41 @@ package com.facebank.enterprises;
 @javax.persistence.Entity
 public class AuthorizedDataList implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "AUTHORIZEDDATALIST_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "AUTHORIZEDDATALIST_ID_SEQ", name = "AUTHORIZEDDATALIST_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "AUTHORIZEDDATALIST_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "AUTHORIZEDDATALIST_ID_SEQ", name = "AUTHORIZEDDATALIST_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public AuthorizedDataList() {
-    }
-    
-    public AuthorizedDataList(java.lang.Long id) {
-        this.id = id;
-    }
+	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
+	private java.util.List<com.facebank.enterprises.AuthorizedData> authorizedDataList;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	public AuthorizedDataList() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
 
+	public java.util.List<com.facebank.enterprises.AuthorizedData> getAuthorizedDataList() {
+		return this.authorizedDataList;
+	}
+
+	public void setAuthorizedDataList(
+			java.util.List<com.facebank.enterprises.AuthorizedData> authorizedDataList) {
+		this.authorizedDataList = authorizedDataList;
+	}
+
+	public AuthorizedDataList(
+			java.lang.Long id,
+			java.util.List<com.facebank.enterprises.AuthorizedData> authorizedDataList) {
+		this.id = id;
+		this.authorizedDataList = authorizedDataList;
+	}
 
 }
