@@ -6,6 +6,7 @@
         <class>com.test.enterprises.EnterpriseData</class>
         <class>com.test.enterprises.ShareholdersData</class>
         <class>com.facebank.enterprises.AuthorizedDataList</class>
+        <class>com.facebank.enterprises.ShareholdersDataList</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
