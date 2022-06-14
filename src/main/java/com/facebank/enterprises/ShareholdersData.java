@@ -26,6 +26,9 @@ public class ShareholdersData implements java.io.Serializable {
 
 	private java.lang.Double participationPercentage;
 
+	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
+	private com.facebank.enterprises.ShareholdersDataList subShareholdersDataList;
+
 	public ShareholdersData() {
 	}
 
@@ -86,10 +89,24 @@ public class ShareholdersData implements java.io.Serializable {
 		this.participationPercentage = participationPercentage;
 	}
 
-	public ShareholdersData(java.lang.Long id, java.lang.String name,
-			java.lang.String title, java.lang.String entityType,
-			java.lang.String status, java.lang.String enterprise,
-			java.lang.Double participationPercentage) {
+	public com.facebank.enterprises.ShareholdersDataList getSubShareholdersDataList() {
+		return this.subShareholdersDataList;
+	}
+
+	public void setSubShareholdersDataList(
+			com.facebank.enterprises.ShareholdersDataList subShareholdersDataList) {
+		this.subShareholdersDataList = subShareholdersDataList;
+	}
+
+	public ShareholdersData(
+			java.lang.Long id,
+			java.lang.String name,
+			java.lang.String title,
+			java.lang.String entityType,
+			java.lang.String status,
+			java.lang.String enterprise,
+			java.lang.Double participationPercentage,
+			com.facebank.enterprises.ShareholdersDataList subShareholdersDataList) {
 		this.id = id;
 		this.name = name;
 		this.title = title;
@@ -97,6 +114,7 @@ public class ShareholdersData implements java.io.Serializable {
 		this.status = status;
 		this.enterprise = enterprise;
 		this.participationPercentage = participationPercentage;
+		this.subShareholdersDataList = subShareholdersDataList;
 	}
 
 }
