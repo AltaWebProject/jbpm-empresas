@@ -26,6 +26,8 @@ public class InitialData implements java.io.Serializable {
 	private java.lang.String reasonRequest;
 	private java.util.List<java.lang.Integer> rolIds;
 
+	private java.lang.String firstSurname;
+
 	public InitialData() {
 	}
 
@@ -133,6 +135,14 @@ public class InitialData implements java.io.Serializable {
 		this.rolIds = rolIds;
 	}
 
+	public java.lang.String getFirstSurname() {
+		return this.firstSurname;
+	}
+
+	public void setFirstSurname(java.lang.String firstSurname) {
+		this.firstSurname = firstSurname;
+	}
+
 	public InitialData(java.lang.String bdfEmail,
 			java.lang.String bdfLoginName, java.lang.String bdfName,
 			java.lang.String currentUser, java.lang.String email,
@@ -140,7 +150,8 @@ public class InitialData implements java.io.Serializable {
 			java.lang.String languageBDF, java.lang.String languageClient,
 			java.lang.String login, java.lang.String products,
 			java.lang.String reasonRequest,
-			java.util.List<java.lang.Integer> rolIds) {
+			java.util.List<java.lang.Integer> rolIds,
+			java.lang.String firstSurname) {
 		this.bdfEmail = bdfEmail;
 		this.bdfLoginName = bdfLoginName;
 		this.bdfName = bdfName;
@@ -154,6 +165,7 @@ public class InitialData implements java.io.Serializable {
 		this.products = products;
 		this.reasonRequest = reasonRequest;
 		this.rolIds = rolIds;
+		this.firstSurname = firstSurname;
 	}
 
 }
