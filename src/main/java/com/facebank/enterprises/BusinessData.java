@@ -9,8 +9,10 @@ public class BusinessData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	@javax.persistence.Column(length = 300)
 	private java.lang.String businessTypeDescription;
 
+	@javax.persistence.Column(length = 300)
 	private java.lang.String productsTypeDescription;
 
 	@javax.persistence.GeneratedValue(generator = "BUSINESSDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
