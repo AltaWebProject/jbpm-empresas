@@ -19,7 +19,7 @@ public class EnterpriseData implements java.io.Serializable {
 	private java.lang.String enterpriseName;
 
 	@org.kie.api.definition.type.Description("J - Persona Jurídica\nF - Persona Física")
-	private java.lang.Character idType;
+	private String idType;
 
 	private java.lang.Integer country;
 
@@ -61,14 +61,6 @@ public class EnterpriseData implements java.io.Serializable {
 
 	public void setEnterpriseName(java.lang.String enterpriseName) {
 		this.enterpriseName = enterpriseName;
-	}
-
-	public java.lang.Character getIdType() {
-		return this.idType;
-	}
-
-	public void setIdType(java.lang.Character idType) {
-		this.idType = idType;
 	}
 
 	public java.lang.Integer getCountry() {
@@ -127,9 +119,17 @@ public class EnterpriseData implements java.io.Serializable {
 		this.sourceOfFunds = sourceOfFunds;
 	}
 
+	public java.lang.String getIdType() {
+		return this.idType;
+	}
+
+	public void setIdType(java.lang.String idType) {
+		this.idType = idType;
+	}
+
 	public EnterpriseData(java.lang.Long id,
 			java.lang.String legalRepresentative,
-			java.lang.String enterpriseName, java.lang.Character idType,
+			java.lang.String enterpriseName, java.lang.String idType,
 			java.lang.Integer country, java.lang.Integer businessType,
 			java.lang.Integer enterpriseType, java.lang.String acronym,
 			java.util.Date startDate, java.lang.Integer accountMotive,
