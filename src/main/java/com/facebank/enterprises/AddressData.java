@@ -30,6 +30,10 @@ public class AddressData implements java.io.Serializable {
 	private java.lang.String workPostalCodeDescription;
 	private java.lang.Integer workProvince;
 
+	private java.lang.String workEmail;
+
+	private java.lang.String email;
+
 	public AddressData() {
 	}
 
@@ -170,6 +174,22 @@ public class AddressData implements java.io.Serializable {
 		this.workProvince = workProvince;
 	}
 
+	public java.lang.String getWorkEmail() {
+		return this.workEmail;
+	}
+
+	public void setWorkEmail(java.lang.String workEmail) {
+		this.workEmail = workEmail;
+	}
+
+	public java.lang.String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(java.lang.String email) {
+		this.email = email;
+	}
+
 	public AddressData(java.lang.Integer country, java.lang.Integer city,
 			java.lang.Long id, java.lang.String address,
 			java.lang.String addressType, java.lang.Integer province,
@@ -180,7 +200,8 @@ public class AddressData implements java.io.Serializable {
 			java.lang.Integer workCountry, java.lang.String workPhoneNumber,
 			java.lang.Integer workPostalCode,
 			java.lang.String workPostalCodeDescription,
-			java.lang.Integer workProvince) {
+			java.lang.Integer workProvince, java.lang.String workEmail,
+			java.lang.String email) {
 		this.country = country;
 		this.city = city;
 		this.id = id;
@@ -198,6 +219,8 @@ public class AddressData implements java.io.Serializable {
 		this.workPostalCode = workPostalCode;
 		this.workPostalCodeDescription = workPostalCodeDescription;
 		this.workProvince = workProvince;
+		this.workEmail = workEmail;
+		this.email = email;
 	}
 
 }
