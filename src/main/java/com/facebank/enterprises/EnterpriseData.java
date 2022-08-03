@@ -21,8 +21,6 @@ public class EnterpriseData implements java.io.Serializable {
 	@org.kie.api.definition.type.Description("J - Persona Jurídica\nF - Persona Física")
 	private String idType;
 
-	private java.lang.Integer country;
-
 	private java.lang.Integer businessType;
 
 	private java.lang.Integer enterpriseType;
@@ -30,13 +28,17 @@ public class EnterpriseData implements java.io.Serializable {
 	@org.kie.api.definition.type.Description("Siglas")
 	private java.lang.String acronym;
 
-	private java.util.Date startDate;
+	private String startDate;
 
 	private java.lang.Integer accountMotive;
 
 	private java.lang.Integer sourceOfFunds;
 
 	private java.lang.String idNumber;
+
+	private java.lang.Integer nationality;
+
+	private java.lang.String patrimonialOrigin;
 
 	public EnterpriseData() {
 	}
@@ -65,14 +67,6 @@ public class EnterpriseData implements java.io.Serializable {
 		this.enterpriseName = enterpriseName;
 	}
 
-	public java.lang.Integer getCountry() {
-		return this.country;
-	}
-
-	public void setCountry(java.lang.Integer country) {
-		this.country = country;
-	}
-
 	public java.lang.Integer getBusinessType() {
 		return this.businessType;
 	}
@@ -95,14 +89,6 @@ public class EnterpriseData implements java.io.Serializable {
 
 	public void setAcronym(java.lang.String acronym) {
 		this.acronym = acronym;
-	}
-
-	public java.util.Date getStartDate() {
-		return this.startDate;
-	}
-
-	public void setStartDate(java.util.Date startDate) {
-		this.startDate = startDate;
 	}
 
 	public java.lang.Integer getAccountMotive() {
@@ -137,18 +123,42 @@ public class EnterpriseData implements java.io.Serializable {
 		this.idNumber = idNumber;
 	}
 
+	public java.lang.Integer getNationality() {
+		return this.nationality;
+	}
+
+	public void setNationality(java.lang.Integer nationality) {
+		this.nationality = nationality;
+	}
+
+	public java.lang.String getStartDate() {
+		return this.startDate;
+	}
+
+	public void setStartDate(java.lang.String startDate) {
+		this.startDate = startDate;
+	}
+
+	public java.lang.String getPatrimonialOrigin() {
+		return this.patrimonialOrigin;
+	}
+
+	public void setPatrimonialOrigin(java.lang.String patrimonialOrigin) {
+		this.patrimonialOrigin = patrimonialOrigin;
+	}
+
 	public EnterpriseData(java.lang.Long id,
 			java.lang.String legalRepresentative,
 			java.lang.String enterpriseName, java.lang.String idType,
-			java.lang.Integer country, java.lang.Integer businessType,
-			java.lang.Integer enterpriseType, java.lang.String acronym,
-			java.util.Date startDate, java.lang.Integer accountMotive,
-			java.lang.Integer sourceOfFunds, java.lang.String idNumber) {
+			java.lang.Integer businessType, java.lang.Integer enterpriseType,
+			java.lang.String acronym, java.lang.String startDate,
+			java.lang.Integer accountMotive, java.lang.Integer sourceOfFunds,
+			java.lang.String idNumber, java.lang.Integer nationality,
+			java.lang.String patrimonialOrigin) {
 		this.id = id;
 		this.legalRepresentative = legalRepresentative;
 		this.enterpriseName = enterpriseName;
 		this.idType = idType;
-		this.country = country;
 		this.businessType = businessType;
 		this.enterpriseType = enterpriseType;
 		this.acronym = acronym;
@@ -156,6 +166,8 @@ public class EnterpriseData implements java.io.Serializable {
 		this.accountMotive = accountMotive;
 		this.sourceOfFunds = sourceOfFunds;
 		this.idNumber = idNumber;
+		this.nationality = nationality;
+		this.patrimonialOrigin = patrimonialOrigin;
 	}
 
 }
