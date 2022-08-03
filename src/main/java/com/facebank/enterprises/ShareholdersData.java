@@ -20,14 +20,14 @@ public class ShareholdersData implements java.io.Serializable {
 
 	private java.lang.String entityType;
 
-	private java.lang.String status;
-
-	private java.lang.String enterprise;
-
 	private java.lang.Double participationPercentage;
 
 	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
 	private com.facebank.enterprises.ShareholdersDataList subShareholdersDataList;
+
+	private java.lang.String nationality;
+
+	private java.lang.Integer number;
 
 	public ShareholdersData() {
 	}
@@ -64,22 +64,6 @@ public class ShareholdersData implements java.io.Serializable {
 		this.entityType = entityType;
 	}
 
-	public java.lang.String getStatus() {
-		return this.status;
-	}
-
-	public void setStatus(java.lang.String status) {
-		this.status = status;
-	}
-
-	public java.lang.String getEnterprise() {
-		return this.enterprise;
-	}
-
-	public void setEnterprise(java.lang.String enterprise) {
-		this.enterprise = enterprise;
-	}
-
 	public java.lang.Double getParticipationPercentage() {
 		return this.participationPercentage;
 	}
@@ -98,23 +82,38 @@ public class ShareholdersData implements java.io.Serializable {
 		this.subShareholdersDataList = subShareholdersDataList;
 	}
 
+	public java.lang.String getNationality() {
+		return this.nationality;
+	}
+
+	public void setNationality(java.lang.String nationality) {
+		this.nationality = nationality;
+	}
+
+	public java.lang.Integer getNumber() {
+		return this.number;
+	}
+
+	public void setNumber(java.lang.Integer number) {
+		this.number = number;
+	}
+
 	public ShareholdersData(
 			java.lang.Long id,
 			java.lang.String name,
 			java.lang.String title,
 			java.lang.String entityType,
-			java.lang.String status,
-			java.lang.String enterprise,
 			java.lang.Double participationPercentage,
-			com.facebank.enterprises.ShareholdersDataList subShareholdersDataList) {
+			com.facebank.enterprises.ShareholdersDataList subShareholdersDataList,
+			java.lang.String nationality, java.lang.Integer number) {
 		this.id = id;
 		this.name = name;
 		this.title = title;
 		this.entityType = entityType;
-		this.status = status;
-		this.enterprise = enterprise;
 		this.participationPercentage = participationPercentage;
 		this.subShareholdersDataList = subShareholdersDataList;
+		this.nationality = nationality;
+		this.number = number;
 	}
 
 }
