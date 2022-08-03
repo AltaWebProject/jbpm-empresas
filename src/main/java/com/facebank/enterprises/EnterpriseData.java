@@ -36,7 +36,7 @@ public class EnterpriseData implements java.io.Serializable {
 
 	private java.lang.Integer sourceOfFunds;
 
-	private java.lang.String identificationNumber;
+	private java.lang.String idNumber;
 
 	public EnterpriseData() {
 	}
@@ -129,12 +129,12 @@ public class EnterpriseData implements java.io.Serializable {
 		this.idType = idType;
 	}
 
-	public java.lang.String getIdentificationNumber() {
-		return this.identificationNumber;
+	public java.lang.String getIdNumber() {
+		return this.idNumber;
 	}
 
-	public void setIdentificationNumber(java.lang.String identificationNumber) {
-		this.identificationNumber = identificationNumber;
+	public void setIdNumber(java.lang.String idNumber) {
+		this.idNumber = idNumber;
 	}
 
 	public EnterpriseData(java.lang.Long id,
@@ -143,8 +143,7 @@ public class EnterpriseData implements java.io.Serializable {
 			java.lang.Integer country, java.lang.Integer businessType,
 			java.lang.Integer enterpriseType, java.lang.String acronym,
 			java.util.Date startDate, java.lang.Integer accountMotive,
-			java.lang.Integer sourceOfFunds,
-			java.lang.String identificationNumber) {
+			java.lang.Integer sourceOfFunds, java.lang.String idNumber) {
 		this.id = id;
 		this.legalRepresentative = legalRepresentative;
 		this.enterpriseName = enterpriseName;
@@ -156,7 +155,7 @@ public class EnterpriseData implements java.io.Serializable {
 		this.startDate = startDate;
 		this.accountMotive = accountMotive;
 		this.sourceOfFunds = sourceOfFunds;
-		this.identificationNumber = identificationNumber;
+		this.idNumber = idNumber;
 	}
 
 }
