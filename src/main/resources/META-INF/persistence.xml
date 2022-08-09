@@ -10,7 +10,6 @@
         <class>com.facebank.enterprises.Documents</class>
         <class>com.facebank.enterprises.AuthorizedData</class>
         <class>com.facebank.enterprises.AuthorizedDataList</class>
-        <class>com.facebank.enterprises.ShareholdersDataList</class>
         <class>com.facebank.enterprises.BusinessData</class>
         <class>com.facebank.enterprises.EnterpriseData</class>
         <class>com.facebank.enterprises.HeaderData</class>
