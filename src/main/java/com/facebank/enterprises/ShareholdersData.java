@@ -18,16 +18,13 @@ public class ShareholdersData implements java.io.Serializable {
 
 	private java.lang.String title;
 
-	private java.lang.String entityType;
-
-	private java.lang.Double participationPercentage;
-
-	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
-	private com.facebank.enterprises.ShareholdersDataList subShareholdersDataList;
-
 	private java.lang.String nationality;
 
 	private java.lang.Integer number;
+
+	private java.lang.String type;
+
+	private java.lang.Double participation;
 
 	public ShareholdersData() {
 	}
@@ -56,32 +53,6 @@ public class ShareholdersData implements java.io.Serializable {
 		this.title = title;
 	}
 
-	public java.lang.String getEntityType() {
-		return this.entityType;
-	}
-
-	public void setEntityType(java.lang.String entityType) {
-		this.entityType = entityType;
-	}
-
-	public java.lang.Double getParticipationPercentage() {
-		return this.participationPercentage;
-	}
-
-	public void setParticipationPercentage(
-			java.lang.Double participationPercentage) {
-		this.participationPercentage = participationPercentage;
-	}
-
-	public com.facebank.enterprises.ShareholdersDataList getSubShareholdersDataList() {
-		return this.subShareholdersDataList;
-	}
-
-	public void setSubShareholdersDataList(
-			com.facebank.enterprises.ShareholdersDataList subShareholdersDataList) {
-		this.subShareholdersDataList = subShareholdersDataList;
-	}
-
 	public java.lang.String getNationality() {
 		return this.nationality;
 	}
@@ -98,22 +69,33 @@ public class ShareholdersData implements java.io.Serializable {
 		this.number = number;
 	}
 
-	public ShareholdersData(
-			java.lang.Long id,
-			java.lang.String name,
-			java.lang.String title,
-			java.lang.String entityType,
-			java.lang.Double participationPercentage,
-			com.facebank.enterprises.ShareholdersDataList subShareholdersDataList,
-			java.lang.String nationality, java.lang.Integer number) {
+	public java.lang.String getType() {
+		return this.type;
+	}
+
+	public void setType(java.lang.String type) {
+		this.type = type;
+	}
+
+	public java.lang.Double getParticipation() {
+		return this.participation;
+	}
+
+	public void setParticipation(java.lang.Double participation) {
+		this.participation = participation;
+	}
+
+	public ShareholdersData(java.lang.Long id, java.lang.String name,
+			java.lang.String title, java.lang.String nationality,
+			java.lang.Integer number, java.lang.String type,
+			java.lang.Double participation) {
 		this.id = id;
 		this.name = name;
 		this.title = title;
-		this.entityType = entityType;
-		this.participationPercentage = participationPercentage;
-		this.subShareholdersDataList = subShareholdersDataList;
 		this.nationality = nationality;
 		this.number = number;
+		this.type = type;
+		this.participation = participation;
 	}
 
 }
