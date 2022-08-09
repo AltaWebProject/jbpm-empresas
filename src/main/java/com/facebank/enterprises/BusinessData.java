@@ -9,36 +9,18 @@ public class BusinessData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@javax.persistence.Column(length = 300)
-	private java.lang.String businessTypeDescription;
-
-	@javax.persistence.Column(length = 300)
-	private java.lang.String productsTypeDescription;
-
 	@javax.persistence.GeneratedValue(generator = "BUSINESSDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
 	@javax.persistence.Id
 	@javax.persistence.SequenceGenerator(sequenceName = "BUSINESSDATA_ID_SEQ", name = "BUSINESSDATA_ID_GENERATOR")
 	private java.lang.Long id;
 
+	@javax.persistence.Column(length = 300)
+	private java.lang.String descriptionTypeBusiness;
+
+	@javax.persistence.Column(length = 300)
+	private java.lang.String descriptionProductAndService;
+
 	public BusinessData() {
-	}
-
-	public java.lang.String getBusinessTypeDescription() {
-		return this.businessTypeDescription;
-	}
-
-	public void setBusinessTypeDescription(
-			java.lang.String businessTypeDescription) {
-		this.businessTypeDescription = businessTypeDescription;
-	}
-
-	public java.lang.String getProductsTypeDescription() {
-		return this.productsTypeDescription;
-	}
-
-	public void setProductsTypeDescription(
-			java.lang.String productsTypeDescription) {
-		this.productsTypeDescription = productsTypeDescription;
 	}
 
 	public java.lang.Long getId() {
@@ -49,11 +31,30 @@ public class BusinessData implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public BusinessData(java.lang.String businessTypeDescription,
-			java.lang.String productsTypeDescription, java.lang.Long id) {
-		this.businessTypeDescription = businessTypeDescription;
-		this.productsTypeDescription = productsTypeDescription;
+	public java.lang.String getDescriptionTypeBusiness() {
+		return this.descriptionTypeBusiness;
+	}
+
+	public void setDescriptionTypeBusiness(
+			java.lang.String descriptionTypeBusiness) {
+		this.descriptionTypeBusiness = descriptionTypeBusiness;
+	}
+
+	public java.lang.String getDescriptionProductAndService() {
+		return this.descriptionProductAndService;
+	}
+
+	public void setDescriptionProductAndService(
+			java.lang.String descriptionProductAndService) {
+		this.descriptionProductAndService = descriptionProductAndService;
+	}
+
+	public BusinessData(java.lang.Long id,
+			java.lang.String descriptionTypeBusiness,
+			java.lang.String descriptionProductAndService) {
 		this.id = id;
+		this.descriptionTypeBusiness = descriptionTypeBusiness;
+		this.descriptionProductAndService = descriptionProductAndService;
 	}
 
 }
