@@ -16,7 +16,7 @@ public class EnterpriseData implements java.io.Serializable {
 
 	private String startDate;
 
-	private java.lang.Integer nationality;
+	private String nationality;
 
 	private java.lang.String patrimonialOrigin;
 
@@ -31,16 +31,16 @@ public class EnterpriseData implements java.io.Serializable {
 
 	private java.lang.String emailCompany;
 
-	private java.lang.Integer typeBusiness;
+	private String typeBusiness;
 
-	private java.lang.Integer typeCompany;
+	private String typeCompany;
 
-	@org.kie.api.definition.type.Description(value = "Siglas")
+	@org.kie.api.definition.type.Description("Siglas")
 	private java.lang.String abbreviation;
 
-	private java.lang.Integer reasonOpening;
+	private String reasonOpening;
 
-	private java.lang.Integer sourceFound;
+	private String sourceFound;
 
 	public EnterpriseData() {
 	}
@@ -51,14 +51,6 @@ public class EnterpriseData implements java.io.Serializable {
 
 	public void setId(java.lang.Long id) {
 		this.id = id;
-	}
-
-	public java.lang.Integer getNationality() {
-		return this.nationality;
-	}
-
-	public void setNationality(java.lang.Integer nationality) {
-		this.nationality = nationality;
 	}
 
 	public java.lang.String getStartDate() {
@@ -109,44 +101,12 @@ public class EnterpriseData implements java.io.Serializable {
 		this.emailCompany = emailCompany;
 	}
 
-	public java.lang.Integer getTypeBusiness() {
-		return this.typeBusiness;
-	}
-
-	public void setTypeBusiness(java.lang.Integer typeBusiness) {
-		this.typeBusiness = typeBusiness;
-	}
-
-	public java.lang.Integer getTypeCompany() {
-		return this.typeCompany;
-	}
-
-	public void setTypeCompany(java.lang.Integer typeCompany) {
-		this.typeCompany = typeCompany;
-	}
-
 	public java.lang.String getAbbreviation() {
 		return this.abbreviation;
 	}
 
 	public void setAbbreviation(java.lang.String abbreviation) {
 		this.abbreviation = abbreviation;
-	}
-
-	public java.lang.Integer getReasonOpening() {
-		return this.reasonOpening;
-	}
-
-	public void setReasonOpening(java.lang.Integer reasonOpening) {
-		this.reasonOpening = reasonOpening;
-	}
-
-	public java.lang.Integer getSourceFound() {
-		return this.sourceFound;
-	}
-
-	public void setSourceFound(java.lang.Integer sourceFound) {
-		this.sourceFound = sourceFound;
 	}
 
 	public java.lang.Long getNumberId() {
@@ -157,13 +117,53 @@ public class EnterpriseData implements java.io.Serializable {
 		this.numberId = numberId;
 	}
 
+	public java.lang.String getNationality() {
+		return this.nationality;
+	}
+
+	public void setNationality(java.lang.String nationality) {
+		this.nationality = nationality;
+	}
+
+	public java.lang.String getTypeBusiness() {
+		return this.typeBusiness;
+	}
+
+	public void setTypeBusiness(java.lang.String typeBusiness) {
+		this.typeBusiness = typeBusiness;
+	}
+
+	public java.lang.String getTypeCompany() {
+		return this.typeCompany;
+	}
+
+	public void setTypeCompany(java.lang.String typeCompany) {
+		this.typeCompany = typeCompany;
+	}
+
+	public java.lang.String getReasonOpening() {
+		return this.reasonOpening;
+	}
+
+	public void setReasonOpening(java.lang.String reasonOpening) {
+		this.reasonOpening = reasonOpening;
+	}
+
+	public java.lang.String getSourceFound() {
+		return this.sourceFound;
+	}
+
+	public void setSourceFound(java.lang.String sourceFound) {
+		this.sourceFound = sourceFound;
+	}
+
 	public EnterpriseData(java.lang.Long id, java.lang.String startDate,
-			java.lang.Integer nationality, java.lang.String patrimonialOrigin,
+			java.lang.String nationality, java.lang.String patrimonialOrigin,
 			java.lang.String legalResponsible, java.lang.String nameCompany,
 			java.lang.String typeId, java.lang.Long numberId,
-			java.lang.String emailCompany, java.lang.Integer typeBusiness,
-			java.lang.Integer typeCompany, java.lang.String abbreviation,
-			java.lang.Integer reasonOpening, java.lang.Integer sourceFound) {
+			java.lang.String emailCompany, java.lang.String typeBusiness,
+			java.lang.String typeCompany, java.lang.String abbreviation,
+			java.lang.String reasonOpening, java.lang.String sourceFound) {
 		this.id = id;
 		this.startDate = startDate;
 		this.nationality = nationality;
