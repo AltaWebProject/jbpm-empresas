@@ -5,7 +5,7 @@ package com.facebank.enterprises;
  */
 
 @javax.persistence.Entity
-public class ShareholdersData implements java.io.Serializable {
+public class StockholdersData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -26,7 +26,7 @@ public class ShareholdersData implements java.io.Serializable {
 
 	private java.lang.Double participation;
 
-	public ShareholdersData() {
+	public StockholdersData() {
 	}
 
 	public java.lang.Long getId() {
@@ -85,7 +85,7 @@ public class ShareholdersData implements java.io.Serializable {
 		this.participation = participation;
 	}
 
-	public ShareholdersData(java.lang.Long id, java.lang.String name,
+	public StockholdersData(java.lang.Long id, java.lang.String name,
 			java.lang.String title, java.lang.String nationality,
 			java.lang.Integer number, java.lang.String type,
 			java.lang.Double participation) {
