@@ -5,7 +5,7 @@ package com.facebank.enterprises;
  */
 
 @javax.persistence.Entity
-public class EnterpriseData implements java.io.Serializable {
+public class CompanyData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -13,13 +13,6 @@ public class EnterpriseData implements java.io.Serializable {
 	@javax.persistence.Id
 	@javax.persistence.SequenceGenerator(sequenceName = "ENTERPRISEDATA_ID_SEQ", name = "ENTERPRISEDATA_ID_GENERATOR")
 	private java.lang.Long id;
-
-	private java.lang.String legalRepresentative;
-
-	private java.lang.String enterpriseName;
-
-	@org.kie.api.definition.type.Description("J - Persona Jurídica\nF - Persona Física")
-	private String idType;
 
 	private java.lang.Integer businessType;
 
@@ -34,13 +27,22 @@ public class EnterpriseData implements java.io.Serializable {
 
 	private java.lang.Integer sourceOfFunds;
 
-	private java.lang.String idNumber;
-
 	private java.lang.Integer nationality;
 
 	private java.lang.String patrimonialOrigin;
 
-	public EnterpriseData() {
+	private java.lang.String legalResponsible;
+
+	private java.lang.String nameCompany;
+
+	@org.kie.api.definition.type.Description(value = "J - Persona Jurídica\nF - Persona Física")
+	private java.lang.String typeId;
+
+	private java.lang.String numberId;
+
+	private java.lang.String emailCompany;
+
+	public CompanyData() {
 	}
 
 	public java.lang.Long getId() {
@@ -49,22 +51,6 @@ public class EnterpriseData implements java.io.Serializable {
 
 	public void setId(java.lang.Long id) {
 		this.id = id;
-	}
-
-	public java.lang.String getLegalRepresentative() {
-		return this.legalRepresentative;
-	}
-
-	public void setLegalRepresentative(java.lang.String legalRepresentative) {
-		this.legalRepresentative = legalRepresentative;
-	}
-
-	public java.lang.String getEnterpriseName() {
-		return this.enterpriseName;
-	}
-
-	public void setEnterpriseName(java.lang.String enterpriseName) {
-		this.enterpriseName = enterpriseName;
 	}
 
 	public java.lang.Integer getBusinessType() {
@@ -107,22 +93,6 @@ public class EnterpriseData implements java.io.Serializable {
 		this.sourceOfFunds = sourceOfFunds;
 	}
 
-	public java.lang.String getIdType() {
-		return this.idType;
-	}
-
-	public void setIdType(java.lang.String idType) {
-		this.idType = idType;
-	}
-
-	public java.lang.String getIdNumber() {
-		return this.idNumber;
-	}
-
-	public void setIdNumber(java.lang.String idNumber) {
-		this.idNumber = idNumber;
-	}
-
 	public java.lang.Integer getNationality() {
 		return this.nationality;
 	}
@@ -147,27 +117,68 @@ public class EnterpriseData implements java.io.Serializable {
 		this.patrimonialOrigin = patrimonialOrigin;
 	}
 
-	public EnterpriseData(java.lang.Long id,
-			java.lang.String legalRepresentative,
-			java.lang.String enterpriseName, java.lang.String idType,
-			java.lang.Integer businessType, java.lang.Integer enterpriseType,
-			java.lang.String acronym, java.lang.String startDate,
-			java.lang.Integer accountMotive, java.lang.Integer sourceOfFunds,
-			java.lang.String idNumber, java.lang.Integer nationality,
-			java.lang.String patrimonialOrigin) {
+	public java.lang.String getLegalResponsible() {
+		return this.legalResponsible;
+	}
+
+	public void setLegalResponsible(java.lang.String legalResponsible) {
+		this.legalResponsible = legalResponsible;
+	}
+
+	public java.lang.String getNameCompany() {
+		return this.nameCompany;
+	}
+
+	public void setNameCompany(java.lang.String nameCompany) {
+		this.nameCompany = nameCompany;
+	}
+
+	public java.lang.String getTypeId() {
+		return this.typeId;
+	}
+
+	public void setTypeId(java.lang.String typeId) {
+		this.typeId = typeId;
+	}
+
+	public java.lang.String getNumberId() {
+		return this.numberId;
+	}
+
+	public void setNumberId(java.lang.String numberId) {
+		this.numberId = numberId;
+	}
+
+	public java.lang.String getEmailCompany() {
+		return this.emailCompany;
+	}
+
+	public void setEmailCompany(java.lang.String emailCompany) {
+		this.emailCompany = emailCompany;
+	}
+
+	public CompanyData(java.lang.Long id, java.lang.Integer businessType,
+			java.lang.Integer enterpriseType, java.lang.String acronym,
+			java.lang.String startDate, java.lang.Integer accountMotive,
+			java.lang.Integer sourceOfFunds, java.lang.Integer nationality,
+			java.lang.String patrimonialOrigin,
+			java.lang.String legalResponsible, java.lang.String nameCompany,
+			java.lang.String typeId, java.lang.String numberId,
+			java.lang.String emailCompany) {
 		this.id = id;
-		this.legalRepresentative = legalRepresentative;
-		this.enterpriseName = enterpriseName;
-		this.idType = idType;
 		this.businessType = businessType;
 		this.enterpriseType = enterpriseType;
 		this.acronym = acronym;
 		this.startDate = startDate;
 		this.accountMotive = accountMotive;
 		this.sourceOfFunds = sourceOfFunds;
-		this.idNumber = idNumber;
 		this.nationality = nationality;
 		this.patrimonialOrigin = patrimonialOrigin;
+		this.legalResponsible = legalResponsible;
+		this.nameCompany = nameCompany;
+		this.typeId = typeId;
+		this.numberId = numberId;
+		this.emailCompany = emailCompany;
 	}
 
 }
