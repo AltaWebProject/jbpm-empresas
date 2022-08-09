@@ -5,7 +5,7 @@ package com.facebank.enterprises;
  */
 
 @javax.persistence.Entity
-public class CompanyData implements java.io.Serializable {
+public class EnterpriseData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -14,18 +14,7 @@ public class CompanyData implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(sequenceName = "ENTERPRISEDATA_ID_SEQ", name = "ENTERPRISEDATA_ID_GENERATOR")
 	private java.lang.Long id;
 
-	private java.lang.Integer businessType;
-
-	private java.lang.Integer enterpriseType;
-
-	@org.kie.api.definition.type.Description("Siglas")
-	private java.lang.String acronym;
-
 	private String startDate;
-
-	private java.lang.Integer accountMotive;
-
-	private java.lang.Integer sourceOfFunds;
 
 	private java.lang.Integer nationality;
 
@@ -35,14 +24,25 @@ public class CompanyData implements java.io.Serializable {
 
 	private java.lang.String nameCompany;
 
-	@org.kie.api.definition.type.Description(value = "J - Persona Jurídica\nF - Persona Física")
+	@org.kie.api.definition.type.Description("J - Persona Jurídica\nF - Persona Física")
 	private java.lang.String typeId;
 
-	private java.lang.String numberId;
+	private Long numberId;
 
 	private java.lang.String emailCompany;
 
-	public CompanyData() {
+	private java.lang.Integer typeBusiness;
+
+	private java.lang.Integer typeCompany;
+
+	@org.kie.api.definition.type.Description(value = "Siglas")
+	private java.lang.String abbreviation;
+
+	private java.lang.Integer reasonOpening;
+
+	private java.lang.Integer sourceFound;
+
+	public EnterpriseData() {
 	}
 
 	public java.lang.Long getId() {
@@ -51,46 +51,6 @@ public class CompanyData implements java.io.Serializable {
 
 	public void setId(java.lang.Long id) {
 		this.id = id;
-	}
-
-	public java.lang.Integer getBusinessType() {
-		return this.businessType;
-	}
-
-	public void setBusinessType(java.lang.Integer businessType) {
-		this.businessType = businessType;
-	}
-
-	public java.lang.Integer getEnterpriseType() {
-		return this.enterpriseType;
-	}
-
-	public void setEnterpriseType(java.lang.Integer enterpriseType) {
-		this.enterpriseType = enterpriseType;
-	}
-
-	public java.lang.String getAcronym() {
-		return this.acronym;
-	}
-
-	public void setAcronym(java.lang.String acronym) {
-		this.acronym = acronym;
-	}
-
-	public java.lang.Integer getAccountMotive() {
-		return this.accountMotive;
-	}
-
-	public void setAccountMotive(java.lang.Integer accountMotive) {
-		this.accountMotive = accountMotive;
-	}
-
-	public java.lang.Integer getSourceOfFunds() {
-		return this.sourceOfFunds;
-	}
-
-	public void setSourceOfFunds(java.lang.Integer sourceOfFunds) {
-		this.sourceOfFunds = sourceOfFunds;
 	}
 
 	public java.lang.Integer getNationality() {
@@ -141,14 +101,6 @@ public class CompanyData implements java.io.Serializable {
 		this.typeId = typeId;
 	}
 
-	public java.lang.String getNumberId() {
-		return this.numberId;
-	}
-
-	public void setNumberId(java.lang.String numberId) {
-		this.numberId = numberId;
-	}
-
 	public java.lang.String getEmailCompany() {
 		return this.emailCompany;
 	}
@@ -157,21 +109,63 @@ public class CompanyData implements java.io.Serializable {
 		this.emailCompany = emailCompany;
 	}
 
-	public CompanyData(java.lang.Long id, java.lang.Integer businessType,
-			java.lang.Integer enterpriseType, java.lang.String acronym,
-			java.lang.String startDate, java.lang.Integer accountMotive,
-			java.lang.Integer sourceOfFunds, java.lang.Integer nationality,
-			java.lang.String patrimonialOrigin,
+	public java.lang.Integer getTypeBusiness() {
+		return this.typeBusiness;
+	}
+
+	public void setTypeBusiness(java.lang.Integer typeBusiness) {
+		this.typeBusiness = typeBusiness;
+	}
+
+	public java.lang.Integer getTypeCompany() {
+		return this.typeCompany;
+	}
+
+	public void setTypeCompany(java.lang.Integer typeCompany) {
+		this.typeCompany = typeCompany;
+	}
+
+	public java.lang.String getAbbreviation() {
+		return this.abbreviation;
+	}
+
+	public void setAbbreviation(java.lang.String abbreviation) {
+		this.abbreviation = abbreviation;
+	}
+
+	public java.lang.Integer getReasonOpening() {
+		return this.reasonOpening;
+	}
+
+	public void setReasonOpening(java.lang.Integer reasonOpening) {
+		this.reasonOpening = reasonOpening;
+	}
+
+	public java.lang.Integer getSourceFound() {
+		return this.sourceFound;
+	}
+
+	public void setSourceFound(java.lang.Integer sourceFound) {
+		this.sourceFound = sourceFound;
+	}
+
+	public java.lang.Long getNumberId() {
+		return this.numberId;
+	}
+
+	public void setNumberId(java.lang.Long numberId) {
+		this.numberId = numberId;
+	}
+
+	public EnterpriseData(java.lang.Long id, java.lang.String startDate,
+			java.lang.Integer nationality, java.lang.String patrimonialOrigin,
 			java.lang.String legalResponsible, java.lang.String nameCompany,
-			java.lang.String typeId, java.lang.String numberId,
-			java.lang.String emailCompany) {
+			java.lang.String typeId, java.lang.Long numberId,
+			java.lang.String emailCompany, java.lang.Integer typeBusiness,
+			java.lang.Integer typeCompany, java.lang.String abbreviation,
+			java.lang.Integer reasonOpening, java.lang.Integer sourceFound) {
 		this.id = id;
-		this.businessType = businessType;
-		this.enterpriseType = enterpriseType;
-		this.acronym = acronym;
 		this.startDate = startDate;
-		this.accountMotive = accountMotive;
-		this.sourceOfFunds = sourceOfFunds;
 		this.nationality = nationality;
 		this.patrimonialOrigin = patrimonialOrigin;
 		this.legalResponsible = legalResponsible;
@@ -179,6 +173,11 @@ public class CompanyData implements java.io.Serializable {
 		this.typeId = typeId;
 		this.numberId = numberId;
 		this.emailCompany = emailCompany;
+		this.typeBusiness = typeBusiness;
+		this.typeCompany = typeCompany;
+		this.abbreviation = abbreviation;
+		this.reasonOpening = reasonOpening;
+		this.sourceFound = sourceFound;
 	}
 
 }
