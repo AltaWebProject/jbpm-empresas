@@ -28,6 +28,8 @@ public class InitialData implements java.io.Serializable {
 
 	private java.lang.String firstSurname;
 
+	private java.lang.String secondSurname;
+
 	public InitialData() {
 	}
 
@@ -143,6 +145,14 @@ public class InitialData implements java.io.Serializable {
 		this.firstSurname = firstSurname;
 	}
 
+	public java.lang.String getSecondSurname() {
+		return this.secondSurname;
+	}
+
+	public void setSecondSurname(java.lang.String secondSurname) {
+		this.secondSurname = secondSurname;
+	}
+
 	public InitialData(java.lang.String bdfEmail,
 			java.lang.String bdfLoginName, java.lang.String bdfName,
 			java.lang.String currentUser, java.lang.String email,
@@ -151,7 +161,7 @@ public class InitialData implements java.io.Serializable {
 			java.lang.String login, java.lang.String products,
 			java.lang.String reasonRequest,
 			java.util.List<java.lang.Integer> rolIds,
-			java.lang.String firstSurname) {
+			java.lang.String firstSurname, java.lang.String secondSurname) {
 		this.bdfEmail = bdfEmail;
 		this.bdfLoginName = bdfLoginName;
 		this.bdfName = bdfName;
@@ -166,6 +176,7 @@ public class InitialData implements java.io.Serializable {
 		this.reasonRequest = reasonRequest;
 		this.rolIds = rolIds;
 		this.firstSurname = firstSurname;
+		this.secondSurname = secondSurname;
 	}
 
 }
