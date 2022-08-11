@@ -25,6 +25,7 @@ public class InitialData implements java.io.Serializable {
 	private java.lang.String products;
 	private java.lang.String reasonRequest;
 
+	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
 	private java.util.List<java.lang.Integer> rolIds;
 
 	private java.lang.String firstSurname;
