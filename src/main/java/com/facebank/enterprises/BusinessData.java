@@ -7,29 +7,54 @@ package com.facebank.enterprises;
 @javax.persistence.Entity
 public class BusinessData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "BUSINESSDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "BUSINESSDATA_ID_SEQ", name = "BUSINESSDATA_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "BUSINESSDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "BUSINESSDATA_ID_SEQ", name = "BUSINESSDATA_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public BusinessData() {
-    }
-    
-    public BusinessData(java.lang.Long id) {
-        this.id = id;
-    }
+	@javax.persistence.Column(length = 300)
+	private java.lang.String descriptionTypeBusiness;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	@javax.persistence.Column(length = 300)
+	private java.lang.String descriptionProductAndService;
 
+	public BusinessData() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.String getDescriptionTypeBusiness() {
+		return this.descriptionTypeBusiness;
+	}
+
+	public void setDescriptionTypeBusiness(
+			java.lang.String descriptionTypeBusiness) {
+		this.descriptionTypeBusiness = descriptionTypeBusiness;
+	}
+
+	public java.lang.String getDescriptionProductAndService() {
+		return this.descriptionProductAndService;
+	}
+
+	public void setDescriptionProductAndService(
+			java.lang.String descriptionProductAndService) {
+		this.descriptionProductAndService = descriptionProductAndService;
+	}
+
+	public BusinessData(java.lang.Long id,
+			java.lang.String descriptionTypeBusiness,
+			java.lang.String descriptionProductAndService) {
+		this.id = id;
+		this.descriptionTypeBusiness = descriptionTypeBusiness;
+		this.descriptionProductAndService = descriptionProductAndService;
+	}
 
 }
