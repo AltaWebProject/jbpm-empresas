@@ -7,29 +7,26 @@ package com.facebank.enterprises;
 @javax.persistence.Entity
 public class EnterpriseData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "ENTERPRISEDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "ENTERPRISEDATA_ID_SEQ", name = "ENTERPRISEDATA_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "ENTERPRISEDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "ENTERPRISEDATA_ID_SEQ", name = "ENTERPRISEDATA_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public EnterpriseData() {
-    }
-    
-    public EnterpriseData(java.lang.Long id) {
-        this.id = id;
-    }
+	public EnterpriseData() {
+	}
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
 
-
+	public EnterpriseData(java.lang.Long id) {
+		this.id = id;
+	}
 
 }
