@@ -3,15 +3,15 @@
     <persistence-unit name="com.facebank:Enterprises" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
-        <class>com.facebank.enterprises.InitialData</class>
         <class>com.facebank.enterprises.AuthorizedData</class>
-        <class>com.facebank.enterprises.StockholdersData</class>
-        <class>com.facebank.enterprises.AuthorizedDataList</class>
-        <class>com.facebank.enterprises.ValidDataList</class>
-        <class>com.facebank.enterprises.HeaderData</class>
-        <class>com.facebank.enterprises.AddressData</class>
         <class>com.facebank.enterprises.BusinessData</class>
+        <class>com.facebank.enterprises.ValidDataList</class>
+        <class>com.facebank.enterprises.InitialData</class>
+        <class>com.facebank.enterprises.AddressData</class>
+        <class>com.facebank.enterprises.AuthorizedDataList</class>
         <class>com.facebank.enterprises.EnterpriseData</class>
+        <class>com.facebank.enterprises.HeaderData</class>
+        <class>com.facebank.enterprises.StockholdersData</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
