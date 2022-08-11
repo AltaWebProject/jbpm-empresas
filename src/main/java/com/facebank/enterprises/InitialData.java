@@ -24,6 +24,7 @@ public class InitialData implements java.io.Serializable {
 	private java.lang.String login;
 	private java.lang.String products;
 	private java.lang.String reasonRequest;
+
 	private java.util.List<java.lang.Integer> rolIds;
 
 	private java.lang.String firstSurname;
