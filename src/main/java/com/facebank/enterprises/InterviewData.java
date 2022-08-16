@@ -7,29 +7,38 @@ package com.facebank.enterprises;
 @javax.persistence.Entity
 public class InterviewData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "INTERVIEWDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "INTERVIEWDATA_ID_SEQ", name = "INTERVIEWDATA_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "INTERVIEWDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "INTERVIEWDATA_ID_SEQ", name = "INTERVIEWDATA_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public InterviewData() {
-    }
-    
-    public InterviewData(java.lang.Long id) {
-        this.id = id;
-    }
+	@javax.persistence.Column(length = 300)
+	private java.lang.String comment;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	public InterviewData() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
 
+	public java.lang.String getComment() {
+		return this.comment;
+	}
+
+	public void setComment(java.lang.String comment) {
+		this.comment = comment;
+	}
+
+	public InterviewData(java.lang.Long id, java.lang.String comment) {
+		this.id = id;
+		this.comment = comment;
+	}
 
 }
