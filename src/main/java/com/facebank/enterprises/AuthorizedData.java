@@ -12,13 +12,14 @@ public class AuthorizedData implements java.io.Serializable {
 	private java.lang.String name;
 	@org.kie.api.definition.type.Description("Indistinta o Conjunta")
 	private java.lang.String signatureType;
-	@org.kie.api.definition.type.Description("Operador o Admin")
 	private java.lang.String role;
 
 	@javax.persistence.Id
 	@javax.persistence.GeneratedValue(generator = "AUTHORIZED_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
 	@javax.persistence.SequenceGenerator(sequenceName = "AUTHORIZED_ID_SEQ", name = "AUTHORIZED_ID_GENERATOR")
 	private java.lang.Long id;
+
+	private java.lang.String function;
 
 	public AuthorizedData() {
 	}
@@ -55,13 +56,22 @@ public class AuthorizedData implements java.io.Serializable {
 		this.id = id;
 	}
 
+	public java.lang.String getFunction() {
+		return this.function;
+	}
+
+	public void setFunction(java.lang.String function) {
+		this.function = function;
+	}
+
 	public AuthorizedData(java.lang.String name,
 			java.lang.String signatureType, java.lang.String role,
-			java.lang.Long id) {
+			java.lang.Long id, java.lang.String function) {
 		this.name = name;
 		this.signatureType = signatureType;
 		this.role = role;
 		this.id = id;
+		this.function = function;
 	}
 
 }
