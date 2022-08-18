@@ -26,6 +26,9 @@ public class StockholdersData implements java.io.Serializable {
 
 	private java.lang.Double participation;
 
+	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
+	private com.facebank.enterprises.StockholdersDataList subStockholders;
+
 	public StockholdersData() {
 	}
 
@@ -85,10 +88,20 @@ public class StockholdersData implements java.io.Serializable {
 		this.participation = participation;
 	}
 
+	public com.facebank.enterprises.StockholdersDataList getSubStockholders() {
+		return this.subStockholders;
+	}
+
+	public void setSubStockholders(
+			com.facebank.enterprises.StockholdersDataList subStockholders) {
+		this.subStockholders = subStockholders;
+	}
+
 	public StockholdersData(java.lang.Long id, java.lang.String name,
 			java.lang.String title, java.lang.String nationality,
 			java.lang.Integer number, java.lang.String type,
-			java.lang.Double participation) {
+			java.lang.Double participation,
+			com.facebank.enterprises.StockholdersDataList subStockholders) {
 		this.id = id;
 		this.name = name;
 		this.title = title;
@@ -96,6 +109,7 @@ public class StockholdersData implements java.io.Serializable {
 		this.number = number;
 		this.type = type;
 		this.participation = participation;
+		this.subStockholders = subStockholders;
 	}
 
 }
