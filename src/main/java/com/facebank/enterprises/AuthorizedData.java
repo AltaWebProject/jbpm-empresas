@@ -10,8 +10,6 @@ public class AuthorizedData implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	private java.lang.String name;
-	@org.kie.api.definition.type.Description("Indistinta o Conjunta")
-	private java.lang.String signatureType;
 	private java.lang.String role;
 
 	@javax.persistence.Id
@@ -20,6 +18,9 @@ public class AuthorizedData implements java.io.Serializable {
 	private java.lang.Long id;
 
 	private java.lang.String function;
+
+	@org.kie.api.definition.type.Description(value = "Indistinta o Conjunta")
+	private java.lang.String typeSignature;
 
 	public AuthorizedData() {
 	}
@@ -30,14 +31,6 @@ public class AuthorizedData implements java.io.Serializable {
 
 	public void setName(java.lang.String name) {
 		this.name = name;
-	}
-
-	public java.lang.String getSignatureType() {
-		return this.signatureType;
-	}
-
-	public void setSignatureType(java.lang.String signatureType) {
-		this.signatureType = signatureType;
 	}
 
 	public java.lang.String getRole() {
@@ -64,14 +57,22 @@ public class AuthorizedData implements java.io.Serializable {
 		this.function = function;
 	}
 
-	public AuthorizedData(java.lang.String name,
-			java.lang.String signatureType, java.lang.String role,
-			java.lang.Long id, java.lang.String function) {
+	public java.lang.String getTypeSignature() {
+		return this.typeSignature;
+	}
+
+	public void setTypeSignature(java.lang.String typeSignature) {
+		this.typeSignature = typeSignature;
+	}
+
+	public AuthorizedData(java.lang.String name, java.lang.String role,
+			java.lang.Long id, java.lang.String function,
+			java.lang.String typeSignature) {
 		this.name = name;
-		this.signatureType = signatureType;
 		this.role = role;
 		this.id = id;
 		this.function = function;
+		this.typeSignature = typeSignature;
 	}
 
 }
