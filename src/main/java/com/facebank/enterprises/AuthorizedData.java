@@ -10,8 +10,6 @@ public class AuthorizedData implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	private java.lang.String name;
-	private java.lang.String role;
-
 	@javax.persistence.Id
 	@javax.persistence.GeneratedValue(generator = "AUTHORIZED_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
 	@javax.persistence.SequenceGenerator(sequenceName = "AUTHORIZED_ID_SEQ", name = "AUTHORIZED_ID_GENERATOR")
@@ -19,8 +17,12 @@ public class AuthorizedData implements java.io.Serializable {
 
 	private java.lang.String function;
 
-	@org.kie.api.definition.type.Description(value = "Indistinta o Conjunta")
+	@org.kie.api.definition.type.Description("Indistinta o Conjunta")
 	private java.lang.String typeSignature;
+
+	private java.lang.String rol;
+
+	private java.lang.Integer number;
 
 	public AuthorizedData() {
 	}
@@ -31,14 +33,6 @@ public class AuthorizedData implements java.io.Serializable {
 
 	public void setName(java.lang.String name) {
 		this.name = name;
-	}
-
-	public java.lang.String getRole() {
-		return this.role;
-	}
-
-	public void setRole(java.lang.String role) {
-		this.role = role;
 	}
 
 	public java.lang.Long getId() {
@@ -65,14 +59,31 @@ public class AuthorizedData implements java.io.Serializable {
 		this.typeSignature = typeSignature;
 	}
 
-	public AuthorizedData(java.lang.String name, java.lang.String role,
-			java.lang.Long id, java.lang.String function,
-			java.lang.String typeSignature) {
+	public java.lang.String getRol() {
+		return this.rol;
+	}
+
+	public void setRol(java.lang.String rol) {
+		this.rol = rol;
+	}
+
+	public java.lang.Integer getNumber() {
+		return this.number;
+	}
+
+	public void setNumber(java.lang.Integer number) {
+		this.number = number;
+	}
+
+	public AuthorizedData(java.lang.String name, java.lang.Long id,
+			java.lang.String function, java.lang.String typeSignature,
+			java.lang.String rol, java.lang.Integer number) {
 		this.name = name;
-		this.role = role;
 		this.id = id;
 		this.function = function;
 		this.typeSignature = typeSignature;
+		this.rol = rol;
+		this.number = number;
 	}
 
 }
