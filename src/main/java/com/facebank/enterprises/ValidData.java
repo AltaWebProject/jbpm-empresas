@@ -11,6 +11,10 @@ public class ValidData implements java.io.Serializable {
 	private java.lang.String showName;
 	private java.lang.String variableName;
 
+	private java.lang.String indexStockholder;
+
+	private java.lang.String indexSubstockholder;
+
 	public ValidData() {
 	}
 
@@ -30,9 +34,29 @@ public class ValidData implements java.io.Serializable {
 		this.variableName = variableName;
 	}
 
-	public ValidData(java.lang.String showName, java.lang.String variableName) {
+	public java.lang.String getIndexStockholder() {
+		return this.indexStockholder;
+	}
+
+	public void setIndexStockholder(java.lang.String indexStockholder) {
+		this.indexStockholder = indexStockholder;
+	}
+
+	public java.lang.String getIndexSubstockholder() {
+		return this.indexSubstockholder;
+	}
+
+	public void setIndexSubstockholder(java.lang.String indexSubstockholder) {
+		this.indexSubstockholder = indexSubstockholder;
+	}
+
+	public ValidData(java.lang.String showName, java.lang.String variableName,
+			java.lang.String indexStockholder,
+			java.lang.String indexSubstockholder) {
 		this.showName = showName;
 		this.variableName = variableName;
+		this.indexStockholder = indexStockholder;
+		this.indexSubstockholder = indexSubstockholder;
 	}
 
 }
