@@ -11,9 +11,9 @@ public class ValidData implements java.io.Serializable {
 	private java.lang.String showName;
 	private java.lang.String variableName;
 
-	private java.lang.String indexStockholder;
+	private java.lang.String indexParent;
 
-	private java.lang.String indexSubstockholder;
+	private java.lang.String indexChild;
 
 	public ValidData() {
 	}
@@ -34,29 +34,28 @@ public class ValidData implements java.io.Serializable {
 		this.variableName = variableName;
 	}
 
-	public java.lang.String getIndexStockholder() {
-		return this.indexStockholder;
+	public java.lang.String getIndexParent() {
+		return this.indexParent;
 	}
 
-	public void setIndexStockholder(java.lang.String indexStockholder) {
-		this.indexStockholder = indexStockholder;
+	public void setIndexParent(java.lang.String indexParent) {
+		this.indexParent = indexParent;
 	}
 
-	public java.lang.String getIndexSubstockholder() {
-		return this.indexSubstockholder;
+	public java.lang.String getIndexChild() {
+		return this.indexChild;
 	}
 
-	public void setIndexSubstockholder(java.lang.String indexSubstockholder) {
-		this.indexSubstockholder = indexSubstockholder;
+	public void setIndexChild(java.lang.String indexChild) {
+		this.indexChild = indexChild;
 	}
 
 	public ValidData(java.lang.String showName, java.lang.String variableName,
-			java.lang.String indexStockholder,
-			java.lang.String indexSubstockholder) {
+			java.lang.String indexParent, java.lang.String indexChild) {
 		this.showName = showName;
 		this.variableName = variableName;
-		this.indexStockholder = indexStockholder;
-		this.indexSubstockholder = indexSubstockholder;
+		this.indexParent = indexParent;
+		this.indexChild = indexChild;
 	}
 
 }
