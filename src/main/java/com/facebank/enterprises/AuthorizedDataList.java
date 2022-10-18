@@ -11,6 +11,8 @@ public class AuthorizedDataList implements java.io.Serializable {
 	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
 	private java.util.List<com.facebank.enterprises.AuthorizedData> authorizedData;
 
+	private java.lang.String typeSignature;
+
 	public AuthorizedDataList() {
 	}
 
@@ -23,9 +25,19 @@ public class AuthorizedDataList implements java.io.Serializable {
 		this.authorizedData = authorizedData;
 	}
 
+	public java.lang.String getTypeSignature() {
+		return this.typeSignature;
+	}
+
+	public void setTypeSignature(java.lang.String typeSignature) {
+		this.typeSignature = typeSignature;
+	}
+
 	public AuthorizedDataList(
-			java.util.List<com.facebank.enterprises.AuthorizedData> authorizedData) {
+			java.util.List<com.facebank.enterprises.AuthorizedData> authorizedData,
+			java.lang.String typeSignature) {
 		this.authorizedData = authorizedData;
+		this.typeSignature = typeSignature;
 	}
 
 }
