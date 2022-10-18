@@ -21,6 +21,10 @@ public class AuthorizedData implements java.io.Serializable {
 
 	private java.lang.Integer number;
 
+	private java.lang.String firstSurname;
+
+	private java.lang.String secondSurname;
+
 	public AuthorizedData() {
 	}
 
@@ -64,14 +68,33 @@ public class AuthorizedData implements java.io.Serializable {
 		this.number = number;
 	}
 
+	public java.lang.String getFirstSurname() {
+		return this.firstSurname;
+	}
+
+	public void setFirstSurname(java.lang.String firstSurname) {
+		this.firstSurname = firstSurname;
+	}
+
+	public java.lang.String getSecondSurname() {
+		return this.secondSurname;
+	}
+
+	public void setSecondSurname(java.lang.String secondSurname) {
+		this.secondSurname = secondSurname;
+	}
+
 	public AuthorizedData(java.lang.String name, java.lang.Long id,
 			java.lang.String function, java.lang.String rol,
-			java.lang.Integer number) {
+			java.lang.Integer number, java.lang.String firstSurname,
+			java.lang.String secondSurname) {
 		this.name = name;
 		this.id = id;
 		this.function = function;
 		this.rol = rol;
 		this.number = number;
+		this.firstSurname = firstSurname;
+		this.secondSurname = secondSurname;
 	}
 
 }
