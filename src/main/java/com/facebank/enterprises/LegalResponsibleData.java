@@ -6,12 +6,44 @@ package com.facebank.enterprises;
 
 public class LegalResponsibleData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public LegalResponsibleData() {
-    }
+	private java.lang.String name;
+	private java.lang.String firstSurname;
+	private java.lang.String secondSurname;
 
+	public LegalResponsibleData() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getFirstSurname() {
+		return this.firstSurname;
+	}
+
+	public void setFirstSurname(java.lang.String firstSurname) {
+		this.firstSurname = firstSurname;
+	}
+
+	public java.lang.String getSecondSurname() {
+		return this.secondSurname;
+	}
+
+	public void setSecondSurname(java.lang.String secondSurname) {
+		this.secondSurname = secondSurname;
+	}
+
+	public LegalResponsibleData(java.lang.String name,
+			java.lang.String firstSurname, java.lang.String secondSurname) {
+		this.name = name;
+		this.firstSurname = firstSurname;
+		this.secondSurname = secondSurname;
+	}
 
 }
