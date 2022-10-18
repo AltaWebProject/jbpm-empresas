@@ -6,12 +6,77 @@ package com.facebank.enterprises;
 
 public class TransactionalData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public TransactionalData() {
-    }
+	private java.lang.String monthlyNumber;
+	private java.lang.String monthlyValue;
+	private java.lang.String internalMonthlyNumber;
+	private java.lang.String internalMonthlyValue;
+	private java.lang.String name;
+	private java.lang.String relationship;
 
+	public TransactionalData() {
+	}
 
+	public java.lang.String getMonthlyNumber() {
+		return this.monthlyNumber;
+	}
 
+	public void setMonthlyNumber(java.lang.String monthlyNumber) {
+		this.monthlyNumber = monthlyNumber;
+	}
+
+	public java.lang.String getMonthlyValue() {
+		return this.monthlyValue;
+	}
+
+	public void setMonthlyValue(java.lang.String monthlyValue) {
+		this.monthlyValue = monthlyValue;
+	}
+
+	public java.lang.String getInternalMonthlyNumber() {
+		return this.internalMonthlyNumber;
+	}
+
+	public void setInternalMonthlyNumber(java.lang.String internalMonthlyNumber) {
+		this.internalMonthlyNumber = internalMonthlyNumber;
+	}
+
+	public java.lang.String getInternalMonthlyValue() {
+		return this.internalMonthlyValue;
+	}
+
+	public void setInternalMonthlyValue(java.lang.String internalMonthlyValue) {
+		this.internalMonthlyValue = internalMonthlyValue;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getRelationship() {
+		return this.relationship;
+	}
+
+	public void setRelationship(java.lang.String relationship) {
+		this.relationship = relationship;
+	}
+
+	public TransactionalData(java.lang.String monthlyNumber,
+			java.lang.String monthlyValue,
+			java.lang.String internalMonthlyNumber,
+			java.lang.String internalMonthlyValue, java.lang.String name,
+			java.lang.String relationship) {
+		this.monthlyNumber = monthlyNumber;
+		this.monthlyValue = monthlyValue;
+		this.internalMonthlyNumber = internalMonthlyNumber;
+		this.internalMonthlyValue = internalMonthlyValue;
+		this.name = name;
+		this.relationship = relationship;
+	}
 
 }
