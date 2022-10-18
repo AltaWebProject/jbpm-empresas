@@ -17,9 +17,6 @@ public class AuthorizedData implements java.io.Serializable {
 
 	private java.lang.String function;
 
-	@org.kie.api.definition.type.Description("Indistinta o Conjunta")
-	private java.lang.String typeSignature;
-
 	private java.lang.String rol;
 
 	private java.lang.Integer number;
@@ -51,14 +48,6 @@ public class AuthorizedData implements java.io.Serializable {
 		this.function = function;
 	}
 
-	public java.lang.String getTypeSignature() {
-		return this.typeSignature;
-	}
-
-	public void setTypeSignature(java.lang.String typeSignature) {
-		this.typeSignature = typeSignature;
-	}
-
 	public java.lang.String getRol() {
 		return this.rol;
 	}
@@ -76,12 +65,11 @@ public class AuthorizedData implements java.io.Serializable {
 	}
 
 	public AuthorizedData(java.lang.String name, java.lang.Long id,
-			java.lang.String function, java.lang.String typeSignature,
-			java.lang.String rol, java.lang.Integer number) {
+			java.lang.String function, java.lang.String rol,
+			java.lang.Integer number) {
 		this.name = name;
 		this.id = id;
 		this.function = function;
-		this.typeSignature = typeSignature;
 		this.rol = rol;
 		this.number = number;
 	}
