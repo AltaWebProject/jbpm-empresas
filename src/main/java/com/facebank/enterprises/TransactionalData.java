@@ -12,8 +12,13 @@ public class TransactionalData implements java.io.Serializable {
 	private java.lang.String monthlyValue;
 	private java.lang.String internalMonthlyNumber;
 	private java.lang.String internalMonthlyValue;
-	private java.lang.String name;
-	private java.lang.String relationship;
+	private java.lang.String senderName;
+
+	private java.lang.String senderRelationship;
+
+	private java.lang.String receiverName;
+
+	private java.lang.String receiverRelationship;
 
 	public TransactionalData() {
 	}
@@ -50,33 +55,52 @@ public class TransactionalData implements java.io.Serializable {
 		this.internalMonthlyValue = internalMonthlyValue;
 	}
 
-	public java.lang.String getName() {
-		return this.name;
+	public java.lang.String getSenderName() {
+		return this.senderName;
 	}
 
-	public void setName(java.lang.String name) {
-		this.name = name;
+	public void setSenderName(java.lang.String senderName) {
+		this.senderName = senderName;
 	}
 
-	public java.lang.String getRelationship() {
-		return this.relationship;
+	public java.lang.String getSenderRelationship() {
+		return this.senderRelationship;
 	}
 
-	public void setRelationship(java.lang.String relationship) {
-		this.relationship = relationship;
+	public void setSenderRelationship(java.lang.String senderRelationship) {
+		this.senderRelationship = senderRelationship;
+	}
+
+	public java.lang.String getReceiverName() {
+		return this.receiverName;
+	}
+
+	public void setReceiverName(java.lang.String receiverName) {
+		this.receiverName = receiverName;
+	}
+
+	public java.lang.String getReceiverRelationship() {
+		return this.receiverRelationship;
+	}
+
+	public void setReceiverRelationship(java.lang.String receiverRelationship) {
+		this.receiverRelationship = receiverRelationship;
 	}
 
 	public TransactionalData(java.lang.String monthlyNumber,
 			java.lang.String monthlyValue,
 			java.lang.String internalMonthlyNumber,
-			java.lang.String internalMonthlyValue, java.lang.String name,
-			java.lang.String relationship) {
+			java.lang.String internalMonthlyValue, java.lang.String senderName,
+			java.lang.String senderRelationship, java.lang.String receiverName,
+			java.lang.String receiverRelationship) {
 		this.monthlyNumber = monthlyNumber;
 		this.monthlyValue = monthlyValue;
 		this.internalMonthlyNumber = internalMonthlyNumber;
 		this.internalMonthlyValue = internalMonthlyValue;
-		this.name = name;
-		this.relationship = relationship;
+		this.senderName = senderName;
+		this.senderRelationship = senderRelationship;
+		this.receiverName = receiverName;
+		this.receiverRelationship = receiverRelationship;
 	}
 
 }
