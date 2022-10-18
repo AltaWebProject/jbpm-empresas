@@ -25,6 +25,8 @@ public class AuthorizedData implements java.io.Serializable {
 
 	private java.lang.String secondSurname;
 
+	private java.lang.String rolType;
+
 	public AuthorizedData() {
 	}
 
@@ -84,10 +86,18 @@ public class AuthorizedData implements java.io.Serializable {
 		this.secondSurname = secondSurname;
 	}
 
+	public java.lang.String getRolType() {
+		return this.rolType;
+	}
+
+	public void setRolType(java.lang.String rolType) {
+		this.rolType = rolType;
+	}
+
 	public AuthorizedData(java.lang.String name, java.lang.Long id,
 			java.lang.String function, java.lang.String rol,
 			java.lang.Integer number, java.lang.String firstSurname,
-			java.lang.String secondSurname) {
+			java.lang.String secondSurname, java.lang.String rolType) {
 		this.name = name;
 		this.id = id;
 		this.function = function;
@@ -95,6 +105,7 @@ public class AuthorizedData implements java.io.Serializable {
 		this.number = number;
 		this.firstSurname = firstSurname;
 		this.secondSurname = secondSurname;
+		this.rolType = rolType;
 	}
 
 }
