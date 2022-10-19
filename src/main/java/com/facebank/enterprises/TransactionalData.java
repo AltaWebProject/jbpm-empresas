@@ -24,6 +24,10 @@ public class TransactionalData implements java.io.Serializable {
 
 	private java.lang.String internalMonthlyValueReceive;
 
+	private java.util.List<com.facebank.enterprises.SenderData> senderData;
+
+	private java.util.List<com.facebank.enterprises.ReceiverData> receiverData;
+
 	public TransactionalData() {
 	}
 
@@ -95,6 +99,24 @@ public class TransactionalData implements java.io.Serializable {
 		this.internalMonthlyValueReceive = internalMonthlyValueReceive;
 	}
 
+	public java.util.List<com.facebank.enterprises.SenderData> getSenderData() {
+		return this.senderData;
+	}
+
+	public void setSenderData(
+			java.util.List<com.facebank.enterprises.SenderData> senderData) {
+		this.senderData = senderData;
+	}
+
+	public java.util.List<com.facebank.enterprises.ReceiverData> getReceiverData() {
+		return this.receiverData;
+	}
+
+	public void setReceiverData(
+			java.util.List<com.facebank.enterprises.ReceiverData> receiverData) {
+		this.receiverData = receiverData;
+	}
+
 	public TransactionalData(java.lang.String monthlyNumberSend,
 			java.lang.String monthlyValueSend,
 			java.lang.String internalMonthlyNumberSend,
@@ -102,7 +124,9 @@ public class TransactionalData implements java.io.Serializable {
 			java.lang.String monthlyNumberReceive,
 			java.lang.String monthlyValueReceive,
 			java.lang.String internalMonthlyNumberReceive,
-			java.lang.String internalMonthlyValueReceive) {
+			java.lang.String internalMonthlyValueReceive,
+			java.util.List<com.facebank.enterprises.SenderData> senderData,
+			java.util.List<com.facebank.enterprises.ReceiverData> receiverData) {
 		this.monthlyNumberSend = monthlyNumberSend;
 		this.monthlyValueSend = monthlyValueSend;
 		this.internalMonthlyNumberSend = internalMonthlyNumberSend;
@@ -111,6 +135,8 @@ public class TransactionalData implements java.io.Serializable {
 		this.monthlyValueReceive = monthlyValueReceive;
 		this.internalMonthlyNumberReceive = internalMonthlyNumberReceive;
 		this.internalMonthlyValueReceive = internalMonthlyValueReceive;
+		this.senderData = senderData;
+		this.receiverData = receiverData;
 	}
 
 }
