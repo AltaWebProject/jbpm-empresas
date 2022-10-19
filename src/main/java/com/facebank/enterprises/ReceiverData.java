@@ -6,12 +6,33 @@ package com.facebank.enterprises;
 
 public class ReceiverData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ReceiverData() {
-    }
+	private java.lang.String name;
+	private java.lang.String relationship;
 
+	public ReceiverData() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getRelationship() {
+		return this.relationship;
+	}
+
+	public void setRelationship(java.lang.String relationship) {
+		this.relationship = relationship;
+	}
+
+	public ReceiverData(java.lang.String name, java.lang.String relationship) {
+		this.name = name;
+		this.relationship = relationship;
+	}
 
 }
