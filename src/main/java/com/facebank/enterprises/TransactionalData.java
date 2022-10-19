@@ -8,99 +8,109 @@ public class TransactionalData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String monthlyNumber;
-	private java.lang.String monthlyValue;
-	private java.lang.String internalMonthlyNumber;
-	private java.lang.String internalMonthlyValue;
-	private java.lang.String senderName;
+	private java.lang.String monthlyNumberSend;
 
-	private java.lang.String senderRelationship;
+	private java.lang.String monthlyValueSend;
 
-	private java.lang.String receiverName;
+	private java.lang.String internalMonthlyNumberSend;
 
-	private java.lang.String receiverRelationship;
+	private java.lang.String internalMonthlyValueSend;
+
+	private java.lang.String monthlyNumberReceive;
+
+	private java.lang.String monthlyValueReceive;
+
+	private java.lang.String internalMonthlyNumberReceive;
+
+	private java.lang.String internalMonthlyValueReceive;
 
 	public TransactionalData() {
 	}
 
-	public java.lang.String getMonthlyNumber() {
-		return this.monthlyNumber;
+	public java.lang.String getMonthlyNumberSend() {
+		return this.monthlyNumberSend;
 	}
 
-	public void setMonthlyNumber(java.lang.String monthlyNumber) {
-		this.monthlyNumber = monthlyNumber;
+	public void setMonthlyNumberSend(java.lang.String monthlyNumberSend) {
+		this.monthlyNumberSend = monthlyNumberSend;
 	}
 
-	public java.lang.String getMonthlyValue() {
-		return this.monthlyValue;
+	public java.lang.String getMonthlyValueSend() {
+		return this.monthlyValueSend;
 	}
 
-	public void setMonthlyValue(java.lang.String monthlyValue) {
-		this.monthlyValue = monthlyValue;
+	public void setMonthlyValueSend(java.lang.String monthlyValueSend) {
+		this.monthlyValueSend = monthlyValueSend;
 	}
 
-	public java.lang.String getInternalMonthlyNumber() {
-		return this.internalMonthlyNumber;
+	public java.lang.String getInternalMonthlyNumberSend() {
+		return this.internalMonthlyNumberSend;
 	}
 
-	public void setInternalMonthlyNumber(java.lang.String internalMonthlyNumber) {
-		this.internalMonthlyNumber = internalMonthlyNumber;
+	public void setInternalMonthlyNumberSend(
+			java.lang.String internalMonthlyNumberSend) {
+		this.internalMonthlyNumberSend = internalMonthlyNumberSend;
 	}
 
-	public java.lang.String getInternalMonthlyValue() {
-		return this.internalMonthlyValue;
+	public java.lang.String getInternalMonthlyValueSend() {
+		return this.internalMonthlyValueSend;
 	}
 
-	public void setInternalMonthlyValue(java.lang.String internalMonthlyValue) {
-		this.internalMonthlyValue = internalMonthlyValue;
+	public void setInternalMonthlyValueSend(
+			java.lang.String internalMonthlyValueSend) {
+		this.internalMonthlyValueSend = internalMonthlyValueSend;
 	}
 
-	public java.lang.String getSenderName() {
-		return this.senderName;
+	public java.lang.String getMonthlyNumberReceive() {
+		return this.monthlyNumberReceive;
 	}
 
-	public void setSenderName(java.lang.String senderName) {
-		this.senderName = senderName;
+	public void setMonthlyNumberReceive(java.lang.String monthlyNumberReceive) {
+		this.monthlyNumberReceive = monthlyNumberReceive;
 	}
 
-	public java.lang.String getSenderRelationship() {
-		return this.senderRelationship;
+	public java.lang.String getMonthlyValueReceive() {
+		return this.monthlyValueReceive;
 	}
 
-	public void setSenderRelationship(java.lang.String senderRelationship) {
-		this.senderRelationship = senderRelationship;
+	public void setMonthlyValueReceive(java.lang.String monthlyValueReceive) {
+		this.monthlyValueReceive = monthlyValueReceive;
 	}
 
-	public java.lang.String getReceiverName() {
-		return this.receiverName;
+	public java.lang.String getInternalMonthlyNumberReceive() {
+		return this.internalMonthlyNumberReceive;
 	}
 
-	public void setReceiverName(java.lang.String receiverName) {
-		this.receiverName = receiverName;
+	public void setInternalMonthlyNumberReceive(
+			java.lang.String internalMonthlyNumberReceive) {
+		this.internalMonthlyNumberReceive = internalMonthlyNumberReceive;
 	}
 
-	public java.lang.String getReceiverRelationship() {
-		return this.receiverRelationship;
+	public java.lang.String getInternalMonthlyValueReceive() {
+		return this.internalMonthlyValueReceive;
 	}
 
-	public void setReceiverRelationship(java.lang.String receiverRelationship) {
-		this.receiverRelationship = receiverRelationship;
+	public void setInternalMonthlyValueReceive(
+			java.lang.String internalMonthlyValueReceive) {
+		this.internalMonthlyValueReceive = internalMonthlyValueReceive;
 	}
 
-	public TransactionalData(java.lang.String monthlyNumber,
-			java.lang.String monthlyValue,
-			java.lang.String internalMonthlyNumber,
-			java.lang.String internalMonthlyValue, java.lang.String senderName,
-			java.lang.String senderRelationship, java.lang.String receiverName,
-			java.lang.String receiverRelationship) {
-		this.monthlyNumber = monthlyNumber;
-		this.monthlyValue = monthlyValue;
-		this.internalMonthlyNumber = internalMonthlyNumber;
-		this.internalMonthlyValue = internalMonthlyValue;
-		this.senderName = senderName;
-		this.senderRelationship = senderRelationship;
-		this.receiverName = receiverName;
-		this.receiverRelationship = receiverRelationship;
+	public TransactionalData(java.lang.String monthlyNumberSend,
+			java.lang.String monthlyValueSend,
+			java.lang.String internalMonthlyNumberSend,
+			java.lang.String internalMonthlyValueSend,
+			java.lang.String monthlyNumberReceive,
+			java.lang.String monthlyValueReceive,
+			java.lang.String internalMonthlyNumberReceive,
+			java.lang.String internalMonthlyValueReceive) {
+		this.monthlyNumberSend = monthlyNumberSend;
+		this.monthlyValueSend = monthlyValueSend;
+		this.internalMonthlyNumberSend = internalMonthlyNumberSend;
+		this.internalMonthlyValueSend = internalMonthlyValueSend;
+		this.monthlyNumberReceive = monthlyNumberReceive;
+		this.monthlyValueReceive = monthlyValueReceive;
+		this.internalMonthlyNumberReceive = internalMonthlyNumberReceive;
+		this.internalMonthlyValueReceive = internalMonthlyValueReceive;
 	}
 
 }
