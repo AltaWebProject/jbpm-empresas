@@ -47,6 +47,8 @@ public class InitialData implements java.io.Serializable {
 
 	private java.lang.String surNameEntity;
 
+	private java.lang.String secondSurNameEntity;
+
 	public InitialData() {
 	}
 
@@ -218,6 +220,14 @@ public class InitialData implements java.io.Serializable {
 		this.surNameEntity = surNameEntity;
 	}
 
+	public java.lang.String getSecondSurNameEntity() {
+		return this.secondSurNameEntity;
+	}
+
+	public void setSecondSurNameEntity(java.lang.String secondSurNameEntity) {
+		this.secondSurNameEntity = secondSurNameEntity;
+	}
+
 	public InitialData(java.lang.String bdfEmail,
 			java.lang.String bdfLoginName, java.lang.String bdfName,
 			java.lang.String email, java.lang.Long id,
@@ -228,7 +238,8 @@ public class InitialData implements java.io.Serializable {
 			java.lang.String agency, java.lang.String executive,
 			java.lang.String companyName, java.lang.String mainPhone,
 			java.lang.String otherPhone, java.lang.String codeEntity,
-			java.lang.String nameEntity, java.lang.String surNameEntity) {
+			java.lang.String nameEntity, java.lang.String surNameEntity,
+			java.lang.String secondSurNameEntity) {
 		this.bdfEmail = bdfEmail;
 		this.bdfLoginName = bdfLoginName;
 		this.bdfName = bdfName;
@@ -250,6 +261,7 @@ public class InitialData implements java.io.Serializable {
 		this.codeEntity = codeEntity;
 		this.nameEntity = nameEntity;
 		this.surNameEntity = surNameEntity;
+		this.secondSurNameEntity = secondSurNameEntity;
 	}
 
 }
