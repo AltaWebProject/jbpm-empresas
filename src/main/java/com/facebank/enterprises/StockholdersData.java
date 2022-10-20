@@ -10,8 +10,6 @@ public class StockholdersData implements java.io.Serializable {
 
 	private java.lang.String name;
 
-	private java.lang.String title;
-
 	private java.lang.String nationality;
 
 	private java.lang.Integer number;
@@ -23,6 +21,14 @@ public class StockholdersData implements java.io.Serializable {
 	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
 	private com.facebank.enterprises.StockholdersDataList subStockholders;
 
+	private java.lang.String signatory;
+
+	private java.lang.String surName;
+
+	private java.lang.String secondSurName;
+
+	private java.lang.String position;
+
 	public StockholdersData() {
 	}
 
@@ -32,14 +38,6 @@ public class StockholdersData implements java.io.Serializable {
 
 	public void setName(java.lang.String name) {
 		this.name = name;
-	}
-
-	public java.lang.String getTitle() {
-		return this.title;
-	}
-
-	public void setTitle(java.lang.String title) {
-		this.title = title;
 	}
 
 	public java.lang.String getNationality() {
@@ -83,17 +81,54 @@ public class StockholdersData implements java.io.Serializable {
 		this.subStockholders = subStockholders;
 	}
 
-	public StockholdersData(java.lang.String name, java.lang.String title,
+	public java.lang.String getSignatory() {
+		return this.signatory;
+	}
+
+	public void setSignatory(java.lang.String signatory) {
+		this.signatory = signatory;
+	}
+
+	public java.lang.String getSurName() {
+		return this.surName;
+	}
+
+	public void setSurName(java.lang.String surName) {
+		this.surName = surName;
+	}
+
+	public java.lang.String getSecondSurName() {
+		return this.secondSurName;
+	}
+
+	public void setSecondSurName(java.lang.String secondSurName) {
+		this.secondSurName = secondSurName;
+	}
+
+	public java.lang.String getPosition() {
+		return this.position;
+	}
+
+	public void setPosition(java.lang.String position) {
+		this.position = position;
+	}
+
+	public StockholdersData(java.lang.String name,
 			java.lang.String nationality, java.lang.Integer number,
 			java.lang.String type, java.lang.Double participation,
-			com.facebank.enterprises.StockholdersDataList subStockholders) {
+			com.facebank.enterprises.StockholdersDataList subStockholders,
+			java.lang.String signatory, java.lang.String surName,
+			java.lang.String secondSurName, java.lang.String position) {
 		this.name = name;
-		this.title = title;
 		this.nationality = nationality;
 		this.number = number;
 		this.type = type;
 		this.participation = participation;
 		this.subStockholders = subStockholders;
+		this.signatory = signatory;
+		this.surName = surName;
+		this.secondSurName = secondSurName;
+		this.position = position;
 	}
 
 }
