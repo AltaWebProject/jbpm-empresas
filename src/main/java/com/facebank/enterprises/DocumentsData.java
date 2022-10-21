@@ -8,21 +8,58 @@ public class DocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String w8IndividualsId;
+	private java.lang.String w8IndividualsEnglishId;
+
+	private java.lang.String w8IndividualsSpanishId;
+
+	private java.lang.String w9EnglishId;
+
+	private java.lang.String w9SpanishId;
 
 	public DocumentsData() {
 	}
 
-	public java.lang.String getW8IndividualsId() {
-		return this.w8IndividualsId;
+	public java.lang.String getW8IndividualsEnglishId() {
+		return this.w8IndividualsEnglishId;
 	}
 
-	public void setW8IndividualsId(java.lang.String w8IndividualsId) {
-		this.w8IndividualsId = w8IndividualsId;
+	public void setW8IndividualsEnglishId(
+			java.lang.String w8IndividualsEnglishId) {
+		this.w8IndividualsEnglishId = w8IndividualsEnglishId;
 	}
 
-	public DocumentsData(java.lang.String w8IndividualsId) {
-		this.w8IndividualsId = w8IndividualsId;
+	public java.lang.String getW8IndividualsSpanishId() {
+		return this.w8IndividualsSpanishId;
+	}
+
+	public void setW8IndividualsSpanishId(
+			java.lang.String w8IndividualsSpanishId) {
+		this.w8IndividualsSpanishId = w8IndividualsSpanishId;
+	}
+
+	public java.lang.String getW9EnglishId() {
+		return this.w9EnglishId;
+	}
+
+	public void setW9EnglishId(java.lang.String w9EnglishId) {
+		this.w9EnglishId = w9EnglishId;
+	}
+
+	public java.lang.String getW9SpanishId() {
+		return this.w9SpanishId;
+	}
+
+	public void setW9SpanishId(java.lang.String w9SpanishId) {
+		this.w9SpanishId = w9SpanishId;
+	}
+
+	public DocumentsData(java.lang.String w8IndividualsEnglishId,
+			java.lang.String w8IndividualsSpanishId,
+			java.lang.String w9EnglishId, java.lang.String w9SpanishId) {
+		this.w8IndividualsEnglishId = w8IndividualsEnglishId;
+		this.w8IndividualsSpanishId = w8IndividualsSpanishId;
+		this.w9EnglishId = w9EnglishId;
+		this.w9SpanishId = w9SpanishId;
 	}
 
 }
