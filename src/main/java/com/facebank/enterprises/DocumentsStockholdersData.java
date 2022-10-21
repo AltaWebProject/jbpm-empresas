@@ -11,6 +11,8 @@ public class DocumentsStockholdersData implements java.io.Serializable {
 	private java.lang.String passport;
 	private java.lang.String identification;
 
+	private java.lang.String w8;
+
 	public DocumentsStockholdersData() {
 	}
 
@@ -30,10 +32,19 @@ public class DocumentsStockholdersData implements java.io.Serializable {
 		this.identification = identification;
 	}
 
+	public java.lang.String getW8() {
+		return this.w8;
+	}
+
+	public void setW8(java.lang.String w8) {
+		this.w8 = w8;
+	}
+
 	public DocumentsStockholdersData(java.lang.String passport,
-			java.lang.String identification) {
+			java.lang.String identification, java.lang.String w8) {
 		this.passport = passport;
 		this.identification = identification;
+		this.w8 = w8;
 	}
 
 }
