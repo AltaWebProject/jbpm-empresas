@@ -6,12 +6,23 @@ package com.facebank.enterprises;
 
 public class DocumentsData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DocumentsData() {
-    }
+	private java.lang.String w8IndividualsId;
 
+	public DocumentsData() {
+	}
 
+	public java.lang.String getW8IndividualsId() {
+		return this.w8IndividualsId;
+	}
 
+	public void setW8IndividualsId(java.lang.String w8IndividualsId) {
+		this.w8IndividualsId = w8IndividualsId;
+	}
+
+	public DocumentsData(java.lang.String w8IndividualsId) {
+		this.w8IndividualsId = w8IndividualsId;
+	}
 
 }
