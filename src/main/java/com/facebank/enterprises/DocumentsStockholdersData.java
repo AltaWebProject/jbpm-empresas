@@ -6,12 +6,34 @@ package com.facebank.enterprises;
 
 public class DocumentsStockholdersData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DocumentsStockholdersData() {
-    }
+	private java.lang.String passport;
+	private java.lang.String identification;
 
+	public DocumentsStockholdersData() {
+	}
 
+	public java.lang.String getPassport() {
+		return this.passport;
+	}
 
+	public void setPassport(java.lang.String passport) {
+		this.passport = passport;
+	}
+
+	public java.lang.String getIdentification() {
+		return this.identification;
+	}
+
+	public void setIdentification(java.lang.String identification) {
+		this.identification = identification;
+	}
+
+	public DocumentsStockholdersData(java.lang.String passport,
+			java.lang.String identification) {
+		this.passport = passport;
+		this.identification = identification;
+	}
 
 }
