@@ -8,55 +8,19 @@ public class DocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String w8IndividualsEnglishId;
-
-	private java.lang.String w8IndividualsSpanishId;
-
-	private java.lang.String w9EnglishId;
-
-	private java.lang.String w9SpanishId;
-
 	private java.util.List<java.lang.String> financialDocumentsIds;
 
 	private java.util.List<java.lang.String> legalDocumentsIds;
 
 	private java.util.List<java.lang.String> generalDocumentsIds;
 
+	private java.lang.String w9Id;
+
+	private java.lang.String carId;
+
+	private java.util.List<com.facebank.enterprises.DocumentsStockholdersData> stockholdersDocumentsIds;
+
 	public DocumentsData() {
-	}
-
-	public java.lang.String getW8IndividualsEnglishId() {
-		return this.w8IndividualsEnglishId;
-	}
-
-	public void setW8IndividualsEnglishId(
-			java.lang.String w8IndividualsEnglishId) {
-		this.w8IndividualsEnglishId = w8IndividualsEnglishId;
-	}
-
-	public java.lang.String getW8IndividualsSpanishId() {
-		return this.w8IndividualsSpanishId;
-	}
-
-	public void setW8IndividualsSpanishId(
-			java.lang.String w8IndividualsSpanishId) {
-		this.w8IndividualsSpanishId = w8IndividualsSpanishId;
-	}
-
-	public java.lang.String getW9EnglishId() {
-		return this.w9EnglishId;
-	}
-
-	public void setW9EnglishId(java.lang.String w9EnglishId) {
-		this.w9EnglishId = w9EnglishId;
-	}
-
-	public java.lang.String getW9SpanishId() {
-		return this.w9SpanishId;
-	}
-
-	public void setW9SpanishId(java.lang.String w9SpanishId) {
-		this.w9SpanishId = w9SpanishId;
 	}
 
 	public java.util.List<java.lang.String> getFinancialDocumentsIds() {
@@ -86,19 +50,44 @@ public class DocumentsData implements java.io.Serializable {
 		this.generalDocumentsIds = generalDocumentsIds;
 	}
 
-	public DocumentsData(java.lang.String w8IndividualsEnglishId,
-			java.lang.String w8IndividualsSpanishId,
-			java.lang.String w9EnglishId, java.lang.String w9SpanishId,
+	public java.lang.String getW9Id() {
+		return this.w9Id;
+	}
+
+	public void setW9Id(java.lang.String w9Id) {
+		this.w9Id = w9Id;
+	}
+
+	public java.lang.String getCarId() {
+		return this.carId;
+	}
+
+	public void setCarId(java.lang.String carId) {
+		this.carId = carId;
+	}
+
+	public java.util.List<com.facebank.enterprises.DocumentsStockholdersData> getStockholdersDocumentsIds() {
+		return this.stockholdersDocumentsIds;
+	}
+
+	public void setStockholdersDocumentsIds(
+			java.util.List<com.facebank.enterprises.DocumentsStockholdersData> stockholdersDocumentsIds) {
+		this.stockholdersDocumentsIds = stockholdersDocumentsIds;
+	}
+
+	public DocumentsData(
 			java.util.List<java.lang.String> financialDocumentsIds,
 			java.util.List<java.lang.String> legalDocumentsIds,
-			java.util.List<java.lang.String> generalDocumentsIds) {
-		this.w8IndividualsEnglishId = w8IndividualsEnglishId;
-		this.w8IndividualsSpanishId = w8IndividualsSpanishId;
-		this.w9EnglishId = w9EnglishId;
-		this.w9SpanishId = w9SpanishId;
+			java.util.List<java.lang.String> generalDocumentsIds,
+			java.lang.String w9Id,
+			java.lang.String carId,
+			java.util.List<com.facebank.enterprises.DocumentsStockholdersData> stockholdersDocumentsIds) {
 		this.financialDocumentsIds = financialDocumentsIds;
 		this.legalDocumentsIds = legalDocumentsIds;
 		this.generalDocumentsIds = generalDocumentsIds;
+		this.w9Id = w9Id;
+		this.carId = carId;
+		this.stockholdersDocumentsIds = stockholdersDocumentsIds;
 	}
 
 }
