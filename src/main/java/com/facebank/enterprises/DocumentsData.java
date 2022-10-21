@@ -20,6 +20,8 @@ public class DocumentsData implements java.io.Serializable {
 
 	private java.util.List<com.facebank.enterprises.DocumentsStockholdersData> stockholdersDocumentsIds;
 
+	private java.lang.String w8Id;
+
 	public DocumentsData() {
 	}
 
@@ -75,19 +77,29 @@ public class DocumentsData implements java.io.Serializable {
 		this.stockholdersDocumentsIds = stockholdersDocumentsIds;
 	}
 
+	public java.lang.String getW8Id() {
+		return this.w8Id;
+	}
+
+	public void setW8Id(java.lang.String w8Id) {
+		this.w8Id = w8Id;
+	}
+
 	public DocumentsData(
 			java.util.List<java.lang.String> financialDocumentsIds,
 			java.util.List<java.lang.String> legalDocumentsIds,
 			java.util.List<java.lang.String> generalDocumentsIds,
 			java.lang.String w9Id,
 			java.lang.String carId,
-			java.util.List<com.facebank.enterprises.DocumentsStockholdersData> stockholdersDocumentsIds) {
+			java.util.List<com.facebank.enterprises.DocumentsStockholdersData> stockholdersDocumentsIds,
+			java.lang.String w8Id) {
 		this.financialDocumentsIds = financialDocumentsIds;
 		this.legalDocumentsIds = legalDocumentsIds;
 		this.generalDocumentsIds = generalDocumentsIds;
 		this.w9Id = w9Id;
 		this.carId = carId;
 		this.stockholdersDocumentsIds = stockholdersDocumentsIds;
+		this.w8Id = w8Id;
 	}
 
 }
