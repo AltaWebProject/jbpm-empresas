@@ -16,6 +16,12 @@ public class DocumentsData implements java.io.Serializable {
 
 	private java.lang.String w9SpanishId;
 
+	private java.util.List<java.lang.String> financialDocumentsIds;
+
+	private java.util.List<java.lang.String> legalDocumentsIds;
+
+	private java.util.List<java.lang.String> generalDocumentsIds;
+
 	public DocumentsData() {
 	}
 
@@ -53,13 +59,46 @@ public class DocumentsData implements java.io.Serializable {
 		this.w9SpanishId = w9SpanishId;
 	}
 
+	public java.util.List<java.lang.String> getFinancialDocumentsIds() {
+		return this.financialDocumentsIds;
+	}
+
+	public void setFinancialDocumentsIds(
+			java.util.List<java.lang.String> financialDocumentsIds) {
+		this.financialDocumentsIds = financialDocumentsIds;
+	}
+
+	public java.util.List<java.lang.String> getLegalDocumentsIds() {
+		return this.legalDocumentsIds;
+	}
+
+	public void setLegalDocumentsIds(
+			java.util.List<java.lang.String> legalDocumentsIds) {
+		this.legalDocumentsIds = legalDocumentsIds;
+	}
+
+	public java.util.List<java.lang.String> getGeneralDocumentsIds() {
+		return this.generalDocumentsIds;
+	}
+
+	public void setGeneralDocumentsIds(
+			java.util.List<java.lang.String> generalDocumentsIds) {
+		this.generalDocumentsIds = generalDocumentsIds;
+	}
+
 	public DocumentsData(java.lang.String w8IndividualsEnglishId,
 			java.lang.String w8IndividualsSpanishId,
-			java.lang.String w9EnglishId, java.lang.String w9SpanishId) {
+			java.lang.String w9EnglishId, java.lang.String w9SpanishId,
+			java.util.List<java.lang.String> financialDocumentsIds,
+			java.util.List<java.lang.String> legalDocumentsIds,
+			java.util.List<java.lang.String> generalDocumentsIds) {
 		this.w8IndividualsEnglishId = w8IndividualsEnglishId;
 		this.w8IndividualsSpanishId = w8IndividualsSpanishId;
 		this.w9EnglishId = w9EnglishId;
 		this.w9SpanishId = w9SpanishId;
+		this.financialDocumentsIds = financialDocumentsIds;
+		this.legalDocumentsIds = legalDocumentsIds;
+		this.generalDocumentsIds = generalDocumentsIds;
 	}
 
 }
