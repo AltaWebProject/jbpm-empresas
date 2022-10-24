@@ -29,6 +29,8 @@ public class StockholdersData implements java.io.Serializable {
 
 	private java.lang.String position;
 
+	private java.lang.String id;
+
 	public StockholdersData() {
 	}
 
@@ -113,12 +115,21 @@ public class StockholdersData implements java.io.Serializable {
 		this.position = position;
 	}
 
+	public java.lang.String getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
 	public StockholdersData(java.lang.String name,
 			java.lang.String nationality, java.lang.Integer number,
 			java.lang.String type, java.lang.Double participation,
 			com.facebank.enterprises.StockholdersDataList subStockholders,
 			java.lang.String signatory, java.lang.String surName,
-			java.lang.String secondSurName, java.lang.String position) {
+			java.lang.String secondSurName, java.lang.String position,
+			java.lang.String id) {
 		this.name = name;
 		this.nationality = nationality;
 		this.number = number;
@@ -129,6 +140,7 @@ public class StockholdersData implements java.io.Serializable {
 		this.surName = surName;
 		this.secondSurName = secondSurName;
 		this.position = position;
+		this.id = id;
 	}
 
 }
