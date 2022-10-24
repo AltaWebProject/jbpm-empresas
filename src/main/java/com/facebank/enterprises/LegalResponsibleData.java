@@ -12,6 +12,8 @@ public class LegalResponsibleData implements java.io.Serializable {
 	private java.lang.String firstSurname;
 	private java.lang.String secondSurname;
 
+	private java.lang.String function;
+
 	public LegalResponsibleData() {
 	}
 
@@ -39,11 +41,21 @@ public class LegalResponsibleData implements java.io.Serializable {
 		this.secondSurname = secondSurname;
 	}
 
+	public java.lang.String getFunction() {
+		return this.function;
+	}
+
+	public void setFunction(java.lang.String function) {
+		this.function = function;
+	}
+
 	public LegalResponsibleData(java.lang.String name,
-			java.lang.String firstSurname, java.lang.String secondSurname) {
+			java.lang.String firstSurname, java.lang.String secondSurname,
+			java.lang.String function) {
 		this.name = name;
 		this.firstSurname = firstSurname;
 		this.secondSurname = secondSurname;
+		this.function = function;
 	}
 
 }
