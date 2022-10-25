@@ -8,95 +8,27 @@ public class TransactionalData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String monthlyNumberSend;
-
-	private java.lang.String monthlyValueSend;
-
-	private java.lang.String internalMonthlyNumberSend;
-
-	private java.lang.String internalMonthlyValueSend;
-
-	private java.lang.String monthlyNumberReceive;
-
-	private java.lang.String monthlyValueReceive;
-
-	private java.lang.String internalMonthlyNumberReceive;
-
-	private java.lang.String internalMonthlyValueReceive;
-
 	private java.util.List<com.facebank.enterprises.SenderData> senderData;
 
 	private java.util.List<com.facebank.enterprises.ReceiverData> receiverData;
 
+	private java.lang.String transfersToSentNumber;
+
+	private java.lang.String transfersToSentAmount;
+
+	private java.lang.String internalTransfersToSentNumber;
+
+	private java.lang.String internalTransfersToSentAmount;
+
+	private java.lang.String transfersToReceiveNumber;
+
+	private java.lang.String transfersToReceiveAmount;
+
+	private java.lang.String internalTransfersToReceiveNumber;
+
+	private java.lang.String internalTransfersToReceiveAmount;
+
 	public TransactionalData() {
-	}
-
-	public java.lang.String getMonthlyNumberSend() {
-		return this.monthlyNumberSend;
-	}
-
-	public void setMonthlyNumberSend(java.lang.String monthlyNumberSend) {
-		this.monthlyNumberSend = monthlyNumberSend;
-	}
-
-	public java.lang.String getMonthlyValueSend() {
-		return this.monthlyValueSend;
-	}
-
-	public void setMonthlyValueSend(java.lang.String monthlyValueSend) {
-		this.monthlyValueSend = monthlyValueSend;
-	}
-
-	public java.lang.String getInternalMonthlyNumberSend() {
-		return this.internalMonthlyNumberSend;
-	}
-
-	public void setInternalMonthlyNumberSend(
-			java.lang.String internalMonthlyNumberSend) {
-		this.internalMonthlyNumberSend = internalMonthlyNumberSend;
-	}
-
-	public java.lang.String getInternalMonthlyValueSend() {
-		return this.internalMonthlyValueSend;
-	}
-
-	public void setInternalMonthlyValueSend(
-			java.lang.String internalMonthlyValueSend) {
-		this.internalMonthlyValueSend = internalMonthlyValueSend;
-	}
-
-	public java.lang.String getMonthlyNumberReceive() {
-		return this.monthlyNumberReceive;
-	}
-
-	public void setMonthlyNumberReceive(java.lang.String monthlyNumberReceive) {
-		this.monthlyNumberReceive = monthlyNumberReceive;
-	}
-
-	public java.lang.String getMonthlyValueReceive() {
-		return this.monthlyValueReceive;
-	}
-
-	public void setMonthlyValueReceive(java.lang.String monthlyValueReceive) {
-		this.monthlyValueReceive = monthlyValueReceive;
-	}
-
-	public java.lang.String getInternalMonthlyNumberReceive() {
-		return this.internalMonthlyNumberReceive;
-	}
-
-	public void setInternalMonthlyNumberReceive(
-			java.lang.String internalMonthlyNumberReceive) {
-		this.internalMonthlyNumberReceive = internalMonthlyNumberReceive;
-	}
-
-	public java.lang.String getInternalMonthlyValueReceive() {
-		return this.internalMonthlyValueReceive;
-	}
-
-	public void setInternalMonthlyValueReceive(
-			java.lang.String internalMonthlyValueReceive) {
-		this.internalMonthlyValueReceive = internalMonthlyValueReceive;
 	}
 
 	public java.util.List<com.facebank.enterprises.SenderData> getSenderData() {
@@ -117,26 +49,97 @@ public class TransactionalData implements java.io.Serializable {
 		this.receiverData = receiverData;
 	}
 
-	public TransactionalData(java.lang.String monthlyNumberSend,
-			java.lang.String monthlyValueSend,
-			java.lang.String internalMonthlyNumberSend,
-			java.lang.String internalMonthlyValueSend,
-			java.lang.String monthlyNumberReceive,
-			java.lang.String monthlyValueReceive,
-			java.lang.String internalMonthlyNumberReceive,
-			java.lang.String internalMonthlyValueReceive,
+	public java.lang.String getTransfersToSentNumber() {
+		return this.transfersToSentNumber;
+	}
+
+	public void setTransfersToSentNumber(java.lang.String transfersToSentNumber) {
+		this.transfersToSentNumber = transfersToSentNumber;
+	}
+
+	public java.lang.String getTransfersToSentAmount() {
+		return this.transfersToSentAmount;
+	}
+
+	public void setTransfersToSentAmount(java.lang.String transfersToSentAmount) {
+		this.transfersToSentAmount = transfersToSentAmount;
+	}
+
+	public java.lang.String getInternalTransfersToSentNumber() {
+		return this.internalTransfersToSentNumber;
+	}
+
+	public void setInternalTransfersToSentNumber(
+			java.lang.String internalTransfersToSentNumber) {
+		this.internalTransfersToSentNumber = internalTransfersToSentNumber;
+	}
+
+	public java.lang.String getInternalTransfersToSentAmount() {
+		return this.internalTransfersToSentAmount;
+	}
+
+	public void setInternalTransfersToSentAmount(
+			java.lang.String internalTransfersToSentAmount) {
+		this.internalTransfersToSentAmount = internalTransfersToSentAmount;
+	}
+
+	public java.lang.String getTransfersToReceiveNumber() {
+		return this.transfersToReceiveNumber;
+	}
+
+	public void setTransfersToReceiveNumber(
+			java.lang.String transfersToReceiveNumber) {
+		this.transfersToReceiveNumber = transfersToReceiveNumber;
+	}
+
+	public java.lang.String getTransfersToReceiveAmount() {
+		return this.transfersToReceiveAmount;
+	}
+
+	public void setTransfersToReceiveAmount(
+			java.lang.String transfersToReceiveAmount) {
+		this.transfersToReceiveAmount = transfersToReceiveAmount;
+	}
+
+	public java.lang.String getInternalTransfersToReceiveNumber() {
+		return this.internalTransfersToReceiveNumber;
+	}
+
+	public void setInternalTransfersToReceiveNumber(
+			java.lang.String internalTransfersToReceiveNumber) {
+		this.internalTransfersToReceiveNumber = internalTransfersToReceiveNumber;
+	}
+
+	public java.lang.String getInternalTransfersToReceiveAmount() {
+		return this.internalTransfersToReceiveAmount;
+	}
+
+	public void setInternalTransfersToReceiveAmount(
+			java.lang.String internalTransfersToReceiveAmount) {
+		this.internalTransfersToReceiveAmount = internalTransfersToReceiveAmount;
+	}
+
+	public TransactionalData(
 			java.util.List<com.facebank.enterprises.SenderData> senderData,
-			java.util.List<com.facebank.enterprises.ReceiverData> receiverData) {
-		this.monthlyNumberSend = monthlyNumberSend;
-		this.monthlyValueSend = monthlyValueSend;
-		this.internalMonthlyNumberSend = internalMonthlyNumberSend;
-		this.internalMonthlyValueSend = internalMonthlyValueSend;
-		this.monthlyNumberReceive = monthlyNumberReceive;
-		this.monthlyValueReceive = monthlyValueReceive;
-		this.internalMonthlyNumberReceive = internalMonthlyNumberReceive;
-		this.internalMonthlyValueReceive = internalMonthlyValueReceive;
+			java.util.List<com.facebank.enterprises.ReceiverData> receiverData,
+			java.lang.String transfersToSentNumber,
+			java.lang.String transfersToSentAmount,
+			java.lang.String internalTransfersToSentNumber,
+			java.lang.String internalTransfersToSentAmount,
+			java.lang.String transfersToReceiveNumber,
+			java.lang.String transfersToReceiveAmount,
+			java.lang.String internalTransfersToReceiveNumber,
+			java.lang.String internalTransfersToReceiveAmount) {
 		this.senderData = senderData;
 		this.receiverData = receiverData;
+		this.transfersToSentNumber = transfersToSentNumber;
+		this.transfersToSentAmount = transfersToSentAmount;
+		this.internalTransfersToSentNumber = internalTransfersToSentNumber;
+		this.internalTransfersToSentAmount = internalTransfersToSentAmount;
+		this.transfersToReceiveNumber = transfersToReceiveNumber;
+		this.transfersToReceiveAmount = transfersToReceiveAmount;
+		this.internalTransfersToReceiveNumber = internalTransfersToReceiveNumber;
+		this.internalTransfersToReceiveAmount = internalTransfersToReceiveAmount;
 	}
 
 }
