@@ -12,21 +12,21 @@ public class TransactionalData implements java.io.Serializable {
 
 	private java.util.List<com.facebank.enterprises.ReceiverData> receiverData;
 
-	private java.lang.String transfersToSentNumber;
+	private Long transfersToSentNumber;
 
-	private java.lang.String transfersToSentAmount;
+	private Long transfersToSentAmount;
 
-	private java.lang.String internalTransfersToSentNumber;
+	private Long internalTransfersToSentNumber;
 
-	private java.lang.String internalTransfersToSentAmount;
+	private Long internalTransfersToSentAmount;
 
-	private java.lang.String transfersToReceiveNumber;
+	private Long transfersToReceiveNumber;
 
-	private java.lang.String transfersToReceiveAmount;
+	private Long transfersToReceiveAmount;
 
-	private java.lang.String internalTransfersToReceiveNumber;
+	private Long internalTransfersToReceiveNumber;
 
-	private java.lang.String internalTransfersToReceiveAmount;
+	private Long internalTransfersToReceiveAmount;
 
 	public TransactionalData() {
 	}
@@ -49,87 +49,87 @@ public class TransactionalData implements java.io.Serializable {
 		this.receiverData = receiverData;
 	}
 
-	public java.lang.String getTransfersToSentNumber() {
+	public java.lang.Long getTransfersToSentNumber() {
 		return this.transfersToSentNumber;
 	}
 
-	public void setTransfersToSentNumber(java.lang.String transfersToSentNumber) {
+	public void setTransfersToSentNumber(java.lang.Long transfersToSentNumber) {
 		this.transfersToSentNumber = transfersToSentNumber;
 	}
 
-	public java.lang.String getTransfersToSentAmount() {
+	public java.lang.Long getTransfersToSentAmount() {
 		return this.transfersToSentAmount;
 	}
 
-	public void setTransfersToSentAmount(java.lang.String transfersToSentAmount) {
+	public void setTransfersToSentAmount(java.lang.Long transfersToSentAmount) {
 		this.transfersToSentAmount = transfersToSentAmount;
 	}
 
-	public java.lang.String getInternalTransfersToSentNumber() {
+	public java.lang.Long getInternalTransfersToSentNumber() {
 		return this.internalTransfersToSentNumber;
 	}
 
 	public void setInternalTransfersToSentNumber(
-			java.lang.String internalTransfersToSentNumber) {
+			java.lang.Long internalTransfersToSentNumber) {
 		this.internalTransfersToSentNumber = internalTransfersToSentNumber;
 	}
 
-	public java.lang.String getInternalTransfersToSentAmount() {
+	public java.lang.Long getInternalTransfersToSentAmount() {
 		return this.internalTransfersToSentAmount;
 	}
 
 	public void setInternalTransfersToSentAmount(
-			java.lang.String internalTransfersToSentAmount) {
+			java.lang.Long internalTransfersToSentAmount) {
 		this.internalTransfersToSentAmount = internalTransfersToSentAmount;
 	}
 
-	public java.lang.String getTransfersToReceiveNumber() {
+	public java.lang.Long getTransfersToReceiveNumber() {
 		return this.transfersToReceiveNumber;
 	}
 
 	public void setTransfersToReceiveNumber(
-			java.lang.String transfersToReceiveNumber) {
+			java.lang.Long transfersToReceiveNumber) {
 		this.transfersToReceiveNumber = transfersToReceiveNumber;
 	}
 
-	public java.lang.String getTransfersToReceiveAmount() {
+	public java.lang.Long getTransfersToReceiveAmount() {
 		return this.transfersToReceiveAmount;
 	}
 
 	public void setTransfersToReceiveAmount(
-			java.lang.String transfersToReceiveAmount) {
+			java.lang.Long transfersToReceiveAmount) {
 		this.transfersToReceiveAmount = transfersToReceiveAmount;
 	}
 
-	public java.lang.String getInternalTransfersToReceiveNumber() {
+	public java.lang.Long getInternalTransfersToReceiveNumber() {
 		return this.internalTransfersToReceiveNumber;
 	}
 
 	public void setInternalTransfersToReceiveNumber(
-			java.lang.String internalTransfersToReceiveNumber) {
+			java.lang.Long internalTransfersToReceiveNumber) {
 		this.internalTransfersToReceiveNumber = internalTransfersToReceiveNumber;
 	}
 
-	public java.lang.String getInternalTransfersToReceiveAmount() {
+	public java.lang.Long getInternalTransfersToReceiveAmount() {
 		return this.internalTransfersToReceiveAmount;
 	}
 
 	public void setInternalTransfersToReceiveAmount(
-			java.lang.String internalTransfersToReceiveAmount) {
+			java.lang.Long internalTransfersToReceiveAmount) {
 		this.internalTransfersToReceiveAmount = internalTransfersToReceiveAmount;
 	}
 
 	public TransactionalData(
 			java.util.List<com.facebank.enterprises.SenderData> senderData,
 			java.util.List<com.facebank.enterprises.ReceiverData> receiverData,
-			java.lang.String transfersToSentNumber,
-			java.lang.String transfersToSentAmount,
-			java.lang.String internalTransfersToSentNumber,
-			java.lang.String internalTransfersToSentAmount,
-			java.lang.String transfersToReceiveNumber,
-			java.lang.String transfersToReceiveAmount,
-			java.lang.String internalTransfersToReceiveNumber,
-			java.lang.String internalTransfersToReceiveAmount) {
+			java.lang.Long transfersToSentNumber,
+			java.lang.Long transfersToSentAmount,
+			java.lang.Long internalTransfersToSentNumber,
+			java.lang.Long internalTransfersToSentAmount,
+			java.lang.Long transfersToReceiveNumber,
+			java.lang.Long transfersToReceiveAmount,
+			java.lang.Long internalTransfersToReceiveNumber,
+			java.lang.Long internalTransfersToReceiveAmount) {
 		this.senderData = senderData;
 		this.receiverData = receiverData;
 		this.transfersToSentNumber = transfersToSentNumber;
