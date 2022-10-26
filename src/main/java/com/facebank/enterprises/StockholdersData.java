@@ -8,46 +8,30 @@ public class StockholdersData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String name;
-
-	private java.lang.String nationality;
-
 	private java.lang.Integer number;
-
-	private java.lang.String type;
-
-	private java.lang.Double participation;
 
 	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
 	private com.facebank.enterprises.StockholdersDataList subStockholders;
 
 	private java.lang.String signatory;
 
-	private java.lang.String surName;
+	private java.lang.String nameStockholder;
 
-	private java.lang.String secondSurName;
+	private java.lang.String nationalityStockholder;
 
-	private java.lang.String position;
+	private java.lang.String typeStockholder;
 
-	private java.lang.String id;
+	private java.lang.Double participationStockholder;
+
+	private java.lang.String surNameStockholder;
+
+	private java.lang.String secondSurNameStockholder;
+
+	private java.lang.String positionStockholder;
+
+	private java.lang.String idStockholder;
 
 	public StockholdersData() {
-	}
-
-	public java.lang.String getName() {
-		return this.name;
-	}
-
-	public void setName(java.lang.String name) {
-		this.name = name;
-	}
-
-	public java.lang.String getNationality() {
-		return this.nationality;
-	}
-
-	public void setNationality(java.lang.String nationality) {
-		this.nationality = nationality;
 	}
 
 	public java.lang.Integer getNumber() {
@@ -56,22 +40,6 @@ public class StockholdersData implements java.io.Serializable {
 
 	public void setNumber(java.lang.Integer number) {
 		this.number = number;
-	}
-
-	public java.lang.String getType() {
-		return this.type;
-	}
-
-	public void setType(java.lang.String type) {
-		this.type = type;
-	}
-
-	public java.lang.Double getParticipation() {
-		return this.participation;
-	}
-
-	public void setParticipation(java.lang.Double participation) {
-		this.participation = participation;
 	}
 
 	public com.facebank.enterprises.StockholdersDataList getSubStockholders() {
@@ -91,56 +59,93 @@ public class StockholdersData implements java.io.Serializable {
 		this.signatory = signatory;
 	}
 
-	public java.lang.String getSurName() {
-		return this.surName;
+	public java.lang.String getNameStockholder() {
+		return this.nameStockholder;
 	}
 
-	public void setSurName(java.lang.String surName) {
-		this.surName = surName;
+	public void setNameStockholder(java.lang.String nameStockholder) {
+		this.nameStockholder = nameStockholder;
 	}
 
-	public java.lang.String getSecondSurName() {
-		return this.secondSurName;
+	public java.lang.String getNationalityStockholder() {
+		return this.nationalityStockholder;
 	}
 
-	public void setSecondSurName(java.lang.String secondSurName) {
-		this.secondSurName = secondSurName;
+	public void setNationalityStockholder(
+			java.lang.String nationalityStockholder) {
+		this.nationalityStockholder = nationalityStockholder;
 	}
 
-	public java.lang.String getPosition() {
-		return this.position;
+	public java.lang.String getTypeStockholder() {
+		return this.typeStockholder;
 	}
 
-	public void setPosition(java.lang.String position) {
-		this.position = position;
+	public void setTypeStockholder(java.lang.String typeStockholder) {
+		this.typeStockholder = typeStockholder;
 	}
 
-	public java.lang.String getId() {
-		return this.id;
+	public java.lang.Double getParticipationStockholder() {
+		return this.participationStockholder;
 	}
 
-	public void setId(java.lang.String id) {
-		this.id = id;
+	public void setParticipationStockholder(
+			java.lang.Double participationStockholder) {
+		this.participationStockholder = participationStockholder;
 	}
 
-	public StockholdersData(java.lang.String name,
-			java.lang.String nationality, java.lang.Integer number,
-			java.lang.String type, java.lang.Double participation,
+	public java.lang.String getSurNameStockholder() {
+		return this.surNameStockholder;
+	}
+
+	public void setSurNameStockholder(java.lang.String surNameStockholder) {
+		this.surNameStockholder = surNameStockholder;
+	}
+
+	public java.lang.String getSecondSurNameStockholder() {
+		return this.secondSurNameStockholder;
+	}
+
+	public void setSecondSurNameStockholder(
+			java.lang.String secondSurNameStockholder) {
+		this.secondSurNameStockholder = secondSurNameStockholder;
+	}
+
+	public java.lang.String getPositionStockholder() {
+		return this.positionStockholder;
+	}
+
+	public void setPositionStockholder(java.lang.String positionStockholder) {
+		this.positionStockholder = positionStockholder;
+	}
+
+	public java.lang.String getIdStockholder() {
+		return this.idStockholder;
+	}
+
+	public void setIdStockholder(java.lang.String idStockholder) {
+		this.idStockholder = idStockholder;
+	}
+
+	public StockholdersData(java.lang.Integer number,
 			com.facebank.enterprises.StockholdersDataList subStockholders,
-			java.lang.String signatory, java.lang.String surName,
-			java.lang.String secondSurName, java.lang.String position,
-			java.lang.String id) {
-		this.name = name;
-		this.nationality = nationality;
+			java.lang.String signatory, java.lang.String nameStockholder,
+			java.lang.String nationalityStockholder,
+			java.lang.String typeStockholder,
+			java.lang.Double participationStockholder,
+			java.lang.String surNameStockholder,
+			java.lang.String secondSurNameStockholder,
+			java.lang.String positionStockholder, java.lang.String idStockholder) {
 		this.number = number;
-		this.type = type;
-		this.participation = participation;
 		this.subStockholders = subStockholders;
 		this.signatory = signatory;
-		this.surName = surName;
-		this.secondSurName = secondSurName;
-		this.position = position;
-		this.id = id;
+		this.nameStockholder = nameStockholder;
+		this.nationalityStockholder = nationalityStockholder;
+		this.typeStockholder = typeStockholder;
+		this.participationStockholder = participationStockholder;
+		this.surNameStockholder = surNameStockholder;
+		this.secondSurNameStockholder = secondSurNameStockholder;
+		this.positionStockholder = positionStockholder;
+		this.idStockholder = idStockholder;
 	}
 
 }
