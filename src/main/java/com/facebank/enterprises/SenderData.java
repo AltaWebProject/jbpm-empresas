@@ -8,31 +8,44 @@ public class SenderData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String name;
-	private java.lang.String relationship;
+	private java.lang.String nameSender;
+
+	private java.lang.String relationshipSender;
+
+	private java.lang.String id;
 
 	public SenderData() {
 	}
 
-	public java.lang.String getName() {
-		return this.name;
+	public java.lang.String getNameSender() {
+		return this.nameSender;
 	}
 
-	public void setName(java.lang.String name) {
-		this.name = name;
+	public void setNameSender(java.lang.String nameSender) {
+		this.nameSender = nameSender;
 	}
 
-	public java.lang.String getRelationship() {
-		return this.relationship;
+	public java.lang.String getRelationshipSender() {
+		return this.relationshipSender;
 	}
 
-	public void setRelationship(java.lang.String relationship) {
-		this.relationship = relationship;
+	public void setRelationshipSender(java.lang.String relationshipSender) {
+		this.relationshipSender = relationshipSender;
 	}
 
-	public SenderData(java.lang.String name, java.lang.String relationship) {
-		this.name = name;
-		this.relationship = relationship;
+	public java.lang.String getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public SenderData(java.lang.String nameSender,
+			java.lang.String relationshipSender, java.lang.String id) {
+		this.nameSender = nameSender;
+		this.relationshipSender = relationshipSender;
+		this.id = id;
 	}
 
 }
