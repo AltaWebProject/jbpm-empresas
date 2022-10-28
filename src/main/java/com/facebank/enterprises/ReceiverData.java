@@ -8,31 +8,44 @@ public class ReceiverData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String name;
-	private java.lang.String relationship;
+	private java.lang.String nameReceiver;
+
+	private java.lang.String relationshipReceiver;
+
+	private java.lang.String id;
 
 	public ReceiverData() {
 	}
 
-	public java.lang.String getName() {
-		return this.name;
+	public java.lang.String getNameReceiver() {
+		return this.nameReceiver;
 	}
 
-	public void setName(java.lang.String name) {
-		this.name = name;
+	public void setNameReceiver(java.lang.String nameReceiver) {
+		this.nameReceiver = nameReceiver;
 	}
 
-	public java.lang.String getRelationship() {
-		return this.relationship;
+	public java.lang.String getRelationshipReceiver() {
+		return this.relationshipReceiver;
 	}
 
-	public void setRelationship(java.lang.String relationship) {
-		this.relationship = relationship;
+	public void setRelationshipReceiver(java.lang.String relationshipReceiver) {
+		this.relationshipReceiver = relationshipReceiver;
 	}
 
-	public ReceiverData(java.lang.String name, java.lang.String relationship) {
-		this.name = name;
-		this.relationship = relationship;
+	public java.lang.String getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public ReceiverData(java.lang.String nameReceiver,
+			java.lang.String relationshipReceiver, java.lang.String id) {
+		this.nameReceiver = nameReceiver;
+		this.relationshipReceiver = relationshipReceiver;
+		this.id = id;
 	}
 
 }
