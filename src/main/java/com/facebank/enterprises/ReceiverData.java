@@ -14,6 +14,16 @@ public class ReceiverData implements java.io.Serializable {
 
 	private java.lang.String id;
 
+	private java.lang.String number;
+
+	private java.lang.Boolean flagCorrection;
+
+	private java.lang.Boolean flagAlertCorrection;
+
+	private java.lang.Boolean flagDisableDelete;
+
+	private java.lang.Boolean flagDisableEdit;
+
 	public ReceiverData() {
 	}
 
@@ -41,11 +51,60 @@ public class ReceiverData implements java.io.Serializable {
 		this.id = id;
 	}
 
+	public java.lang.String getNumber() {
+		return this.number;
+	}
+
+	public void setNumber(java.lang.String number) {
+		this.number = number;
+	}
+
+	public java.lang.Boolean getFlagCorrection() {
+		return this.flagCorrection;
+	}
+
+	public void setFlagCorrection(java.lang.Boolean flagCorrection) {
+		this.flagCorrection = flagCorrection;
+	}
+
+	public java.lang.Boolean getFlagAlertCorrection() {
+		return this.flagAlertCorrection;
+	}
+
+	public void setFlagAlertCorrection(java.lang.Boolean flagAlertCorrection) {
+		this.flagAlertCorrection = flagAlertCorrection;
+	}
+
+	public java.lang.Boolean getFlagDisableDelete() {
+		return this.flagDisableDelete;
+	}
+
+	public void setFlagDisableDelete(java.lang.Boolean flagDisableDelete) {
+		this.flagDisableDelete = flagDisableDelete;
+	}
+
+	public java.lang.Boolean getFlagDisableEdit() {
+		return this.flagDisableEdit;
+	}
+
+	public void setFlagDisableEdit(java.lang.Boolean flagDisableEdit) {
+		this.flagDisableEdit = flagDisableEdit;
+	}
+
 	public ReceiverData(java.lang.String nameReceiver,
-			java.lang.String relationshipReceiver, java.lang.String id) {
+			java.lang.String relationshipReceiver, java.lang.String id,
+			java.lang.String number, java.lang.Boolean flagCorrection,
+			java.lang.Boolean flagAlertCorrection,
+			java.lang.Boolean flagDisableDelete,
+			java.lang.Boolean flagDisableEdit) {
 		this.nameReceiver = nameReceiver;
 		this.relationshipReceiver = relationshipReceiver;
 		this.id = id;
+		this.number = number;
+		this.flagCorrection = flagCorrection;
+		this.flagAlertCorrection = flagAlertCorrection;
+		this.flagDisableDelete = flagDisableDelete;
+		this.flagDisableEdit = flagDisableEdit;
 	}
 
 }
