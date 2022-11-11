@@ -22,6 +22,8 @@ public class DocumentsData implements java.io.Serializable {
 
 	private java.lang.String w8Id;
 
+	private java.lang.String kycId;
+
 	public DocumentsData() {
 	}
 
@@ -85,6 +87,14 @@ public class DocumentsData implements java.io.Serializable {
 		this.w8Id = w8Id;
 	}
 
+	public java.lang.String getKycId() {
+		return this.kycId;
+	}
+
+	public void setKycId(java.lang.String kycId) {
+		this.kycId = kycId;
+	}
+
 	public DocumentsData(
 			java.util.List<java.lang.String> financialDocumentsIds,
 			java.util.List<java.lang.String> legalDocumentsIds,
@@ -92,7 +102,7 @@ public class DocumentsData implements java.io.Serializable {
 			java.lang.String w9Id,
 			java.lang.String carId,
 			java.util.List<com.facebank.enterprises.DocumentsStockholdersData> stockholdersDocumentsIds,
-			java.lang.String w8Id) {
+			java.lang.String w8Id, java.lang.String kycId) {
 		this.financialDocumentsIds = financialDocumentsIds;
 		this.legalDocumentsIds = legalDocumentsIds;
 		this.generalDocumentsIds = generalDocumentsIds;
@@ -100,6 +110,7 @@ public class DocumentsData implements java.io.Serializable {
 		this.carId = carId;
 		this.stockholdersDocumentsIds = stockholdersDocumentsIds;
 		this.w8Id = w8Id;
+		this.kycId = kycId;
 	}
 
 }
