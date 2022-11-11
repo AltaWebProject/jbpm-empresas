@@ -14,6 +14,8 @@ public class DocumentsStockholdersData implements java.io.Serializable {
 
 	private java.lang.String w8Id;
 
+	private java.lang.String folderId;
+
 	public DocumentsStockholdersData() {
 	}
 
@@ -41,11 +43,21 @@ public class DocumentsStockholdersData implements java.io.Serializable {
 		this.w8Id = w8Id;
 	}
 
+	public java.lang.String getFolderId() {
+		return this.folderId;
+	}
+
+	public void setFolderId(java.lang.String folderId) {
+		this.folderId = folderId;
+	}
+
 	public DocumentsStockholdersData(java.lang.String passportId,
-			java.lang.String identificationId, java.lang.String w8Id) {
+			java.lang.String identificationId, java.lang.String w8Id,
+			java.lang.String folderId) {
 		this.passportId = passportId;
 		this.identificationId = identificationId;
 		this.w8Id = w8Id;
+		this.folderId = folderId;
 	}
 
 }
