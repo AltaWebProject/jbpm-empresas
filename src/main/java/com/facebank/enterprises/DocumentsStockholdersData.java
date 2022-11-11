@@ -8,43 +8,44 @@ public class DocumentsStockholdersData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String passport;
-	private java.lang.String identification;
+	private java.lang.String passportId;
 
-	private java.lang.String w8;
+	private java.lang.String identificationId;
+
+	private java.lang.String w8Id;
 
 	public DocumentsStockholdersData() {
 	}
 
-	public java.lang.String getPassport() {
-		return this.passport;
+	public java.lang.String getPassportId() {
+		return this.passportId;
 	}
 
-	public void setPassport(java.lang.String passport) {
-		this.passport = passport;
+	public void setPassportId(java.lang.String passportId) {
+		this.passportId = passportId;
 	}
 
-	public java.lang.String getIdentification() {
-		return this.identification;
+	public java.lang.String getIdentificationId() {
+		return this.identificationId;
 	}
 
-	public void setIdentification(java.lang.String identification) {
-		this.identification = identification;
+	public void setIdentificationId(java.lang.String identificationId) {
+		this.identificationId = identificationId;
 	}
 
-	public java.lang.String getW8() {
-		return this.w8;
+	public java.lang.String getW8Id() {
+		return this.w8Id;
 	}
 
-	public void setW8(java.lang.String w8) {
-		this.w8 = w8;
+	public void setW8Id(java.lang.String w8Id) {
+		this.w8Id = w8Id;
 	}
 
-	public DocumentsStockholdersData(java.lang.String passport,
-			java.lang.String identification, java.lang.String w8) {
-		this.passport = passport;
-		this.identification = identification;
-		this.w8 = w8;
+	public DocumentsStockholdersData(java.lang.String passportId,
+			java.lang.String identificationId, java.lang.String w8Id) {
+		this.passportId = passportId;
+		this.identificationId = identificationId;
+		this.w8Id = w8Id;
 	}
 
 }
