@@ -6,12 +6,49 @@ package com.facebank.enterprises;
 
 public class FinancialDocumentsData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public FinancialDocumentsData() {
-    }
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> taxReturn;
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> financialStatements;
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> bankReferences;
 
+	public FinancialDocumentsData() {
+	}
 
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getTaxReturn() {
+		return this.taxReturn;
+	}
 
+	public void setTaxReturn(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> taxReturn) {
+		this.taxReturn = taxReturn;
+	}
+
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getFinancialStatements() {
+		return this.financialStatements;
+	}
+
+	public void setFinancialStatements(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> financialStatements) {
+		this.financialStatements = financialStatements;
+	}
+
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getBankReferences() {
+		return this.bankReferences;
+	}
+
+	public void setBankReferences(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> bankReferences) {
+		this.bankReferences = bankReferences;
+	}
+
+	public FinancialDocumentsData(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> taxReturn,
+			java.util.List<com.facebank.enterprises.DocumentTypeData> financialStatements,
+			java.util.List<com.facebank.enterprises.DocumentTypeData> bankReferences) {
+		this.taxReturn = taxReturn;
+		this.financialStatements = financialStatements;
+		this.bankReferences = bankReferences;
+	}
 
 }
