@@ -6,12 +6,49 @@ package com.facebank.enterprises;
 
 public class GeneralDocumentsData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public GeneralDocumentsData() {
-    }
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> evidence;
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> scannedIdentifications;
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> affidavit;
 
+	public GeneralDocumentsData() {
+	}
 
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getEvidence() {
+		return this.evidence;
+	}
 
+	public void setEvidence(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> evidence) {
+		this.evidence = evidence;
+	}
+
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getScannedIdentifications() {
+		return this.scannedIdentifications;
+	}
+
+	public void setScannedIdentifications(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> scannedIdentifications) {
+		this.scannedIdentifications = scannedIdentifications;
+	}
+
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getAffidavit() {
+		return this.affidavit;
+	}
+
+	public void setAffidavit(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> affidavit) {
+		this.affidavit = affidavit;
+	}
+
+	public GeneralDocumentsData(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> evidence,
+			java.util.List<com.facebank.enterprises.DocumentTypeData> scannedIdentifications,
+			java.util.List<com.facebank.enterprises.DocumentTypeData> affidavit) {
+		this.evidence = evidence;
+		this.scannedIdentifications = scannedIdentifications;
+		this.affidavit = affidavit;
+	}
 
 }
