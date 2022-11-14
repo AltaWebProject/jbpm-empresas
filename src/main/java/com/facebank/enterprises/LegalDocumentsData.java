@@ -13,6 +13,8 @@ public class LegalDocumentsData implements java.io.Serializable {
 	private java.util.List<com.facebank.enterprises.DocumentTypeData> statutoryChanges;
 	private java.util.List<com.facebank.enterprises.DocumentTypeData> benefitialDocumentation;
 
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> sharesTitle;
+
 	public LegalDocumentsData() {
 	}
 
@@ -52,15 +54,26 @@ public class LegalDocumentsData implements java.io.Serializable {
 		this.benefitialDocumentation = benefitialDocumentation;
 	}
 
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getSharesTitle() {
+		return this.sharesTitle;
+	}
+
+	public void setSharesTitle(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> sharesTitle) {
+		this.sharesTitle = sharesTitle;
+	}
+
 	public LegalDocumentsData(
 			java.util.List<com.facebank.enterprises.DocumentTypeData> constitutiveRecord,
 			java.util.List<com.facebank.enterprises.DocumentTypeData> meetingMinutes,
 			java.util.List<com.facebank.enterprises.DocumentTypeData> statutoryChanges,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> benefitialDocumentation) {
+			java.util.List<com.facebank.enterprises.DocumentTypeData> benefitialDocumentation,
+			java.util.List<com.facebank.enterprises.DocumentTypeData> sharesTitle) {
 		this.constitutiveRecord = constitutiveRecord;
 		this.meetingMinutes = meetingMinutes;
 		this.statutoryChanges = statutoryChanges;
 		this.benefitialDocumentation = benefitialDocumentation;
+		this.sharesTitle = sharesTitle;
 	}
 
 }
