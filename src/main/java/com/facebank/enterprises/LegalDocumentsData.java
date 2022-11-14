@@ -6,12 +6,61 @@ package com.facebank.enterprises;
 
 public class LegalDocumentsData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public LegalDocumentsData() {
-    }
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> constitutiveRecord;
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> meetingMinutes;
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> statutoryChanges;
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> benefitialDocumentation;
 
+	public LegalDocumentsData() {
+	}
 
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getConstitutiveRecord() {
+		return this.constitutiveRecord;
+	}
 
+	public void setConstitutiveRecord(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> constitutiveRecord) {
+		this.constitutiveRecord = constitutiveRecord;
+	}
+
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getMeetingMinutes() {
+		return this.meetingMinutes;
+	}
+
+	public void setMeetingMinutes(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> meetingMinutes) {
+		this.meetingMinutes = meetingMinutes;
+	}
+
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getStatutoryChanges() {
+		return this.statutoryChanges;
+	}
+
+	public void setStatutoryChanges(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> statutoryChanges) {
+		this.statutoryChanges = statutoryChanges;
+	}
+
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getBenefitialDocumentation() {
+		return this.benefitialDocumentation;
+	}
+
+	public void setBenefitialDocumentation(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> benefitialDocumentation) {
+		this.benefitialDocumentation = benefitialDocumentation;
+	}
+
+	public LegalDocumentsData(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> constitutiveRecord,
+			java.util.List<com.facebank.enterprises.DocumentTypeData> meetingMinutes,
+			java.util.List<com.facebank.enterprises.DocumentTypeData> statutoryChanges,
+			java.util.List<com.facebank.enterprises.DocumentTypeData> benefitialDocumentation) {
+		this.constitutiveRecord = constitutiveRecord;
+		this.meetingMinutes = meetingMinutes;
+		this.statutoryChanges = statutoryChanges;
+		this.benefitialDocumentation = benefitialDocumentation;
+	}
 
 }
