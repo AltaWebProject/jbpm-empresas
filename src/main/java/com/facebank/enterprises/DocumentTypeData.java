@@ -11,6 +11,10 @@ public class DocumentTypeData implements java.io.Serializable {
 	private java.lang.String nameDocument;
 	private java.lang.String idDocument;
 
+	private java.lang.String reported;
+
+	private java.lang.String idFolder;
+
 	public DocumentTypeData() {
 	}
 
@@ -30,10 +34,29 @@ public class DocumentTypeData implements java.io.Serializable {
 		this.idDocument = idDocument;
 	}
 
+	public java.lang.String getReported() {
+		return this.reported;
+	}
+
+	public void setReported(java.lang.String reported) {
+		this.reported = reported;
+	}
+
+	public java.lang.String getIdFolder() {
+		return this.idFolder;
+	}
+
+	public void setIdFolder(java.lang.String idFolder) {
+		this.idFolder = idFolder;
+	}
+
 	public DocumentTypeData(java.lang.String nameDocument,
-			java.lang.String idDocument) {
+			java.lang.String idDocument, java.lang.String reported,
+			java.lang.String idFolder) {
 		this.nameDocument = nameDocument;
 		this.idDocument = idDocument;
+		this.reported = reported;
+		this.idFolder = idFolder;
 	}
 
 }
