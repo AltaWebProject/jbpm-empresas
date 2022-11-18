@@ -8,19 +8,11 @@ public class DocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String kycId;
-
 	private com.facebank.enterprises.EnterpriseDocumentsData company;
 
+	private com.facebank.enterprises.StockholderDocumentsData stockholders;
+
 	public DocumentsData() {
-	}
-
-	public java.lang.String getKycId() {
-		return this.kycId;
-	}
-
-	public void setKycId(java.lang.String kycId) {
-		this.kycId = kycId;
 	}
 
 	public com.facebank.enterprises.EnterpriseDocumentsData getCompany() {
@@ -32,10 +24,20 @@ public class DocumentsData implements java.io.Serializable {
 		this.company = company;
 	}
 
-	public DocumentsData(java.lang.String kycId,
-			com.facebank.enterprises.EnterpriseDocumentsData company) {
-		this.kycId = kycId;
+	public com.facebank.enterprises.StockholderDocumentsData getStockholders() {
+		return this.stockholders;
+	}
+
+	public void setStockholders(
+			com.facebank.enterprises.StockholderDocumentsData stockholders) {
+		this.stockholders = stockholders;
+	}
+
+	public DocumentsData(
+			com.facebank.enterprises.EnterpriseDocumentsData company,
+			com.facebank.enterprises.StockholderDocumentsData stockholders) {
 		this.company = company;
+		this.stockholders = stockholders;
 	}
 
 }
