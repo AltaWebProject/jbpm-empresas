@@ -8,85 +8,11 @@ public class DocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<java.lang.String> financialDocumentsIds;
-
-	private java.util.List<java.lang.String> legalDocumentsIds;
-
-	private java.util.List<java.lang.String> generalDocumentsIds;
-
-	private java.lang.String w9Id;
-
-	private java.lang.String carId;
-
-	private java.util.List<com.facebank.enterprises.DocumentsStockholdersData> stockholdersDocumentsIds;
-
-	private java.lang.String w8Id;
-
 	private java.lang.String kycId;
 
-	private java.lang.String folderId;
+	private com.facebank.enterprises.EnterpriseDocumentsData company;
 
 	public DocumentsData() {
-	}
-
-	public java.util.List<java.lang.String> getFinancialDocumentsIds() {
-		return this.financialDocumentsIds;
-	}
-
-	public void setFinancialDocumentsIds(
-			java.util.List<java.lang.String> financialDocumentsIds) {
-		this.financialDocumentsIds = financialDocumentsIds;
-	}
-
-	public java.util.List<java.lang.String> getLegalDocumentsIds() {
-		return this.legalDocumentsIds;
-	}
-
-	public void setLegalDocumentsIds(
-			java.util.List<java.lang.String> legalDocumentsIds) {
-		this.legalDocumentsIds = legalDocumentsIds;
-	}
-
-	public java.util.List<java.lang.String> getGeneralDocumentsIds() {
-		return this.generalDocumentsIds;
-	}
-
-	public void setGeneralDocumentsIds(
-			java.util.List<java.lang.String> generalDocumentsIds) {
-		this.generalDocumentsIds = generalDocumentsIds;
-	}
-
-	public java.lang.String getW9Id() {
-		return this.w9Id;
-	}
-
-	public void setW9Id(java.lang.String w9Id) {
-		this.w9Id = w9Id;
-	}
-
-	public java.lang.String getCarId() {
-		return this.carId;
-	}
-
-	public void setCarId(java.lang.String carId) {
-		this.carId = carId;
-	}
-
-	public java.util.List<com.facebank.enterprises.DocumentsStockholdersData> getStockholdersDocumentsIds() {
-		return this.stockholdersDocumentsIds;
-	}
-
-	public void setStockholdersDocumentsIds(
-			java.util.List<com.facebank.enterprises.DocumentsStockholdersData> stockholdersDocumentsIds) {
-		this.stockholdersDocumentsIds = stockholdersDocumentsIds;
-	}
-
-	public java.lang.String getW8Id() {
-		return this.w8Id;
-	}
-
-	public void setW8Id(java.lang.String w8Id) {
-		this.w8Id = w8Id;
 	}
 
 	public java.lang.String getKycId() {
@@ -97,32 +23,19 @@ public class DocumentsData implements java.io.Serializable {
 		this.kycId = kycId;
 	}
 
-	public java.lang.String getFolderId() {
-		return this.folderId;
+	public com.facebank.enterprises.EnterpriseDocumentsData getCompany() {
+		return this.company;
 	}
 
-	public void setFolderId(java.lang.String folderId) {
-		this.folderId = folderId;
+	public void setCompany(
+			com.facebank.enterprises.EnterpriseDocumentsData company) {
+		this.company = company;
 	}
 
-	public DocumentsData(
-			java.util.List<java.lang.String> financialDocumentsIds,
-			java.util.List<java.lang.String> legalDocumentsIds,
-			java.util.List<java.lang.String> generalDocumentsIds,
-			java.lang.String w9Id,
-			java.lang.String carId,
-			java.util.List<com.facebank.enterprises.DocumentsStockholdersData> stockholdersDocumentsIds,
-			java.lang.String w8Id, java.lang.String kycId,
-			java.lang.String folderId) {
-		this.financialDocumentsIds = financialDocumentsIds;
-		this.legalDocumentsIds = legalDocumentsIds;
-		this.generalDocumentsIds = generalDocumentsIds;
-		this.w9Id = w9Id;
-		this.carId = carId;
-		this.stockholdersDocumentsIds = stockholdersDocumentsIds;
-		this.w8Id = w8Id;
+	public DocumentsData(java.lang.String kycId,
+			com.facebank.enterprises.EnterpriseDocumentsData company) {
 		this.kycId = kycId;
-		this.folderId = folderId;
+		this.company = company;
 	}
 
 }
