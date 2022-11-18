@@ -6,12 +6,49 @@ package com.facebank.enterprises;
 
 public class EnterpriseDocumentsData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public EnterpriseDocumentsData() {
-    }
+	private com.facebank.enterprises.GeneralDocumentsData generalDocuments;
+	private com.facebank.enterprises.LegalDocumentsData legalDocuments;
+	private com.facebank.enterprises.FinancialDocumentsData financialDocuments;
 
+	public EnterpriseDocumentsData() {
+	}
 
+	public com.facebank.enterprises.GeneralDocumentsData getGeneralDocuments() {
+		return this.generalDocuments;
+	}
 
+	public void setGeneralDocuments(
+			com.facebank.enterprises.GeneralDocumentsData generalDocuments) {
+		this.generalDocuments = generalDocuments;
+	}
+
+	public com.facebank.enterprises.LegalDocumentsData getLegalDocuments() {
+		return this.legalDocuments;
+	}
+
+	public void setLegalDocuments(
+			com.facebank.enterprises.LegalDocumentsData legalDocuments) {
+		this.legalDocuments = legalDocuments;
+	}
+
+	public com.facebank.enterprises.FinancialDocumentsData getFinancialDocuments() {
+		return this.financialDocuments;
+	}
+
+	public void setFinancialDocuments(
+			com.facebank.enterprises.FinancialDocumentsData financialDocuments) {
+		this.financialDocuments = financialDocuments;
+	}
+
+	public EnterpriseDocumentsData(
+			com.facebank.enterprises.GeneralDocumentsData generalDocuments,
+			com.facebank.enterprises.LegalDocumentsData legalDocuments,
+			com.facebank.enterprises.FinancialDocumentsData financialDocuments) {
+		this.generalDocuments = generalDocuments;
+		this.legalDocuments = legalDocuments;
+		this.financialDocuments = financialDocuments;
+	}
 
 }
