@@ -18,6 +18,8 @@ public class StockholderDocumentsData implements java.io.Serializable {
 
 	private java.util.List<com.facebank.enterprises.StockholderPersonGeneralDocumentsData> stockholderPersonGeneralDocuments;
 
+	private java.util.List<com.facebank.enterprises.StockholderPersonFinancialDocumentsData> stockholderPersonFinancialDocuments;
+
 	public StockholderDocumentsData() {
 	}
 
@@ -63,17 +65,28 @@ public class StockholderDocumentsData implements java.io.Serializable {
 		this.stockholderPersonGeneralDocuments = stockholderPersonGeneralDocuments;
 	}
 
+	public java.util.List<com.facebank.enterprises.StockholderPersonFinancialDocumentsData> getStockholderPersonFinancialDocuments() {
+		return this.stockholderPersonFinancialDocuments;
+	}
+
+	public void setStockholderPersonFinancialDocuments(
+			java.util.List<com.facebank.enterprises.StockholderPersonFinancialDocumentsData> stockholderPersonFinancialDocuments) {
+		this.stockholderPersonFinancialDocuments = stockholderPersonFinancialDocuments;
+	}
+
 	public StockholderDocumentsData(
 			java.lang.String type,
 			java.lang.String idStockholder,
 			java.lang.String nameStockholder,
 			java.util.List<com.facebank.enterprises.DocumentTypeData> identifications,
-			java.util.List<com.facebank.enterprises.StockholderPersonGeneralDocumentsData> stockholderPersonGeneralDocuments) {
+			java.util.List<com.facebank.enterprises.StockholderPersonGeneralDocumentsData> stockholderPersonGeneralDocuments,
+			java.util.List<com.facebank.enterprises.StockholderPersonFinancialDocumentsData> stockholderPersonFinancialDocuments) {
 		this.type = type;
 		this.idStockholder = idStockholder;
 		this.nameStockholder = nameStockholder;
 		this.identifications = identifications;
 		this.stockholderPersonGeneralDocuments = stockholderPersonGeneralDocuments;
+		this.stockholderPersonFinancialDocuments = stockholderPersonFinancialDocuments;
 	}
 
 }
