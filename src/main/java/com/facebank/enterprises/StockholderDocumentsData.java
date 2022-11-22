@@ -24,6 +24,8 @@ public class StockholderDocumentsData implements java.io.Serializable {
 
 	private java.util.List<com.facebank.enterprises.LegalDocumentsData> stockholderCompanyLegalDocuments;
 
+	private java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> stockholderCompanyFinancialDocuments;
+
 	public StockholderDocumentsData() {
 	}
 
@@ -96,6 +98,15 @@ public class StockholderDocumentsData implements java.io.Serializable {
 		this.stockholderCompanyLegalDocuments = stockholderCompanyLegalDocuments;
 	}
 
+	public java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> getStockholderCompanyFinancialDocuments() {
+		return this.stockholderCompanyFinancialDocuments;
+	}
+
+	public void setStockholderCompanyFinancialDocuments(
+			java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> stockholderCompanyFinancialDocuments) {
+		this.stockholderCompanyFinancialDocuments = stockholderCompanyFinancialDocuments;
+	}
+
 	public StockholderDocumentsData(
 			java.lang.String type,
 			java.lang.String idStockholder,
@@ -104,7 +115,8 @@ public class StockholderDocumentsData implements java.io.Serializable {
 			java.util.List<com.facebank.enterprises.StockholderPersonGeneralDocumentsData> stockholderPersonGeneralDocuments,
 			java.util.List<com.facebank.enterprises.StockholderPersonFinancialDocumentsData> stockholderPersonFinancialDocuments,
 			java.util.List<com.facebank.enterprises.StockholderCompanyGeneralDocumentsData> stockholderCompanyGeneralDocuments,
-			java.util.List<com.facebank.enterprises.LegalDocumentsData> stockholderCompanyLegalDocuments) {
+			java.util.List<com.facebank.enterprises.LegalDocumentsData> stockholderCompanyLegalDocuments,
+			java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> stockholderCompanyFinancialDocuments) {
 		this.type = type;
 		this.idStockholder = idStockholder;
 		this.nameStockholder = nameStockholder;
@@ -113,6 +125,7 @@ public class StockholderDocumentsData implements java.io.Serializable {
 		this.stockholderPersonFinancialDocuments = stockholderPersonFinancialDocuments;
 		this.stockholderCompanyGeneralDocuments = stockholderCompanyGeneralDocuments;
 		this.stockholderCompanyLegalDocuments = stockholderCompanyLegalDocuments;
+		this.stockholderCompanyFinancialDocuments = stockholderCompanyFinancialDocuments;
 	}
 
 }
