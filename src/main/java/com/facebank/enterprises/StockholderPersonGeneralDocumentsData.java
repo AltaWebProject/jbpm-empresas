@@ -12,7 +12,7 @@ public class StockholderPersonGeneralDocumentsData
 
 	private java.util.List<com.facebank.enterprises.DocumentTypeData> w8;
 	private java.util.List<com.facebank.enterprises.DocumentTypeData> w9;
-	private com.facebank.enterprises.DocumentTypeData evidence;
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> evidence;
 
 	public StockholderPersonGeneralDocumentsData() {
 	}
@@ -35,18 +35,19 @@ public class StockholderPersonGeneralDocumentsData
 		this.w9 = w9;
 	}
 
-	public com.facebank.enterprises.DocumentTypeData getEvidence() {
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getEvidence() {
 		return this.evidence;
 	}
 
-	public void setEvidence(com.facebank.enterprises.DocumentTypeData evidence) {
+	public void setEvidence(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> evidence) {
 		this.evidence = evidence;
 	}
 
 	public StockholderPersonGeneralDocumentsData(
 			java.util.List<com.facebank.enterprises.DocumentTypeData> w8,
 			java.util.List<com.facebank.enterprises.DocumentTypeData> w9,
-			com.facebank.enterprises.DocumentTypeData evidence) {
+			java.util.List<com.facebank.enterprises.DocumentTypeData> evidence) {
 		this.w8 = w8;
 		this.w9 = w9;
 		this.evidence = evidence;
