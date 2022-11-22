@@ -8,36 +8,36 @@ public class DocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private com.facebank.enterprises.EnterpriseDocumentsData company;
+	private com.facebank.enterprises.EnterpriseDocumentsData companyDocuments;
 
-	private com.facebank.enterprises.StockholderDocumentsData stockholders;
+	private com.facebank.enterprises.StockholderDocumentsData stockholdersDocuments;
 
 	public DocumentsData() {
 	}
 
-	public com.facebank.enterprises.EnterpriseDocumentsData getCompany() {
-		return this.company;
+	public com.facebank.enterprises.EnterpriseDocumentsData getCompanyDocuments() {
+		return this.companyDocuments;
 	}
 
-	public void setCompany(
-			com.facebank.enterprises.EnterpriseDocumentsData company) {
-		this.company = company;
+	public void setCompanyDocuments(
+			com.facebank.enterprises.EnterpriseDocumentsData companyDocuments) {
+		this.companyDocuments = companyDocuments;
 	}
 
-	public com.facebank.enterprises.StockholderDocumentsData getStockholders() {
-		return this.stockholders;
+	public com.facebank.enterprises.StockholderDocumentsData getStockholdersDocuments() {
+		return this.stockholdersDocuments;
 	}
 
-	public void setStockholders(
-			com.facebank.enterprises.StockholderDocumentsData stockholders) {
-		this.stockholders = stockholders;
+	public void setStockholdersDocuments(
+			com.facebank.enterprises.StockholderDocumentsData stockholdersDocuments) {
+		this.stockholdersDocuments = stockholdersDocuments;
 	}
 
 	public DocumentsData(
-			com.facebank.enterprises.EnterpriseDocumentsData company,
-			com.facebank.enterprises.StockholderDocumentsData stockholders) {
-		this.company = company;
-		this.stockholders = stockholders;
+			com.facebank.enterprises.EnterpriseDocumentsData companyDocuments,
+			com.facebank.enterprises.StockholderDocumentsData stockholdersDocuments) {
+		this.companyDocuments = companyDocuments;
+		this.stockholdersDocuments = stockholdersDocuments;
 	}
 
 }
