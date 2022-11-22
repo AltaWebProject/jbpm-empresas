@@ -8,12 +8,6 @@ public class StockholderDocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String type;
-
-	private java.lang.String idStockholder;
-
-	private java.lang.String nameStockholder;
-
 	private java.util.List<com.facebank.enterprises.DocumentTypeData> identifications;
 
 	private java.util.List<com.facebank.enterprises.StockholderPersonGeneralDocumentsData> stockholderPersonGeneralDocuments;
@@ -26,31 +20,13 @@ public class StockholderDocumentsData implements java.io.Serializable {
 
 	private java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> stockholderCompanyFinancialDocuments;
 
+	private java.util.List<java.lang.String> type;
+
+	private java.util.List<java.lang.String> idStockholder;
+
+	private java.util.List<java.lang.String> nameStockholder;
+
 	public StockholderDocumentsData() {
-	}
-
-	public java.lang.String getType() {
-		return this.type;
-	}
-
-	public void setType(java.lang.String type) {
-		this.type = type;
-	}
-
-	public java.lang.String getIdStockholder() {
-		return this.idStockholder;
-	}
-
-	public void setIdStockholder(java.lang.String idStockholder) {
-		this.idStockholder = idStockholder;
-	}
-
-	public java.lang.String getNameStockholder() {
-		return this.nameStockholder;
-	}
-
-	public void setNameStockholder(java.lang.String nameStockholder) {
-		this.nameStockholder = nameStockholder;
 	}
 
 	public java.util.List<com.facebank.enterprises.DocumentTypeData> getIdentifications() {
@@ -107,25 +83,50 @@ public class StockholderDocumentsData implements java.io.Serializable {
 		this.stockholderCompanyFinancialDocuments = stockholderCompanyFinancialDocuments;
 	}
 
+	public java.util.List<java.lang.String> getType() {
+		return this.type;
+	}
+
+	public void setType(java.util.List<java.lang.String> type) {
+		this.type = type;
+	}
+
+	public java.util.List<java.lang.String> getIdStockholder() {
+		return this.idStockholder;
+	}
+
+	public void setIdStockholder(java.util.List<java.lang.String> idStockholder) {
+		this.idStockholder = idStockholder;
+	}
+
+	public java.util.List<java.lang.String> getNameStockholder() {
+		return this.nameStockholder;
+	}
+
+	public void setNameStockholder(
+			java.util.List<java.lang.String> nameStockholder) {
+		this.nameStockholder = nameStockholder;
+	}
+
 	public StockholderDocumentsData(
-			java.lang.String type,
-			java.lang.String idStockholder,
-			java.lang.String nameStockholder,
 			java.util.List<com.facebank.enterprises.DocumentTypeData> identifications,
 			java.util.List<com.facebank.enterprises.StockholderPersonGeneralDocumentsData> stockholderPersonGeneralDocuments,
 			java.util.List<com.facebank.enterprises.StockholderPersonFinancialDocumentsData> stockholderPersonFinancialDocuments,
 			java.util.List<com.facebank.enterprises.StockholderCompanyGeneralDocumentsData> stockholderCompanyGeneralDocuments,
 			java.util.List<com.facebank.enterprises.LegalDocumentsData> stockholderCompanyLegalDocuments,
-			java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> stockholderCompanyFinancialDocuments) {
-		this.type = type;
-		this.idStockholder = idStockholder;
-		this.nameStockholder = nameStockholder;
+			java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> stockholderCompanyFinancialDocuments,
+			java.util.List<java.lang.String> type,
+			java.util.List<java.lang.String> idStockholder,
+			java.util.List<java.lang.String> nameStockholder) {
 		this.identifications = identifications;
 		this.stockholderPersonGeneralDocuments = stockholderPersonGeneralDocuments;
 		this.stockholderPersonFinancialDocuments = stockholderPersonFinancialDocuments;
 		this.stockholderCompanyGeneralDocuments = stockholderCompanyGeneralDocuments;
 		this.stockholderCompanyLegalDocuments = stockholderCompanyLegalDocuments;
 		this.stockholderCompanyFinancialDocuments = stockholderCompanyFinancialDocuments;
+		this.type = type;
+		this.idStockholder = idStockholder;
+		this.nameStockholder = nameStockholder;
 	}
 
 }
