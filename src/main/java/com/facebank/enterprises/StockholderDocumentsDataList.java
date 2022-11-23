@@ -6,12 +6,25 @@ package com.facebank.enterprises;
 
 public class StockholderDocumentsDataList implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public StockholderDocumentsDataList() {
-    }
+	private java.util.List<com.facebank.enterprises.StockholderDocumentsData> stockholderDocumentsData;
 
+	public StockholderDocumentsDataList() {
+	}
 
+	public java.util.List<com.facebank.enterprises.StockholderDocumentsData> getStockholderDocumentsData() {
+		return this.stockholderDocumentsData;
+	}
 
+	public void setStockholderDocumentsData(
+			java.util.List<com.facebank.enterprises.StockholderDocumentsData> stockholderDocumentsData) {
+		this.stockholderDocumentsData = stockholderDocumentsData;
+	}
+
+	public StockholderDocumentsDataList(
+			java.util.List<com.facebank.enterprises.StockholderDocumentsData> stockholderDocumentsData) {
+		this.stockholderDocumentsData = stockholderDocumentsData;
+	}
 
 }
