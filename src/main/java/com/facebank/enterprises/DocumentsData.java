@@ -10,7 +10,7 @@ public class DocumentsData implements java.io.Serializable {
 
 	private com.facebank.enterprises.EnterpriseDocumentsData companyDocuments;
 
-	private com.facebank.enterprises.StockholderDocumentsData stockholdersDocuments;
+	private StockholderDocumentsDataList stockholdersDocuments;
 
 	public DocumentsData() {
 	}
@@ -24,18 +24,18 @@ public class DocumentsData implements java.io.Serializable {
 		this.companyDocuments = companyDocuments;
 	}
 
-	public com.facebank.enterprises.StockholderDocumentsData getStockholdersDocuments() {
+	public com.facebank.enterprises.StockholderDocumentsDataList getStockholdersDocuments() {
 		return this.stockholdersDocuments;
 	}
 
 	public void setStockholdersDocuments(
-			com.facebank.enterprises.StockholderDocumentsData stockholdersDocuments) {
+			com.facebank.enterprises.StockholderDocumentsDataList stockholdersDocuments) {
 		this.stockholdersDocuments = stockholdersDocuments;
 	}
 
 	public DocumentsData(
 			com.facebank.enterprises.EnterpriseDocumentsData companyDocuments,
-			com.facebank.enterprises.StockholderDocumentsData stockholdersDocuments) {
+			com.facebank.enterprises.StockholderDocumentsDataList stockholdersDocuments) {
 		this.companyDocuments = companyDocuments;
 		this.stockholdersDocuments = stockholdersDocuments;
 	}
