@@ -20,11 +20,11 @@ public class StockholderDocumentsData implements java.io.Serializable {
 
 	private java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> stockholderCompanyFinancialDocuments;
 
-	private java.util.List<java.lang.String> type;
+	private String type;
 
-	private java.util.List<java.lang.String> idStockholder;
+	private String idStockholder;
 
-	private java.util.List<java.lang.String> nameStockholder;
+	private String nameStockholder;
 
 	public StockholderDocumentsData() {
 	}
@@ -83,28 +83,27 @@ public class StockholderDocumentsData implements java.io.Serializable {
 		this.stockholderCompanyFinancialDocuments = stockholderCompanyFinancialDocuments;
 	}
 
-	public java.util.List<java.lang.String> getType() {
+	public java.lang.String getType() {
 		return this.type;
 	}
 
-	public void setType(java.util.List<java.lang.String> type) {
+	public void setType(java.lang.String type) {
 		this.type = type;
 	}
 
-	public java.util.List<java.lang.String> getIdStockholder() {
+	public java.lang.String getIdStockholder() {
 		return this.idStockholder;
 	}
 
-	public void setIdStockholder(java.util.List<java.lang.String> idStockholder) {
+	public void setIdStockholder(java.lang.String idStockholder) {
 		this.idStockholder = idStockholder;
 	}
 
-	public java.util.List<java.lang.String> getNameStockholder() {
+	public java.lang.String getNameStockholder() {
 		return this.nameStockholder;
 	}
 
-	public void setNameStockholder(
-			java.util.List<java.lang.String> nameStockholder) {
+	public void setNameStockholder(java.lang.String nameStockholder) {
 		this.nameStockholder = nameStockholder;
 	}
 
@@ -115,9 +114,8 @@ public class StockholderDocumentsData implements java.io.Serializable {
 			java.util.List<com.facebank.enterprises.StockholderCompanyGeneralDocumentsData> stockholderCompanyGeneralDocuments,
 			java.util.List<com.facebank.enterprises.LegalDocumentsData> stockholderCompanyLegalDocuments,
 			java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> stockholderCompanyFinancialDocuments,
-			java.util.List<java.lang.String> type,
-			java.util.List<java.lang.String> idStockholder,
-			java.util.List<java.lang.String> nameStockholder) {
+			java.lang.String type, java.lang.String idStockholder,
+			java.lang.String nameStockholder) {
 		this.identifications = identifications;
 		this.stockholderPersonGeneralDocuments = stockholderPersonGeneralDocuments;
 		this.stockholderPersonFinancialDocuments = stockholderPersonFinancialDocuments;
