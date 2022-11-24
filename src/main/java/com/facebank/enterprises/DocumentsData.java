@@ -12,6 +12,8 @@ public class DocumentsData implements java.io.Serializable {
 
 	private StockholderDocumentsDataList stockholdersDocuments;
 
+	private com.facebank.enterprises.DocumentFoldersData questysFoldersIds;
+
 	public DocumentsData() {
 	}
 
@@ -33,11 +35,22 @@ public class DocumentsData implements java.io.Serializable {
 		this.stockholdersDocuments = stockholdersDocuments;
 	}
 
+	public com.facebank.enterprises.DocumentFoldersData getQuestysFoldersIds() {
+		return this.questysFoldersIds;
+	}
+
+	public void setQuestysFoldersIds(
+			com.facebank.enterprises.DocumentFoldersData questysFoldersIds) {
+		this.questysFoldersIds = questysFoldersIds;
+	}
+
 	public DocumentsData(
 			com.facebank.enterprises.EnterpriseDocumentsData companyDocuments,
-			com.facebank.enterprises.StockholderDocumentsDataList stockholdersDocuments) {
+			com.facebank.enterprises.StockholderDocumentsDataList stockholdersDocuments,
+			com.facebank.enterprises.DocumentFoldersData questysFoldersIds) {
 		this.companyDocuments = companyDocuments;
 		this.stockholdersDocuments = stockholdersDocuments;
+		this.questysFoldersIds = questysFoldersIds;
 	}
 
 }
