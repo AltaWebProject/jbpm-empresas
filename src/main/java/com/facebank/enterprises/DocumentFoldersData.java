@@ -6,12 +6,44 @@ package com.facebank.enterprises;
 
 public class DocumentFoldersData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DocumentFoldersData() {
-    }
+	private java.lang.String generalRequirementsId;
+	private java.lang.String identificationsId;
+	private java.lang.String aplicationsIds;
 
+	public DocumentFoldersData() {
+	}
 
+	public java.lang.String getGeneralRequirementsId() {
+		return this.generalRequirementsId;
+	}
 
+	public void setGeneralRequirementsId(java.lang.String generalRequirementsId) {
+		this.generalRequirementsId = generalRequirementsId;
+	}
+
+	public java.lang.String getIdentificationsId() {
+		return this.identificationsId;
+	}
+
+	public void setIdentificationsId(java.lang.String identificationsId) {
+		this.identificationsId = identificationsId;
+	}
+
+	public java.lang.String getAplicationsIds() {
+		return this.aplicationsIds;
+	}
+
+	public void setAplicationsIds(java.lang.String aplicationsIds) {
+		this.aplicationsIds = aplicationsIds;
+	}
+
+	public DocumentFoldersData(java.lang.String generalRequirementsId,
+			java.lang.String identificationsId, java.lang.String aplicationsIds) {
+		this.generalRequirementsId = generalRequirementsId;
+		this.identificationsId = identificationsId;
+		this.aplicationsIds = aplicationsIds;
+	}
 
 }
