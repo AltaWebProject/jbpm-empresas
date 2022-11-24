@@ -10,21 +10,10 @@ public class StockholderPersonIdentificationDocumentsData
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String fileName;
 	private java.lang.String idDocument;
-	private java.lang.String idFolder;
-	private java.lang.String nameDocument;
-	private java.lang.String reported;
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> personIdentifications;
 
 	public StockholderPersonIdentificationDocumentsData() {
-	}
-
-	public java.lang.String getFileName() {
-		return this.fileName;
-	}
-
-	public void setFileName(java.lang.String fileName) {
-		this.fileName = fileName;
 	}
 
 	public java.lang.String getIdDocument() {
@@ -35,39 +24,20 @@ public class StockholderPersonIdentificationDocumentsData
 		this.idDocument = idDocument;
 	}
 
-	public java.lang.String getIdFolder() {
-		return this.idFolder;
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getPersonIdentifications() {
+		return this.personIdentifications;
 	}
 
-	public void setIdFolder(java.lang.String idFolder) {
-		this.idFolder = idFolder;
-	}
-
-	public java.lang.String getNameDocument() {
-		return this.nameDocument;
-	}
-
-	public void setNameDocument(java.lang.String nameDocument) {
-		this.nameDocument = nameDocument;
-	}
-
-	public java.lang.String getReported() {
-		return this.reported;
-	}
-
-	public void setReported(java.lang.String reported) {
-		this.reported = reported;
+	public void setPersonIdentifications(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> personIdentifications) {
+		this.personIdentifications = personIdentifications;
 	}
 
 	public StockholderPersonIdentificationDocumentsData(
-			java.lang.String fileName, java.lang.String idDocument,
-			java.lang.String idFolder, java.lang.String nameDocument,
-			java.lang.String reported) {
-		this.fileName = fileName;
+			java.lang.String idDocument,
+			java.util.List<com.facebank.enterprises.DocumentTypeData> personIdentifications) {
 		this.idDocument = idDocument;
-		this.idFolder = idFolder;
-		this.nameDocument = nameDocument;
-		this.reported = reported;
+		this.personIdentifications = personIdentifications;
 	}
 
 }
