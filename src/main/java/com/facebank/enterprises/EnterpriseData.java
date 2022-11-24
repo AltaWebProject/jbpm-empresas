@@ -42,6 +42,8 @@ public class EnterpriseData implements java.io.Serializable {
 
 	private String sourceFound;
 
+	private java.lang.Long lastReportedIncome;
+
 	public EnterpriseData() {
 	}
 
@@ -157,13 +159,22 @@ public class EnterpriseData implements java.io.Serializable {
 		this.sourceFound = sourceFound;
 	}
 
+	public java.lang.Long getLastReportedIncome() {
+		return this.lastReportedIncome;
+	}
+
+	public void setLastReportedIncome(java.lang.Long lastReportedIncome) {
+		this.lastReportedIncome = lastReportedIncome;
+	}
+
 	public EnterpriseData(java.lang.Long id, java.lang.String startDate,
 			java.lang.String nationality, java.lang.String patrimonialOrigin,
 			java.lang.String legalResponsible, java.lang.String nameCompany,
 			java.lang.String typeId, java.lang.Long numberId,
 			java.lang.String emailCompany, java.lang.String typeBusiness,
 			java.lang.String typeCompany, java.lang.String abbreviation,
-			java.lang.String reasonOpening, java.lang.String sourceFound) {
+			java.lang.String reasonOpening, java.lang.String sourceFound,
+			java.lang.Long lastReportedIncome) {
 		this.id = id;
 		this.startDate = startDate;
 		this.nationality = nationality;
@@ -178,6 +189,7 @@ public class EnterpriseData implements java.io.Serializable {
 		this.abbreviation = abbreviation;
 		this.reasonOpening = reasonOpening;
 		this.sourceFound = sourceFound;
+		this.lastReportedIncome = lastReportedIncome;
 	}
 
 }
