@@ -9,18 +9,11 @@ public class AuthorizedData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String name;
 	private String id;
-
-	private java.lang.String function;
 
 	private java.lang.String rol;
 
 	private java.lang.Integer number;
-
-	private java.lang.String firstSurname;
-
-	private java.lang.String secondSurname;
 
 	private java.lang.String rolType;
 
@@ -29,23 +22,15 @@ public class AuthorizedData implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(sequenceName = "AUTHORIZEDDATA_ID_SEQ", name = "AUTHORIZEDDATA_ID_GENERATOR")
 	private java.lang.Long idDatabase;
 
+	private java.lang.String nameAuthorized;
+
+	private java.lang.String functionAuthorized;
+
+	private java.lang.String firstSurnameAuthorized;
+
+	private java.lang.String secondSurnameAuthorized;
+
 	public AuthorizedData() {
-	}
-
-	public java.lang.String getName() {
-		return this.name;
-	}
-
-	public void setName(java.lang.String name) {
-		this.name = name;
-	}
-
-	public java.lang.String getFunction() {
-		return this.function;
-	}
-
-	public void setFunction(java.lang.String function) {
-		this.function = function;
 	}
 
 	public java.lang.String getRol() {
@@ -62,22 +47,6 @@ public class AuthorizedData implements java.io.Serializable {
 
 	public void setNumber(java.lang.Integer number) {
 		this.number = number;
-	}
-
-	public java.lang.String getFirstSurname() {
-		return this.firstSurname;
-	}
-
-	public void setFirstSurname(java.lang.String firstSurname) {
-		this.firstSurname = firstSurname;
-	}
-
-	public java.lang.String getSecondSurname() {
-		return this.secondSurname;
-	}
-
-	public void setSecondSurname(java.lang.String secondSurname) {
-		this.secondSurname = secondSurname;
 	}
 
 	public java.lang.String getRolType() {
@@ -104,20 +73,55 @@ public class AuthorizedData implements java.io.Serializable {
 		this.idDatabase = idDatabase;
 	}
 
-	public AuthorizedData(java.lang.String name, java.lang.String id,
-			java.lang.String function, java.lang.String rol,
-			java.lang.Integer number, java.lang.String firstSurname,
-			java.lang.String secondSurname, java.lang.String rolType,
-			java.lang.Long idDatabase) {
-		this.name = name;
+	public java.lang.String getNameAuthorized() {
+		return this.nameAuthorized;
+	}
+
+	public void setNameAuthorized(java.lang.String nameAuthorized) {
+		this.nameAuthorized = nameAuthorized;
+	}
+
+	public java.lang.String getFunctionAuthorized() {
+		return this.functionAuthorized;
+	}
+
+	public void setFunctionAuthorized(java.lang.String functionAuthorized) {
+		this.functionAuthorized = functionAuthorized;
+	}
+
+	public java.lang.String getFirstSurnameAuthorized() {
+		return this.firstSurnameAuthorized;
+	}
+
+	public void setFirstSurnameAuthorized(
+			java.lang.String firstSurnameAuthorized) {
+		this.firstSurnameAuthorized = firstSurnameAuthorized;
+	}
+
+	public java.lang.String getSecondSurnameAuthorized() {
+		return this.secondSurnameAuthorized;
+	}
+
+	public void setSecondSurnameAuthorized(
+			java.lang.String secondSurnameAuthorized) {
+		this.secondSurnameAuthorized = secondSurnameAuthorized;
+	}
+
+	public AuthorizedData(java.lang.String id, java.lang.String rol,
+			java.lang.Integer number, java.lang.String rolType,
+			java.lang.Long idDatabase, java.lang.String nameAuthorized,
+			java.lang.String functionAuthorized,
+			java.lang.String firstSurnameAuthorized,
+			java.lang.String secondSurnameAuthorized) {
 		this.id = id;
-		this.function = function;
 		this.rol = rol;
 		this.number = number;
-		this.firstSurname = firstSurname;
-		this.secondSurname = secondSurname;
 		this.rolType = rolType;
 		this.idDatabase = idDatabase;
+		this.nameAuthorized = nameAuthorized;
+		this.functionAuthorized = functionAuthorized;
+		this.firstSurnameAuthorized = firstSurnameAuthorized;
+		this.secondSurnameAuthorized = secondSurnameAuthorized;
 	}
 
 }
