@@ -10,18 +10,9 @@ public class StockholderPersonIdentificationDocumentsData
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String idDocument;
 	private java.util.List<com.facebank.enterprises.DocumentTypeData> personIdentifications;
 
 	public StockholderPersonIdentificationDocumentsData() {
-	}
-
-	public java.lang.String getIdDocument() {
-		return this.idDocument;
-	}
-
-	public void setIdDocument(java.lang.String idDocument) {
-		this.idDocument = idDocument;
 	}
 
 	public java.util.List<com.facebank.enterprises.DocumentTypeData> getPersonIdentifications() {
@@ -34,9 +25,7 @@ public class StockholderPersonIdentificationDocumentsData
 	}
 
 	public StockholderPersonIdentificationDocumentsData(
-			java.lang.String idDocument,
 			java.util.List<com.facebank.enterprises.DocumentTypeData> personIdentifications) {
-		this.idDocument = idDocument;
 		this.personIdentifications = personIdentifications;
 	}
 
