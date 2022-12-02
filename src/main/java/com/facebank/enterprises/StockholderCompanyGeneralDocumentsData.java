@@ -10,55 +10,53 @@ public class StockholderCompanyGeneralDocumentsData
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> evidence;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> w8;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> w9;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> identifications;
+	private DocumentTypeDataList evidence;
+	private DocumentTypeDataList w8;
+	private DocumentTypeDataList w9;
+	private DocumentTypeDataList identifications;
 
 	public StockholderCompanyGeneralDocumentsData() {
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getEvidence() {
+	public com.facebank.enterprises.DocumentTypeDataList getEvidence() {
 		return this.evidence;
 	}
 
 	public void setEvidence(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> evidence) {
+			com.facebank.enterprises.DocumentTypeDataList evidence) {
 		this.evidence = evidence;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getW8() {
+	public com.facebank.enterprises.DocumentTypeDataList getW8() {
 		return this.w8;
 	}
 
-	public void setW8(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> w8) {
+	public void setW8(com.facebank.enterprises.DocumentTypeDataList w8) {
 		this.w8 = w8;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getW9() {
+	public com.facebank.enterprises.DocumentTypeDataList getW9() {
 		return this.w9;
 	}
 
-	public void setW9(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> w9) {
+	public void setW9(com.facebank.enterprises.DocumentTypeDataList w9) {
 		this.w9 = w9;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getIdentifications() {
+	public com.facebank.enterprises.DocumentTypeDataList getIdentifications() {
 		return this.identifications;
 	}
 
 	public void setIdentifications(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> identifications) {
+			com.facebank.enterprises.DocumentTypeDataList identifications) {
 		this.identifications = identifications;
 	}
 
 	public StockholderCompanyGeneralDocumentsData(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> evidence,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> w8,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> w9,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> identifications) {
+			com.facebank.enterprises.DocumentTypeDataList evidence,
+			com.facebank.enterprises.DocumentTypeDataList w8,
+			com.facebank.enterprises.DocumentTypeDataList w9,
+			com.facebank.enterprises.DocumentTypeDataList identifications) {
 		this.evidence = evidence;
 		this.w8 = w8;
 		this.w9 = w9;
