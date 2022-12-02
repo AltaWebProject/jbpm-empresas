@@ -10,66 +10,66 @@ public class StockholderCompanyFinancialDocumentsData
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> bankReferences;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> financialStatements;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> taxReturn;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> projectedCashFlow;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> businessProjection;
+	private DocumentTypeDataList bankReferences;
+	private DocumentTypeDataList financialStatements;
+	private DocumentTypeDataList taxReturn;
+	private DocumentTypeDataList projectedCashFlow;
+	private DocumentTypeDataList businessProjection;
 
 	public StockholderCompanyFinancialDocumentsData() {
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getBankReferences() {
+	public com.facebank.enterprises.DocumentTypeDataList getBankReferences() {
 		return this.bankReferences;
 	}
 
 	public void setBankReferences(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> bankReferences) {
+			com.facebank.enterprises.DocumentTypeDataList bankReferences) {
 		this.bankReferences = bankReferences;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getFinancialStatements() {
+	public com.facebank.enterprises.DocumentTypeDataList getFinancialStatements() {
 		return this.financialStatements;
 	}
 
 	public void setFinancialStatements(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> financialStatements) {
+			com.facebank.enterprises.DocumentTypeDataList financialStatements) {
 		this.financialStatements = financialStatements;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getTaxReturn() {
+	public com.facebank.enterprises.DocumentTypeDataList getTaxReturn() {
 		return this.taxReturn;
 	}
 
 	public void setTaxReturn(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> taxReturn) {
+			com.facebank.enterprises.DocumentTypeDataList taxReturn) {
 		this.taxReturn = taxReturn;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getProjectedCashFlow() {
+	public com.facebank.enterprises.DocumentTypeDataList getProjectedCashFlow() {
 		return this.projectedCashFlow;
 	}
 
 	public void setProjectedCashFlow(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> projectedCashFlow) {
+			com.facebank.enterprises.DocumentTypeDataList projectedCashFlow) {
 		this.projectedCashFlow = projectedCashFlow;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getBusinessProjection() {
+	public com.facebank.enterprises.DocumentTypeDataList getBusinessProjection() {
 		return this.businessProjection;
 	}
 
 	public void setBusinessProjection(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> businessProjection) {
+			com.facebank.enterprises.DocumentTypeDataList businessProjection) {
 		this.businessProjection = businessProjection;
 	}
 
 	public StockholderCompanyFinancialDocumentsData(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> bankReferences,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> financialStatements,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> taxReturn,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> projectedCashFlow,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> businessProjection) {
+			com.facebank.enterprises.DocumentTypeDataList bankReferences,
+			com.facebank.enterprises.DocumentTypeDataList financialStatements,
+			com.facebank.enterprises.DocumentTypeDataList taxReturn,
+			com.facebank.enterprises.DocumentTypeDataList projectedCashFlow,
+			com.facebank.enterprises.DocumentTypeDataList businessProjection) {
 		this.bankReferences = bankReferences;
 		this.financialStatements = financialStatements;
 		this.taxReturn = taxReturn;
