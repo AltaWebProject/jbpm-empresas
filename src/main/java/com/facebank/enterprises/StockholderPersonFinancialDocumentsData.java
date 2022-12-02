@@ -10,33 +10,33 @@ public class StockholderPersonFinancialDocumentsData
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> bankReference;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> workLetter;
+	private DocumentTypeDataList bankReference;
+	private DocumentTypeDataList workLetter;
 
 	public StockholderPersonFinancialDocumentsData() {
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getBankReference() {
+	public com.facebank.enterprises.DocumentTypeDataList getBankReference() {
 		return this.bankReference;
 	}
 
 	public void setBankReference(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> bankReference) {
+			com.facebank.enterprises.DocumentTypeDataList bankReference) {
 		this.bankReference = bankReference;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getWorkLetter() {
+	public com.facebank.enterprises.DocumentTypeDataList getWorkLetter() {
 		return this.workLetter;
 	}
 
 	public void setWorkLetter(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> workLetter) {
+			com.facebank.enterprises.DocumentTypeDataList workLetter) {
 		this.workLetter = workLetter;
 	}
 
 	public StockholderPersonFinancialDocumentsData(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> bankReference,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> workLetter) {
+			com.facebank.enterprises.DocumentTypeDataList bankReference,
+			com.facebank.enterprises.DocumentTypeDataList workLetter) {
 		this.bankReference = bankReference;
 		this.workLetter = workLetter;
 	}
