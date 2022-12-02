@@ -8,67 +8,67 @@ public class LegalDocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> constitutiveRecord;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> meetingMinutes;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> statutoryChanges;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> benefitialDocumentation;
+	private DocumentTypeDataList constitutiveRecord;
+	private DocumentTypeDataList meetingMinutes;
+	private DocumentTypeDataList statutoryChanges;
+	private DocumentTypeDataList benefitialDocumentation;
 
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> sharesTitle;
+	private DocumentTypeDataList sharesTitle;
 
 	public LegalDocumentsData() {
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getConstitutiveRecord() {
+	public com.facebank.enterprises.DocumentTypeDataList getConstitutiveRecord() {
 		return this.constitutiveRecord;
 	}
 
 	public void setConstitutiveRecord(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> constitutiveRecord) {
+			com.facebank.enterprises.DocumentTypeDataList constitutiveRecord) {
 		this.constitutiveRecord = constitutiveRecord;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getMeetingMinutes() {
+	public com.facebank.enterprises.DocumentTypeDataList getMeetingMinutes() {
 		return this.meetingMinutes;
 	}
 
 	public void setMeetingMinutes(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> meetingMinutes) {
+			com.facebank.enterprises.DocumentTypeDataList meetingMinutes) {
 		this.meetingMinutes = meetingMinutes;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getStatutoryChanges() {
+	public com.facebank.enterprises.DocumentTypeDataList getStatutoryChanges() {
 		return this.statutoryChanges;
 	}
 
 	public void setStatutoryChanges(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> statutoryChanges) {
+			com.facebank.enterprises.DocumentTypeDataList statutoryChanges) {
 		this.statutoryChanges = statutoryChanges;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getBenefitialDocumentation() {
+	public com.facebank.enterprises.DocumentTypeDataList getBenefitialDocumentation() {
 		return this.benefitialDocumentation;
 	}
 
 	public void setBenefitialDocumentation(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> benefitialDocumentation) {
+			com.facebank.enterprises.DocumentTypeDataList benefitialDocumentation) {
 		this.benefitialDocumentation = benefitialDocumentation;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getSharesTitle() {
+	public com.facebank.enterprises.DocumentTypeDataList getSharesTitle() {
 		return this.sharesTitle;
 	}
 
 	public void setSharesTitle(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> sharesTitle) {
+			com.facebank.enterprises.DocumentTypeDataList sharesTitle) {
 		this.sharesTitle = sharesTitle;
 	}
 
 	public LegalDocumentsData(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> constitutiveRecord,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> meetingMinutes,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> statutoryChanges,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> benefitialDocumentation,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> sharesTitle) {
+			com.facebank.enterprises.DocumentTypeDataList constitutiveRecord,
+			com.facebank.enterprises.DocumentTypeDataList meetingMinutes,
+			com.facebank.enterprises.DocumentTypeDataList statutoryChanges,
+			com.facebank.enterprises.DocumentTypeDataList benefitialDocumentation,
+			com.facebank.enterprises.DocumentTypeDataList sharesTitle) {
 		this.constitutiveRecord = constitutiveRecord;
 		this.meetingMinutes = meetingMinutes;
 		this.statutoryChanges = statutoryChanges;
