@@ -6,12 +6,25 @@ package com.facebank.enterprises;
 
 public class DocumentTypeDataList implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DocumentTypeDataList() {
-    }
+	private java.util.List<com.facebank.enterprises.DocumentTypeData> documentTypeData;
 
+	public DocumentTypeDataList() {
+	}
 
+	public java.util.List<com.facebank.enterprises.DocumentTypeData> getDocumentTypeData() {
+		return this.documentTypeData;
+	}
 
+	public void setDocumentTypeData(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> documentTypeData) {
+		this.documentTypeData = documentTypeData;
+	}
+
+	public DocumentTypeDataList(
+			java.util.List<com.facebank.enterprises.DocumentTypeData> documentTypeData) {
+		this.documentTypeData = documentTypeData;
+	}
 
 }
