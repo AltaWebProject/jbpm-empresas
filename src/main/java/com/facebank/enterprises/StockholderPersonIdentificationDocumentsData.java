@@ -10,22 +10,22 @@ public class StockholderPersonIdentificationDocumentsData
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> personIdentifications;
+	private DocumentTypeDataList personIdentifications;
 
 	public StockholderPersonIdentificationDocumentsData() {
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getPersonIdentifications() {
+	public com.facebank.enterprises.DocumentTypeDataList getPersonIdentifications() {
 		return this.personIdentifications;
 	}
 
 	public void setPersonIdentifications(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> personIdentifications) {
+			com.facebank.enterprises.DocumentTypeDataList personIdentifications) {
 		this.personIdentifications = personIdentifications;
 	}
 
 	public StockholderPersonIdentificationDocumentsData(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> personIdentifications) {
+			com.facebank.enterprises.DocumentTypeDataList personIdentifications) {
 		this.personIdentifications = personIdentifications;
 	}
 
