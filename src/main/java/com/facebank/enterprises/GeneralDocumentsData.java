@@ -8,44 +8,44 @@ public class GeneralDocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> evidence;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> scannedIdentifications;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> affidavit;
+	private DocumentTypeDataList evidence;
+	private DocumentTypeDataList scannedIdentifications;
+	private DocumentTypeDataList affidavit;
 
 	public GeneralDocumentsData() {
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getEvidence() {
+	public com.facebank.enterprises.DocumentTypeDataList getEvidence() {
 		return this.evidence;
 	}
 
 	public void setEvidence(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> evidence) {
+			com.facebank.enterprises.DocumentTypeDataList evidence) {
 		this.evidence = evidence;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getScannedIdentifications() {
+	public com.facebank.enterprises.DocumentTypeDataList getScannedIdentifications() {
 		return this.scannedIdentifications;
 	}
 
 	public void setScannedIdentifications(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> scannedIdentifications) {
+			com.facebank.enterprises.DocumentTypeDataList scannedIdentifications) {
 		this.scannedIdentifications = scannedIdentifications;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getAffidavit() {
+	public com.facebank.enterprises.DocumentTypeDataList getAffidavit() {
 		return this.affidavit;
 	}
 
 	public void setAffidavit(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> affidavit) {
+			com.facebank.enterprises.DocumentTypeDataList affidavit) {
 		this.affidavit = affidavit;
 	}
 
 	public GeneralDocumentsData(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> evidence,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> scannedIdentifications,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> affidavit) {
+			com.facebank.enterprises.DocumentTypeDataList evidence,
+			com.facebank.enterprises.DocumentTypeDataList scannedIdentifications,
+			com.facebank.enterprises.DocumentTypeDataList affidavit) {
 		this.evidence = evidence;
 		this.scannedIdentifications = scannedIdentifications;
 		this.affidavit = affidavit;
