@@ -8,44 +8,44 @@ public class FinancialDocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> taxReturn;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> financialStatements;
-	private java.util.List<com.facebank.enterprises.DocumentTypeData> bankReferences;
+	private DocumentTypeDataList taxReturn;
+	private DocumentTypeDataList financialStatements;
+	private DocumentTypeDataList bankReferences;
 
 	public FinancialDocumentsData() {
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getTaxReturn() {
+	public com.facebank.enterprises.DocumentTypeDataList getTaxReturn() {
 		return this.taxReturn;
 	}
 
 	public void setTaxReturn(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> taxReturn) {
+			com.facebank.enterprises.DocumentTypeDataList taxReturn) {
 		this.taxReturn = taxReturn;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getFinancialStatements() {
+	public com.facebank.enterprises.DocumentTypeDataList getFinancialStatements() {
 		return this.financialStatements;
 	}
 
 	public void setFinancialStatements(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> financialStatements) {
+			com.facebank.enterprises.DocumentTypeDataList financialStatements) {
 		this.financialStatements = financialStatements;
 	}
 
-	public java.util.List<com.facebank.enterprises.DocumentTypeData> getBankReferences() {
+	public com.facebank.enterprises.DocumentTypeDataList getBankReferences() {
 		return this.bankReferences;
 	}
 
 	public void setBankReferences(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> bankReferences) {
+			com.facebank.enterprises.DocumentTypeDataList bankReferences) {
 		this.bankReferences = bankReferences;
 	}
 
 	public FinancialDocumentsData(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> taxReturn,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> financialStatements,
-			java.util.List<com.facebank.enterprises.DocumentTypeData> bankReferences) {
+			com.facebank.enterprises.DocumentTypeDataList taxReturn,
+			com.facebank.enterprises.DocumentTypeDataList financialStatements,
+			com.facebank.enterprises.DocumentTypeDataList bankReferences) {
 		this.taxReturn = taxReturn;
 		this.financialStatements = financialStatements;
 		this.bankReferences = bankReferences;
