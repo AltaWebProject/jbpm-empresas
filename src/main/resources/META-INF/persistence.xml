@@ -5,7 +5,6 @@
         <jta-data-source>java:jboss/datasources/jBPMDS</jta-data-source>
         <class>com.facebank.enterprises.AuthorizedData</class>
         <class>com.facebank.enterprises.BusinessData</class>
-        <class>com.facebank.enterprises.InitialData</class>
         <class>com.facebank.enterprises.AddressData</class>
         <class>com.facebank.enterprises.EnterpriseData</class>
         <class>com.facebank.enterprises.HeaderData</class>
