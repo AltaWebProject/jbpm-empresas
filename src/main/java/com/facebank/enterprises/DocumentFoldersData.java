@@ -12,6 +12,8 @@ public class DocumentFoldersData implements java.io.Serializable {
 	private java.lang.String identificationsId;
 	private java.lang.String aplicationsIds;
 
+	private java.lang.String rootFolderId;
+
 	public DocumentFoldersData() {
 	}
 
@@ -39,11 +41,21 @@ public class DocumentFoldersData implements java.io.Serializable {
 		this.aplicationsIds = aplicationsIds;
 	}
 
+	public java.lang.String getRootFolderId() {
+		return this.rootFolderId;
+	}
+
+	public void setRootFolderId(java.lang.String rootFolderId) {
+		this.rootFolderId = rootFolderId;
+	}
+
 	public DocumentFoldersData(java.lang.String generalRequirementsId,
-			java.lang.String identificationsId, java.lang.String aplicationsIds) {
+			java.lang.String identificationsId,
+			java.lang.String aplicationsIds, java.lang.String rootFolderId) {
 		this.generalRequirementsId = generalRequirementsId;
 		this.identificationsId = identificationsId;
 		this.aplicationsIds = aplicationsIds;
+		this.rootFolderId = rootFolderId;
 	}
 
 }
