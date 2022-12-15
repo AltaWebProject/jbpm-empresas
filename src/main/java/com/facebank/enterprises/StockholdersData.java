@@ -11,7 +11,7 @@ public class StockholdersData implements java.io.Serializable {
 	private java.lang.Integer number;
 
 	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
-	private com.facebank.enterprises.StockholdersDataList subStockholders;
+	private SubstockholdersDataList subStockholders;
 
 	private java.lang.String signatory;
 
@@ -40,15 +40,6 @@ public class StockholdersData implements java.io.Serializable {
 
 	public void setNumber(java.lang.Integer number) {
 		this.number = number;
-	}
-
-	public com.facebank.enterprises.StockholdersDataList getSubStockholders() {
-		return this.subStockholders;
-	}
-
-	public void setSubStockholders(
-			com.facebank.enterprises.StockholdersDataList subStockholders) {
-		this.subStockholders = subStockholders;
 	}
 
 	public java.lang.String getSignatory() {
@@ -126,8 +117,17 @@ public class StockholdersData implements java.io.Serializable {
 		this.idStockholder = idStockholder;
 	}
 
+	public com.facebank.enterprises.SubstockholdersDataList getSubStockholders() {
+		return this.subStockholders;
+	}
+
+	public void setSubStockholders(
+			com.facebank.enterprises.SubstockholdersDataList subStockholders) {
+		this.subStockholders = subStockholders;
+	}
+
 	public StockholdersData(java.lang.Integer number,
-			com.facebank.enterprises.StockholdersDataList subStockholders,
+			com.facebank.enterprises.SubstockholdersDataList subStockholders,
 			java.lang.String signatory, java.lang.String nameStockholder,
 			java.lang.String nationalityStockholder,
 			java.lang.String typeStockholder,
