@@ -6,12 +6,25 @@ package com.facebank.enterprises;
 
 public class SubstockholdersDataList implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public SubstockholdersDataList() {
-    }
+	private java.util.List<com.facebank.enterprises.SubstockholdersData> substockholdersData;
 
+	public SubstockholdersDataList() {
+	}
 
+	public java.util.List<com.facebank.enterprises.SubstockholdersData> getSubstockholdersData() {
+		return this.substockholdersData;
+	}
 
+	public void setSubstockholdersData(
+			java.util.List<com.facebank.enterprises.SubstockholdersData> substockholdersData) {
+		this.substockholdersData = substockholdersData;
+	}
+
+	public SubstockholdersDataList(
+			java.util.List<com.facebank.enterprises.SubstockholdersData> substockholdersData) {
+		this.substockholdersData = substockholdersData;
+	}
 
 }
