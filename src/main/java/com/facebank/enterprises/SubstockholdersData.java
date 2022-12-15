@@ -6,12 +6,46 @@ package com.facebank.enterprises;
 
 public class SubstockholdersData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public SubstockholdersData() {
-    }
+	private java.lang.String idStockholder;
+	private java.lang.String nameStockholder;
+	private java.lang.String nationalityStockholder;
 
+	public SubstockholdersData() {
+	}
 
+	public java.lang.String getIdStockholder() {
+		return this.idStockholder;
+	}
 
+	public void setIdStockholder(java.lang.String idStockholder) {
+		this.idStockholder = idStockholder;
+	}
+
+	public java.lang.String getNameStockholder() {
+		return this.nameStockholder;
+	}
+
+	public void setNameStockholder(java.lang.String nameStockholder) {
+		this.nameStockholder = nameStockholder;
+	}
+
+	public java.lang.String getNationalityStockholder() {
+		return this.nationalityStockholder;
+	}
+
+	public void setNationalityStockholder(
+			java.lang.String nationalityStockholder) {
+		this.nationalityStockholder = nationalityStockholder;
+	}
+
+	public SubstockholdersData(java.lang.String idStockholder,
+			java.lang.String nameStockholder,
+			java.lang.String nationalityStockholder) {
+		this.idStockholder = idStockholder;
+		this.nameStockholder = nameStockholder;
+		this.nationalityStockholder = nationalityStockholder;
+	}
 
 }
