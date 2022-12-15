@@ -18,6 +18,14 @@ public class SubstockholdersData implements java.io.Serializable {
 
 	private java.lang.String positionStockholder;
 
+	private java.lang.String secondSurNameStockholder;
+
+	private java.lang.String signatory;
+
+	private java.lang.String surNameStockholder;
+
+	private java.lang.String typeStockholder;
+
 	public SubstockholdersData() {
 	}
 
@@ -71,17 +79,57 @@ public class SubstockholdersData implements java.io.Serializable {
 		this.positionStockholder = positionStockholder;
 	}
 
+	public java.lang.String getSecondSurNameStockholder() {
+		return this.secondSurNameStockholder;
+	}
+
+	public void setSecondSurNameStockholder(
+			java.lang.String secondSurNameStockholder) {
+		this.secondSurNameStockholder = secondSurNameStockholder;
+	}
+
+	public java.lang.String getSignatory() {
+		return this.signatory;
+	}
+
+	public void setSignatory(java.lang.String signatory) {
+		this.signatory = signatory;
+	}
+
+	public java.lang.String getSurNameStockholder() {
+		return this.surNameStockholder;
+	}
+
+	public void setSurNameStockholder(java.lang.String surNameStockholder) {
+		this.surNameStockholder = surNameStockholder;
+	}
+
+	public java.lang.String getTypeStockholder() {
+		return this.typeStockholder;
+	}
+
+	public void setTypeStockholder(java.lang.String typeStockholder) {
+		this.typeStockholder = typeStockholder;
+	}
+
 	public SubstockholdersData(java.lang.String idStockholder,
 			java.lang.String nameStockholder,
 			java.lang.String nationalityStockholder, java.lang.Integer number,
 			java.lang.Double participationStockholder,
-			java.lang.String positionStockholder) {
+			java.lang.String positionStockholder,
+			java.lang.String secondSurNameStockholder,
+			java.lang.String signatory, java.lang.String surNameStockholder,
+			java.lang.String typeStockholder) {
 		this.idStockholder = idStockholder;
 		this.nameStockholder = nameStockholder;
 		this.nationalityStockholder = nationalityStockholder;
 		this.number = number;
 		this.participationStockholder = participationStockholder;
 		this.positionStockholder = positionStockholder;
+		this.secondSurNameStockholder = secondSurNameStockholder;
+		this.signatory = signatory;
+		this.surNameStockholder = surNameStockholder;
+		this.typeStockholder = typeStockholder;
 	}
 
 }
