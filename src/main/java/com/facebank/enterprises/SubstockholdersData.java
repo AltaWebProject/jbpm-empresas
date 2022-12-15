@@ -12,6 +12,12 @@ public class SubstockholdersData implements java.io.Serializable {
 	private java.lang.String nameStockholder;
 	private java.lang.String nationalityStockholder;
 
+	private java.lang.Integer number;
+
+	private java.lang.Double participationStockholder;
+
+	private java.lang.String positionStockholder;
+
 	public SubstockholdersData() {
 	}
 
@@ -40,12 +46,42 @@ public class SubstockholdersData implements java.io.Serializable {
 		this.nationalityStockholder = nationalityStockholder;
 	}
 
+	public java.lang.Integer getNumber() {
+		return this.number;
+	}
+
+	public void setNumber(java.lang.Integer number) {
+		this.number = number;
+	}
+
+	public java.lang.Double getParticipationStockholder() {
+		return this.participationStockholder;
+	}
+
+	public void setParticipationStockholder(
+			java.lang.Double participationStockholder) {
+		this.participationStockholder = participationStockholder;
+	}
+
+	public java.lang.String getPositionStockholder() {
+		return this.positionStockholder;
+	}
+
+	public void setPositionStockholder(java.lang.String positionStockholder) {
+		this.positionStockholder = positionStockholder;
+	}
+
 	public SubstockholdersData(java.lang.String idStockholder,
 			java.lang.String nameStockholder,
-			java.lang.String nationalityStockholder) {
+			java.lang.String nationalityStockholder, java.lang.Integer number,
+			java.lang.Double participationStockholder,
+			java.lang.String positionStockholder) {
 		this.idStockholder = idStockholder;
 		this.nameStockholder = nameStockholder;
 		this.nationalityStockholder = nationalityStockholder;
+		this.number = number;
+		this.participationStockholder = participationStockholder;
+		this.positionStockholder = positionStockholder;
 	}
 
 }
