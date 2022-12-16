@@ -8,7 +8,6 @@
         <class>com.facebank.enterprises.AddressData</class>
         <class>com.facebank.enterprises.EnterpriseData</class>
         <class>com.facebank.enterprises.HeaderData</class>
-        <class>com.facebank.enterprises.StockholdersData</class>
         <class>com.facebank.enterprises.InterviewData</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
