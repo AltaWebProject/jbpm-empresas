@@ -14,19 +14,19 @@ public class TransactionalData implements java.io.Serializable {
 
 	private Long transfersToSentNumber;
 
-	private Long transfersToSentAmount;
+	private Double transfersToSentAmount;
 
 	private Long internalTransfersToSentNumber;
 
-	private Long internalTransfersToSentAmount;
+	private Double internalTransfersToSentAmount;
 
 	private Long transfersToReceiveNumber;
 
-	private Long transfersToReceiveAmount;
+	private Double transfersToReceiveAmount;
 
 	private Long internalTransfersToReceiveNumber;
 
-	private Long internalTransfersToReceiveAmount;
+	private Double internalTransfersToReceiveAmount;
 
 	public TransactionalData() {
 	}
@@ -57,14 +57,6 @@ public class TransactionalData implements java.io.Serializable {
 		this.transfersToSentNumber = transfersToSentNumber;
 	}
 
-	public java.lang.Long getTransfersToSentAmount() {
-		return this.transfersToSentAmount;
-	}
-
-	public void setTransfersToSentAmount(java.lang.Long transfersToSentAmount) {
-		this.transfersToSentAmount = transfersToSentAmount;
-	}
-
 	public java.lang.Long getInternalTransfersToSentNumber() {
 		return this.internalTransfersToSentNumber;
 	}
@@ -72,15 +64,6 @@ public class TransactionalData implements java.io.Serializable {
 	public void setInternalTransfersToSentNumber(
 			java.lang.Long internalTransfersToSentNumber) {
 		this.internalTransfersToSentNumber = internalTransfersToSentNumber;
-	}
-
-	public java.lang.Long getInternalTransfersToSentAmount() {
-		return this.internalTransfersToSentAmount;
-	}
-
-	public void setInternalTransfersToSentAmount(
-			java.lang.Long internalTransfersToSentAmount) {
-		this.internalTransfersToSentAmount = internalTransfersToSentAmount;
 	}
 
 	public java.lang.Long getTransfersToReceiveNumber() {
@@ -92,15 +75,6 @@ public class TransactionalData implements java.io.Serializable {
 		this.transfersToReceiveNumber = transfersToReceiveNumber;
 	}
 
-	public java.lang.Long getTransfersToReceiveAmount() {
-		return this.transfersToReceiveAmount;
-	}
-
-	public void setTransfersToReceiveAmount(
-			java.lang.Long transfersToReceiveAmount) {
-		this.transfersToReceiveAmount = transfersToReceiveAmount;
-	}
-
 	public java.lang.Long getInternalTransfersToReceiveNumber() {
 		return this.internalTransfersToReceiveNumber;
 	}
@@ -110,12 +84,38 @@ public class TransactionalData implements java.io.Serializable {
 		this.internalTransfersToReceiveNumber = internalTransfersToReceiveNumber;
 	}
 
-	public java.lang.Long getInternalTransfersToReceiveAmount() {
+	public java.lang.Double getTransfersToSentAmount() {
+		return this.transfersToSentAmount;
+	}
+
+	public void setTransfersToSentAmount(java.lang.Double transfersToSentAmount) {
+		this.transfersToSentAmount = transfersToSentAmount;
+	}
+
+	public java.lang.Double getInternalTransfersToSentAmount() {
+		return this.internalTransfersToSentAmount;
+	}
+
+	public void setInternalTransfersToSentAmount(
+			java.lang.Double internalTransfersToSentAmount) {
+		this.internalTransfersToSentAmount = internalTransfersToSentAmount;
+	}
+
+	public java.lang.Double getTransfersToReceiveAmount() {
+		return this.transfersToReceiveAmount;
+	}
+
+	public void setTransfersToReceiveAmount(
+			java.lang.Double transfersToReceiveAmount) {
+		this.transfersToReceiveAmount = transfersToReceiveAmount;
+	}
+
+	public java.lang.Double getInternalTransfersToReceiveAmount() {
 		return this.internalTransfersToReceiveAmount;
 	}
 
 	public void setInternalTransfersToReceiveAmount(
-			java.lang.Long internalTransfersToReceiveAmount) {
+			java.lang.Double internalTransfersToReceiveAmount) {
 		this.internalTransfersToReceiveAmount = internalTransfersToReceiveAmount;
 	}
 
@@ -123,13 +123,13 @@ public class TransactionalData implements java.io.Serializable {
 			java.util.List<com.facebank.enterprises.SenderData> senderData,
 			java.util.List<com.facebank.enterprises.ReceiverData> receiverData,
 			java.lang.Long transfersToSentNumber,
-			java.lang.Long transfersToSentAmount,
+			java.lang.Double transfersToSentAmount,
 			java.lang.Long internalTransfersToSentNumber,
-			java.lang.Long internalTransfersToSentAmount,
+			java.lang.Double internalTransfersToSentAmount,
 			java.lang.Long transfersToReceiveNumber,
-			java.lang.Long transfersToReceiveAmount,
+			java.lang.Double transfersToReceiveAmount,
 			java.lang.Long internalTransfersToReceiveNumber,
-			java.lang.Long internalTransfersToReceiveAmount) {
+			java.lang.Double internalTransfersToReceiveAmount) {
 		this.senderData = senderData;
 		this.receiverData = receiverData;
 		this.transfersToSentNumber = transfersToSentNumber;
