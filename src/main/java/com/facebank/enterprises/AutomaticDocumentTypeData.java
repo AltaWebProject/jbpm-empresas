@@ -6,12 +6,55 @@ package com.facebank.enterprises;
 
 public class AutomaticDocumentTypeData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public AutomaticDocumentTypeData() {
-    }
+	private java.lang.String nameDocument;
+	private java.lang.String idDocument;
+	private java.lang.Boolean reported;
+	private java.lang.String reportedComment;
 
+	public AutomaticDocumentTypeData() {
+	}
 
+	public java.lang.String getNameDocument() {
+		return this.nameDocument;
+	}
 
+	public void setNameDocument(java.lang.String nameDocument) {
+		this.nameDocument = nameDocument;
+	}
+
+	public java.lang.String getIdDocument() {
+		return this.idDocument;
+	}
+
+	public void setIdDocument(java.lang.String idDocument) {
+		this.idDocument = idDocument;
+	}
+
+	public java.lang.Boolean getReported() {
+		return this.reported;
+	}
+
+	public void setReported(java.lang.Boolean reported) {
+		this.reported = reported;
+	}
+
+	public java.lang.String getReportedComment() {
+		return this.reportedComment;
+	}
+
+	public void setReportedComment(java.lang.String reportedComment) {
+		this.reportedComment = reportedComment;
+	}
+
+	public AutomaticDocumentTypeData(java.lang.String nameDocument,
+			java.lang.String idDocument, java.lang.Boolean reported,
+			java.lang.String reportedComment) {
+		this.nameDocument = nameDocument;
+		this.idDocument = idDocument;
+		this.reported = reported;
+		this.reportedComment = reportedComment;
+	}
 
 }
