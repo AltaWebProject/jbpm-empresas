@@ -6,12 +6,57 @@ package com.facebank.enterprises;
 
 public class AutomaticDocumentsData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public AutomaticDocumentsData() {
-    }
+	private com.facebank.enterprises.DocumentTypeDataList w8;
+	private com.facebank.enterprises.DocumentTypeDataList w9;
+	private com.facebank.enterprises.DocumentTypeDataList car;
+	private com.facebank.enterprises.DocumentTypeDataList kyc;
 
+	public AutomaticDocumentsData() {
+	}
 
+	public com.facebank.enterprises.DocumentTypeDataList getW8() {
+		return this.w8;
+	}
 
+	public void setW8(com.facebank.enterprises.DocumentTypeDataList w8) {
+		this.w8 = w8;
+	}
+
+	public com.facebank.enterprises.DocumentTypeDataList getW9() {
+		return this.w9;
+	}
+
+	public void setW9(com.facebank.enterprises.DocumentTypeDataList w9) {
+		this.w9 = w9;
+	}
+
+	public com.facebank.enterprises.DocumentTypeDataList getCar() {
+		return this.car;
+	}
+
+	public void setCar(com.facebank.enterprises.DocumentTypeDataList car) {
+		this.car = car;
+	}
+
+	public com.facebank.enterprises.DocumentTypeDataList getKyc() {
+		return this.kyc;
+	}
+
+	public void setKyc(com.facebank.enterprises.DocumentTypeDataList kyc) {
+		this.kyc = kyc;
+	}
+
+	public AutomaticDocumentsData(
+			com.facebank.enterprises.DocumentTypeDataList w8,
+			com.facebank.enterprises.DocumentTypeDataList w9,
+			com.facebank.enterprises.DocumentTypeDataList car,
+			com.facebank.enterprises.DocumentTypeDataList kyc) {
+		this.w8 = w8;
+		this.w9 = w9;
+		this.car = car;
+		this.kyc = kyc;
+	}
 
 }
