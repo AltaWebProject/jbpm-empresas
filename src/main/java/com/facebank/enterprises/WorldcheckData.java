@@ -10,6 +10,12 @@ public class WorldcheckData implements java.io.Serializable {
 
 	private java.lang.Integer totalResults;
 
+	private java.lang.Integer interestingProfiles;
+
+	private java.lang.Integer positiveStats;
+
+	private java.lang.Integer possibleStats;
+
 	public WorldcheckData() {
 	}
 
@@ -21,8 +27,37 @@ public class WorldcheckData implements java.io.Serializable {
 		this.totalResults = totalResults;
 	}
 
-	public WorldcheckData(java.lang.Integer totalResults) {
+	public java.lang.Integer getInterestingProfiles() {
+		return this.interestingProfiles;
+	}
+
+	public void setInterestingProfiles(java.lang.Integer interestingProfiles) {
+		this.interestingProfiles = interestingProfiles;
+	}
+
+	public java.lang.Integer getPositiveStats() {
+		return this.positiveStats;
+	}
+
+	public void setPositiveStats(java.lang.Integer positiveStats) {
+		this.positiveStats = positiveStats;
+	}
+
+	public java.lang.Integer getPossibleStats() {
+		return this.possibleStats;
+	}
+
+	public void setPossibleStats(java.lang.Integer possibleStats) {
+		this.possibleStats = possibleStats;
+	}
+
+	public WorldcheckData(java.lang.Integer totalResults,
+			java.lang.Integer interestingProfiles,
+			java.lang.Integer positiveStats, java.lang.Integer possibleStats) {
 		this.totalResults = totalResults;
+		this.interestingProfiles = interestingProfiles;
+		this.positiveStats = positiveStats;
+		this.possibleStats = possibleStats;
 	}
 
 }
