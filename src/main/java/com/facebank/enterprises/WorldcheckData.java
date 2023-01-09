@@ -16,6 +16,42 @@ public class WorldcheckData implements java.io.Serializable {
 
 	private java.lang.Integer possibleStats;
 
+	private java.lang.Integer falseStats;
+
+	private java.lang.Integer unspecifiedStats;
+
+	private java.lang.Integer unresolvedStats;
+
+	private java.lang.Integer exactMatches;
+
+	private java.lang.Integer strongMatches;
+
+	private java.lang.Integer mediumMatches;
+
+	private java.lang.Integer lowMatches;
+
+	private java.lang.Integer weakMatches;
+
+	private java.lang.Integer otherBodies;
+
+	private java.lang.Integer regulatoryEnforcements;
+
+	private java.lang.Integer lawEnforcements;
+
+	private java.lang.Integer sanctions;
+
+	private java.lang.Integer highRisk;
+
+	private java.lang.Integer mediumRisk;
+
+	private java.lang.Integer lowRisk;
+
+	private java.lang.Integer unknownRisk;
+
+	private java.lang.Integer unspecifiedRisk;
+
+	private java.lang.Integer pep;
+
 	public WorldcheckData() {
 	}
 
@@ -51,13 +87,186 @@ public class WorldcheckData implements java.io.Serializable {
 		this.possibleStats = possibleStats;
 	}
 
+	public java.lang.Integer getFalseStats() {
+		return this.falseStats;
+	}
+
+	public void setFalseStats(java.lang.Integer falseStats) {
+		this.falseStats = falseStats;
+	}
+
+	public java.lang.Integer getUnspecifiedStats() {
+		return this.unspecifiedStats;
+	}
+
+	public void setUnspecifiedStats(java.lang.Integer unspecifiedStats) {
+		this.unspecifiedStats = unspecifiedStats;
+	}
+
+	public java.lang.Integer getUnresolvedStats() {
+		return this.unresolvedStats;
+	}
+
+	public void setUnresolvedStats(java.lang.Integer unresolvedStats) {
+		this.unresolvedStats = unresolvedStats;
+	}
+
+	public java.lang.Integer getExactMatches() {
+		return this.exactMatches;
+	}
+
+	public void setExactMatches(java.lang.Integer exactMatches) {
+		this.exactMatches = exactMatches;
+	}
+
+	public java.lang.Integer getStrongMatches() {
+		return this.strongMatches;
+	}
+
+	public void setStrongMatches(java.lang.Integer strongMatches) {
+		this.strongMatches = strongMatches;
+	}
+
+	public java.lang.Integer getMediumMatches() {
+		return this.mediumMatches;
+	}
+
+	public void setMediumMatches(java.lang.Integer mediumMatches) {
+		this.mediumMatches = mediumMatches;
+	}
+
+	public java.lang.Integer getLowMatches() {
+		return this.lowMatches;
+	}
+
+	public void setLowMatches(java.lang.Integer lowMatches) {
+		this.lowMatches = lowMatches;
+	}
+
+	public java.lang.Integer getWeakMatches() {
+		return this.weakMatches;
+	}
+
+	public void setWeakMatches(java.lang.Integer weakMatches) {
+		this.weakMatches = weakMatches;
+	}
+
+	public java.lang.Integer getOtherBodies() {
+		return this.otherBodies;
+	}
+
+	public void setOtherBodies(java.lang.Integer otherBodies) {
+		this.otherBodies = otherBodies;
+	}
+
+	public java.lang.Integer getRegulatoryEnforcements() {
+		return this.regulatoryEnforcements;
+	}
+
+	public void setRegulatoryEnforcements(
+			java.lang.Integer regulatoryEnforcements) {
+		this.regulatoryEnforcements = regulatoryEnforcements;
+	}
+
+	public java.lang.Integer getLawEnforcements() {
+		return this.lawEnforcements;
+	}
+
+	public void setLawEnforcements(java.lang.Integer lawEnforcements) {
+		this.lawEnforcements = lawEnforcements;
+	}
+
+	public java.lang.Integer getSanctions() {
+		return this.sanctions;
+	}
+
+	public void setSanctions(java.lang.Integer sanctions) {
+		this.sanctions = sanctions;
+	}
+
+	public java.lang.Integer getHighRisk() {
+		return this.highRisk;
+	}
+
+	public void setHighRisk(java.lang.Integer highRisk) {
+		this.highRisk = highRisk;
+	}
+
+	public java.lang.Integer getMediumRisk() {
+		return this.mediumRisk;
+	}
+
+	public void setMediumRisk(java.lang.Integer mediumRisk) {
+		this.mediumRisk = mediumRisk;
+	}
+
+	public java.lang.Integer getLowRisk() {
+		return this.lowRisk;
+	}
+
+	public void setLowRisk(java.lang.Integer lowRisk) {
+		this.lowRisk = lowRisk;
+	}
+
+	public java.lang.Integer getUnknownRisk() {
+		return this.unknownRisk;
+	}
+
+	public void setUnknownRisk(java.lang.Integer unknownRisk) {
+		this.unknownRisk = unknownRisk;
+	}
+
+	public java.lang.Integer getUnspecifiedRisk() {
+		return this.unspecifiedRisk;
+	}
+
+	public void setUnspecifiedRisk(java.lang.Integer unspecifiedRisk) {
+		this.unspecifiedRisk = unspecifiedRisk;
+	}
+
+	public java.lang.Integer getPep() {
+		return this.pep;
+	}
+
+	public void setPep(java.lang.Integer pep) {
+		this.pep = pep;
+	}
+
 	public WorldcheckData(java.lang.Integer totalResults,
 			java.lang.Integer interestingProfiles,
-			java.lang.Integer positiveStats, java.lang.Integer possibleStats) {
+			java.lang.Integer positiveStats, java.lang.Integer possibleStats,
+			java.lang.Integer falseStats, java.lang.Integer unspecifiedStats,
+			java.lang.Integer unresolvedStats, java.lang.Integer exactMatches,
+			java.lang.Integer strongMatches, java.lang.Integer mediumMatches,
+			java.lang.Integer lowMatches, java.lang.Integer weakMatches,
+			java.lang.Integer otherBodies,
+			java.lang.Integer regulatoryEnforcements,
+			java.lang.Integer lawEnforcements, java.lang.Integer sanctions,
+			java.lang.Integer highRisk, java.lang.Integer mediumRisk,
+			java.lang.Integer lowRisk, java.lang.Integer unknownRisk,
+			java.lang.Integer unspecifiedRisk, java.lang.Integer pep) {
 		this.totalResults = totalResults;
 		this.interestingProfiles = interestingProfiles;
 		this.positiveStats = positiveStats;
 		this.possibleStats = possibleStats;
+		this.falseStats = falseStats;
+		this.unspecifiedStats = unspecifiedStats;
+		this.unresolvedStats = unresolvedStats;
+		this.exactMatches = exactMatches;
+		this.strongMatches = strongMatches;
+		this.mediumMatches = mediumMatches;
+		this.lowMatches = lowMatches;
+		this.weakMatches = weakMatches;
+		this.otherBodies = otherBodies;
+		this.regulatoryEnforcements = regulatoryEnforcements;
+		this.lawEnforcements = lawEnforcements;
+		this.sanctions = sanctions;
+		this.highRisk = highRisk;
+		this.mediumRisk = mediumRisk;
+		this.lowRisk = lowRisk;
+		this.unknownRisk = unknownRisk;
+		this.unspecifiedRisk = unspecifiedRisk;
+		this.pep = pep;
 	}
 
 }
