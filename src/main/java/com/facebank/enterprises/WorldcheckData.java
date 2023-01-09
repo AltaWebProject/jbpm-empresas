@@ -6,12 +6,23 @@ package com.facebank.enterprises;
 
 public class WorldcheckData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public WorldcheckData() {
-    }
+	private java.lang.Integer totalResults;
 
+	public WorldcheckData() {
+	}
 
+	public java.lang.Integer getTotalResults() {
+		return this.totalResults;
+	}
 
+	public void setTotalResults(java.lang.Integer totalResults) {
+		this.totalResults = totalResults;
+	}
+
+	public WorldcheckData(java.lang.Integer totalResults) {
+		this.totalResults = totalResults;
+	}
 
 }
