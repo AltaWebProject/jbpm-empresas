@@ -8,51 +8,50 @@ public class AutomaticDocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private AutomaticDocumentTypeData w8;
-	private AutomaticDocumentTypeData w9;
-	private AutomaticDocumentTypeData car;
-	private AutomaticDocumentTypeData kyc;
+	private DocumentTypeData w8;
+	private DocumentTypeData w9;
+	private DocumentTypeData car;
+	private DocumentTypeData kyc;
 
 	public AutomaticDocumentsData() {
 	}
 
-	public com.facebank.enterprises.AutomaticDocumentTypeData getW8() {
+	public com.facebank.enterprises.DocumentTypeData getW8() {
 		return this.w8;
 	}
 
-	public void setW8(com.facebank.enterprises.AutomaticDocumentTypeData w8) {
+	public void setW8(com.facebank.enterprises.DocumentTypeData w8) {
 		this.w8 = w8;
 	}
 
-	public com.facebank.enterprises.AutomaticDocumentTypeData getW9() {
+	public com.facebank.enterprises.DocumentTypeData getW9() {
 		return this.w9;
 	}
 
-	public void setW9(com.facebank.enterprises.AutomaticDocumentTypeData w9) {
+	public void setW9(com.facebank.enterprises.DocumentTypeData w9) {
 		this.w9 = w9;
 	}
 
-	public com.facebank.enterprises.AutomaticDocumentTypeData getCar() {
+	public com.facebank.enterprises.DocumentTypeData getCar() {
 		return this.car;
 	}
 
-	public void setCar(com.facebank.enterprises.AutomaticDocumentTypeData car) {
+	public void setCar(com.facebank.enterprises.DocumentTypeData car) {
 		this.car = car;
 	}
 
-	public com.facebank.enterprises.AutomaticDocumentTypeData getKyc() {
+	public com.facebank.enterprises.DocumentTypeData getKyc() {
 		return this.kyc;
 	}
 
-	public void setKyc(com.facebank.enterprises.AutomaticDocumentTypeData kyc) {
+	public void setKyc(com.facebank.enterprises.DocumentTypeData kyc) {
 		this.kyc = kyc;
 	}
 
-	public AutomaticDocumentsData(
-			com.facebank.enterprises.AutomaticDocumentTypeData w8,
-			com.facebank.enterprises.AutomaticDocumentTypeData w9,
-			com.facebank.enterprises.AutomaticDocumentTypeData car,
-			com.facebank.enterprises.AutomaticDocumentTypeData kyc) {
+	public AutomaticDocumentsData(com.facebank.enterprises.DocumentTypeData w8,
+			com.facebank.enterprises.DocumentTypeData w9,
+			com.facebank.enterprises.DocumentTypeData car,
+			com.facebank.enterprises.DocumentTypeData kyc) {
 		this.w8 = w8;
 		this.w9 = w9;
 		this.car = car;
