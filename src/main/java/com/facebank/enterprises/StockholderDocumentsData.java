@@ -8,13 +8,13 @@ public class StockholderDocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<com.facebank.enterprises.StockholderPersonGeneralDocumentsData> stockholderPersonGeneralDocuments;
+	private StockholderPersonGeneralDocumentsData stockholderPersonGeneralDocuments;
 
-	private java.util.List<com.facebank.enterprises.StockholderPersonFinancialDocumentsData> stockholderPersonFinancialDocuments;
+	private StockholderPersonFinancialDocumentsData stockholderPersonFinancialDocuments;
 
-	private java.util.List<com.facebank.enterprises.StockholderCompanyGeneralDocumentsData> stockholderCompanyGeneralDocuments;
+	private StockholderCompanyGeneralDocumentsData stockholderCompanyGeneralDocuments;
 
-	private java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> stockholderCompanyFinancialDocuments;
+	private StockholderCompanyFinancialDocumentsData stockholderCompanyFinancialDocuments;
 
 	private String type;
 
@@ -22,47 +22,11 @@ public class StockholderDocumentsData implements java.io.Serializable {
 
 	private String nameStockholder;
 
-	private java.util.List<com.facebank.enterprises.StockholderCompanyLegalDocumentsData> stockholderCompanyLegalDocuments;
+	private StockholderCompanyLegalDocumentsData stockholderCompanyLegalDocuments;
 
-	private java.util.List<com.facebank.enterprises.StockholderPersonIdentificationDocumentsData> identifications;
+	private StockholderPersonIdentificationDocumentsData identifications;
 
 	public StockholderDocumentsData() {
-	}
-
-	public java.util.List<com.facebank.enterprises.StockholderPersonGeneralDocumentsData> getStockholderPersonGeneralDocuments() {
-		return this.stockholderPersonGeneralDocuments;
-	}
-
-	public void setStockholderPersonGeneralDocuments(
-			java.util.List<com.facebank.enterprises.StockholderPersonGeneralDocumentsData> stockholderPersonGeneralDocuments) {
-		this.stockholderPersonGeneralDocuments = stockholderPersonGeneralDocuments;
-	}
-
-	public java.util.List<com.facebank.enterprises.StockholderPersonFinancialDocumentsData> getStockholderPersonFinancialDocuments() {
-		return this.stockholderPersonFinancialDocuments;
-	}
-
-	public void setStockholderPersonFinancialDocuments(
-			java.util.List<com.facebank.enterprises.StockholderPersonFinancialDocumentsData> stockholderPersonFinancialDocuments) {
-		this.stockholderPersonFinancialDocuments = stockholderPersonFinancialDocuments;
-	}
-
-	public java.util.List<com.facebank.enterprises.StockholderCompanyGeneralDocumentsData> getStockholderCompanyGeneralDocuments() {
-		return this.stockholderCompanyGeneralDocuments;
-	}
-
-	public void setStockholderCompanyGeneralDocuments(
-			java.util.List<com.facebank.enterprises.StockholderCompanyGeneralDocumentsData> stockholderCompanyGeneralDocuments) {
-		this.stockholderCompanyGeneralDocuments = stockholderCompanyGeneralDocuments;
-	}
-
-	public java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> getStockholderCompanyFinancialDocuments() {
-		return this.stockholderCompanyFinancialDocuments;
-	}
-
-	public void setStockholderCompanyFinancialDocuments(
-			java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> stockholderCompanyFinancialDocuments) {
-		this.stockholderCompanyFinancialDocuments = stockholderCompanyFinancialDocuments;
 	}
 
 	public java.lang.String getType() {
@@ -89,34 +53,70 @@ public class StockholderDocumentsData implements java.io.Serializable {
 		this.nameStockholder = nameStockholder;
 	}
 
-	public java.util.List<com.facebank.enterprises.StockholderCompanyLegalDocumentsData> getStockholderCompanyLegalDocuments() {
+	public com.facebank.enterprises.StockholderPersonGeneralDocumentsData getStockholderPersonGeneralDocuments() {
+		return this.stockholderPersonGeneralDocuments;
+	}
+
+	public void setStockholderPersonGeneralDocuments(
+			com.facebank.enterprises.StockholderPersonGeneralDocumentsData stockholderPersonGeneralDocuments) {
+		this.stockholderPersonGeneralDocuments = stockholderPersonGeneralDocuments;
+	}
+
+	public com.facebank.enterprises.StockholderPersonFinancialDocumentsData getStockholderPersonFinancialDocuments() {
+		return this.stockholderPersonFinancialDocuments;
+	}
+
+	public void setStockholderPersonFinancialDocuments(
+			com.facebank.enterprises.StockholderPersonFinancialDocumentsData stockholderPersonFinancialDocuments) {
+		this.stockholderPersonFinancialDocuments = stockholderPersonFinancialDocuments;
+	}
+
+	public com.facebank.enterprises.StockholderCompanyGeneralDocumentsData getStockholderCompanyGeneralDocuments() {
+		return this.stockholderCompanyGeneralDocuments;
+	}
+
+	public void setStockholderCompanyGeneralDocuments(
+			com.facebank.enterprises.StockholderCompanyGeneralDocumentsData stockholderCompanyGeneralDocuments) {
+		this.stockholderCompanyGeneralDocuments = stockholderCompanyGeneralDocuments;
+	}
+
+	public com.facebank.enterprises.StockholderCompanyFinancialDocumentsData getStockholderCompanyFinancialDocuments() {
+		return this.stockholderCompanyFinancialDocuments;
+	}
+
+	public void setStockholderCompanyFinancialDocuments(
+			com.facebank.enterprises.StockholderCompanyFinancialDocumentsData stockholderCompanyFinancialDocuments) {
+		this.stockholderCompanyFinancialDocuments = stockholderCompanyFinancialDocuments;
+	}
+
+	public com.facebank.enterprises.StockholderCompanyLegalDocumentsData getStockholderCompanyLegalDocuments() {
 		return this.stockholderCompanyLegalDocuments;
 	}
 
 	public void setStockholderCompanyLegalDocuments(
-			java.util.List<com.facebank.enterprises.StockholderCompanyLegalDocumentsData> stockholderCompanyLegalDocuments) {
+			com.facebank.enterprises.StockholderCompanyLegalDocumentsData stockholderCompanyLegalDocuments) {
 		this.stockholderCompanyLegalDocuments = stockholderCompanyLegalDocuments;
 	}
 
-	public java.util.List<com.facebank.enterprises.StockholderPersonIdentificationDocumentsData> getIdentifications() {
+	public com.facebank.enterprises.StockholderPersonIdentificationDocumentsData getIdentifications() {
 		return this.identifications;
 	}
 
 	public void setIdentifications(
-			java.util.List<com.facebank.enterprises.StockholderPersonIdentificationDocumentsData> identifications) {
+			com.facebank.enterprises.StockholderPersonIdentificationDocumentsData identifications) {
 		this.identifications = identifications;
 	}
 
 	public StockholderDocumentsData(
-			java.util.List<com.facebank.enterprises.StockholderPersonGeneralDocumentsData> stockholderPersonGeneralDocuments,
-			java.util.List<com.facebank.enterprises.StockholderPersonFinancialDocumentsData> stockholderPersonFinancialDocuments,
-			java.util.List<com.facebank.enterprises.StockholderCompanyGeneralDocumentsData> stockholderCompanyGeneralDocuments,
-			java.util.List<com.facebank.enterprises.StockholderCompanyFinancialDocumentsData> stockholderCompanyFinancialDocuments,
+			com.facebank.enterprises.StockholderPersonGeneralDocumentsData stockholderPersonGeneralDocuments,
+			com.facebank.enterprises.StockholderPersonFinancialDocumentsData stockholderPersonFinancialDocuments,
+			com.facebank.enterprises.StockholderCompanyGeneralDocumentsData stockholderCompanyGeneralDocuments,
+			com.facebank.enterprises.StockholderCompanyFinancialDocumentsData stockholderCompanyFinancialDocuments,
 			java.lang.String type,
 			java.lang.String idStockholder,
 			java.lang.String nameStockholder,
-			java.util.List<com.facebank.enterprises.StockholderCompanyLegalDocumentsData> stockholderCompanyLegalDocuments,
-			java.util.List<com.facebank.enterprises.StockholderPersonIdentificationDocumentsData> identifications) {
+			com.facebank.enterprises.StockholderCompanyLegalDocumentsData stockholderCompanyLegalDocuments,
+			com.facebank.enterprises.StockholderPersonIdentificationDocumentsData identifications) {
 		this.stockholderPersonGeneralDocuments = stockholderPersonGeneralDocuments;
 		this.stockholderPersonFinancialDocuments = stockholderPersonFinancialDocuments;
 		this.stockholderCompanyGeneralDocuments = stockholderCompanyGeneralDocuments;
