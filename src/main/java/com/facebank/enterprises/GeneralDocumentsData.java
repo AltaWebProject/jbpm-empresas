@@ -12,6 +12,8 @@ public class GeneralDocumentsData implements java.io.Serializable {
 	private DocumentTypeDataList scannedIdentifications;
 	private DocumentTypeDataList affidavit;
 
+	private com.facebank.enterprises.DocumentTypeDataList affidavitNotRelatedToGovernmentVenezuela;
+
 	public GeneralDocumentsData() {
 	}
 
@@ -42,13 +44,24 @@ public class GeneralDocumentsData implements java.io.Serializable {
 		this.affidavit = affidavit;
 	}
 
+	public com.facebank.enterprises.DocumentTypeDataList getAffidavitNotRelatedToGovernmentVenezuela() {
+		return this.affidavitNotRelatedToGovernmentVenezuela;
+	}
+
+	public void setAffidavitNotRelatedToGovernmentVenezuela(
+			com.facebank.enterprises.DocumentTypeDataList affidavitNotRelatedToGovernmentVenezuela) {
+		this.affidavitNotRelatedToGovernmentVenezuela = affidavitNotRelatedToGovernmentVenezuela;
+	}
+
 	public GeneralDocumentsData(
 			com.facebank.enterprises.DocumentTypeDataList evidence,
 			com.facebank.enterprises.DocumentTypeDataList scannedIdentifications,
-			com.facebank.enterprises.DocumentTypeDataList affidavit) {
+			com.facebank.enterprises.DocumentTypeDataList affidavit,
+			com.facebank.enterprises.DocumentTypeDataList affidavitNotRelatedToGovernmentVenezuela) {
 		this.evidence = evidence;
 		this.scannedIdentifications = scannedIdentifications;
 		this.affidavit = affidavit;
+		this.affidavitNotRelatedToGovernmentVenezuela = affidavitNotRelatedToGovernmentVenezuela;
 	}
 
 }
