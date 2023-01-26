@@ -10,6 +10,8 @@ public class DocumentTypeDataList implements java.io.Serializable {
 
 	private java.util.List<com.facebank.enterprises.DocumentTypeData> documentTypeData;
 
+	private java.lang.Boolean required = true;
+
 	public DocumentTypeDataList() {
 	}
 
@@ -22,9 +24,19 @@ public class DocumentTypeDataList implements java.io.Serializable {
 		this.documentTypeData = documentTypeData;
 	}
 
+	public java.lang.Boolean getRequired() {
+		return this.required;
+	}
+
+	public void setRequired(java.lang.Boolean required) {
+		this.required = required;
+	}
+
 	public DocumentTypeDataList(
-			java.util.List<com.facebank.enterprises.DocumentTypeData> documentTypeData) {
+			java.util.List<com.facebank.enterprises.DocumentTypeData> documentTypeData,
+			java.lang.Boolean required) {
 		this.documentTypeData = documentTypeData;
+		this.required = required;
 	}
 
 }
