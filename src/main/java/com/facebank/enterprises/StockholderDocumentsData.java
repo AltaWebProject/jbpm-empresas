@@ -26,6 +26,8 @@ public class StockholderDocumentsData implements java.io.Serializable {
 
 	private StockholderPersonIdentificationDocumentsData identifications;
 
+	private java.lang.String nationalityStockholder;
+
 	public StockholderDocumentsData() {
 	}
 
@@ -107,6 +109,15 @@ public class StockholderDocumentsData implements java.io.Serializable {
 		this.identifications = identifications;
 	}
 
+	public java.lang.String getNationalityStockholder() {
+		return this.nationalityStockholder;
+	}
+
+	public void setNationalityStockholder(
+			java.lang.String nationalityStockholder) {
+		this.nationalityStockholder = nationalityStockholder;
+	}
+
 	public StockholderDocumentsData(
 			com.facebank.enterprises.StockholderPersonGeneralDocumentsData stockholderPersonGeneralDocuments,
 			com.facebank.enterprises.StockholderPersonFinancialDocumentsData stockholderPersonFinancialDocuments,
@@ -116,7 +127,8 @@ public class StockholderDocumentsData implements java.io.Serializable {
 			java.lang.String idStockholder,
 			java.lang.String nameStockholder,
 			com.facebank.enterprises.StockholderCompanyLegalDocumentsData stockholderCompanyLegalDocuments,
-			com.facebank.enterprises.StockholderPersonIdentificationDocumentsData identifications) {
+			com.facebank.enterprises.StockholderPersonIdentificationDocumentsData identifications,
+			java.lang.String nationalityStockholder) {
 		this.stockholderPersonGeneralDocuments = stockholderPersonGeneralDocuments;
 		this.stockholderPersonFinancialDocuments = stockholderPersonFinancialDocuments;
 		this.stockholderCompanyGeneralDocuments = stockholderCompanyGeneralDocuments;
@@ -126,6 +138,7 @@ public class StockholderDocumentsData implements java.io.Serializable {
 		this.nameStockholder = nameStockholder;
 		this.stockholderCompanyLegalDocuments = stockholderCompanyLegalDocuments;
 		this.identifications = identifications;
+		this.nationalityStockholder = nationalityStockholder;
 	}
 
 }
