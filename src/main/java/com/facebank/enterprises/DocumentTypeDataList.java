@@ -12,7 +12,7 @@ public class DocumentTypeDataList implements java.io.Serializable {
 
 	private java.lang.Boolean required = true;
 
-	private java.lang.Boolean visible = false;
+	private java.lang.Boolean visible = true;
 
 	public DocumentTypeDataList() {
 	}
