@@ -12,6 +12,8 @@ public class DocumentTypeDataList implements java.io.Serializable {
 
 	private java.lang.Boolean required = true;
 
+	private java.lang.Boolean visible = false;
+
 	public DocumentTypeDataList() {
 	}
 
@@ -32,11 +34,20 @@ public class DocumentTypeDataList implements java.io.Serializable {
 		this.required = required;
 	}
 
+	public java.lang.Boolean getVisible() {
+		return this.visible;
+	}
+
+	public void setVisible(java.lang.Boolean visible) {
+		this.visible = visible;
+	}
+
 	public DocumentTypeDataList(
 			java.util.List<com.facebank.enterprises.DocumentTypeData> documentTypeData,
-			java.lang.Boolean required) {
+			java.lang.Boolean required, java.lang.Boolean visible) {
 		this.documentTypeData = documentTypeData;
 		this.required = required;
+		this.visible = visible;
 	}
 
 }
