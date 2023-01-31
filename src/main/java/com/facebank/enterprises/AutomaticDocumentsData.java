@@ -8,28 +8,10 @@ public class AutomaticDocumentsData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private DocumentTypeData w8;
-	private DocumentTypeData w9;
 	private DocumentTypeData car;
 	private DocumentTypeData kyc;
 
 	public AutomaticDocumentsData() {
-	}
-
-	public com.facebank.enterprises.DocumentTypeData getW8() {
-		return this.w8;
-	}
-
-	public void setW8(com.facebank.enterprises.DocumentTypeData w8) {
-		this.w8 = w8;
-	}
-
-	public com.facebank.enterprises.DocumentTypeData getW9() {
-		return this.w9;
-	}
-
-	public void setW9(com.facebank.enterprises.DocumentTypeData w9) {
-		this.w9 = w9;
 	}
 
 	public com.facebank.enterprises.DocumentTypeData getCar() {
@@ -48,12 +30,9 @@ public class AutomaticDocumentsData implements java.io.Serializable {
 		this.kyc = kyc;
 	}
 
-	public AutomaticDocumentsData(com.facebank.enterprises.DocumentTypeData w8,
-			com.facebank.enterprises.DocumentTypeData w9,
+	public AutomaticDocumentsData(
 			com.facebank.enterprises.DocumentTypeData car,
 			com.facebank.enterprises.DocumentTypeData kyc) {
-		this.w8 = w8;
-		this.w9 = w9;
 		this.car = car;
 		this.kyc = kyc;
 	}
