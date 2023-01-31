@@ -10,27 +10,11 @@ public class StockholderPersonGeneralDocumentsData
 
 	static final long serialVersionUID = 1L;
 
-	private DocumentTypeDataList w8;
-	private DocumentTypeDataList w9;
 	private DocumentTypeDataList evidence;
 
+	private com.facebank.enterprises.DocumentTypeDataList w8_w9;
+
 	public StockholderPersonGeneralDocumentsData() {
-	}
-
-	public com.facebank.enterprises.DocumentTypeDataList getW8() {
-		return this.w8;
-	}
-
-	public void setW8(com.facebank.enterprises.DocumentTypeDataList w8) {
-		this.w8 = w8;
-	}
-
-	public com.facebank.enterprises.DocumentTypeDataList getW9() {
-		return this.w9;
-	}
-
-	public void setW9(com.facebank.enterprises.DocumentTypeDataList w9) {
-		this.w9 = w9;
 	}
 
 	public com.facebank.enterprises.DocumentTypeDataList getEvidence() {
@@ -42,13 +26,19 @@ public class StockholderPersonGeneralDocumentsData
 		this.evidence = evidence;
 	}
 
+	public com.facebank.enterprises.DocumentTypeDataList getW8_w9() {
+		return this.w8_w9;
+	}
+
+	public void setW8_w9(com.facebank.enterprises.DocumentTypeDataList w8_w9) {
+		this.w8_w9 = w8_w9;
+	}
+
 	public StockholderPersonGeneralDocumentsData(
-			com.facebank.enterprises.DocumentTypeDataList w8,
-			com.facebank.enterprises.DocumentTypeDataList w9,
-			com.facebank.enterprises.DocumentTypeDataList evidence) {
-		this.w8 = w8;
-		this.w9 = w9;
+			com.facebank.enterprises.DocumentTypeDataList evidence,
+			com.facebank.enterprises.DocumentTypeDataList w8_w9) {
 		this.evidence = evidence;
+		this.w8_w9 = w8_w9;
 	}
 
 }
