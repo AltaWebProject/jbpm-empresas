@@ -14,10 +14,10 @@ public class BusinessData implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(sequenceName = "BUSINESSDATA_ID_SEQ", name = "BUSINESSDATA_ID_GENERATOR")
 	private java.lang.Long id;
 
-	@javax.persistence.Column(length = 300)
+	@javax.persistence.Column(length = 200)
 	private java.lang.String descriptionTypeBusiness;
 
-	@javax.persistence.Column(length = 300)
+	@javax.persistence.Column(length = 200)
 	private java.lang.String descriptionProductAndService;
 
 	public BusinessData() {
