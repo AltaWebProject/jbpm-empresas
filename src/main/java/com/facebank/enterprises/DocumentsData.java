@@ -16,7 +16,7 @@ public class DocumentsData implements java.io.Serializable {
 
 	private com.facebank.enterprises.AutomaticDocumentsData automaticDocuments;
 
-	private java.lang.Boolean finalizeFlag = false;
+	private java.lang.Boolean finalizeFlag = true;
 
 	public DocumentsData() {
 	}
