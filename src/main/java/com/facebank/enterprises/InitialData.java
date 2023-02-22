@@ -44,6 +44,8 @@ public class InitialData implements java.io.Serializable {
 
 	private java.lang.String secondSurNameEntity;
 
+	private java.lang.String bdfOffice;
+
 	public InitialData() {
 	}
 
@@ -215,6 +217,14 @@ public class InitialData implements java.io.Serializable {
 		this.secondSurNameEntity = secondSurNameEntity;
 	}
 
+	public java.lang.String getBdfOffice() {
+		return this.bdfOffice;
+	}
+
+	public void setBdfOffice(java.lang.String bdfOffice) {
+		this.bdfOffice = bdfOffice;
+	}
+
 	public InitialData(java.lang.String bdfEmail,
 			java.lang.String bdfLoginName, java.lang.String bdfName,
 			java.lang.String email, java.lang.String languageBDF,
@@ -226,7 +236,7 @@ public class InitialData implements java.io.Serializable {
 			java.lang.String companyName, java.lang.String mainPhone,
 			java.lang.String otherPhone, java.lang.String codeEntity,
 			java.lang.String nameEntity, java.lang.String surNameEntity,
-			java.lang.String secondSurNameEntity) {
+			java.lang.String secondSurNameEntity, java.lang.String bdfOffice) {
 		this.bdfEmail = bdfEmail;
 		this.bdfLoginName = bdfLoginName;
 		this.bdfName = bdfName;
@@ -248,6 +258,7 @@ public class InitialData implements java.io.Serializable {
 		this.nameEntity = nameEntity;
 		this.surNameEntity = surNameEntity;
 		this.secondSurNameEntity = secondSurNameEntity;
+		this.bdfOffice = bdfOffice;
 	}
 
 }
