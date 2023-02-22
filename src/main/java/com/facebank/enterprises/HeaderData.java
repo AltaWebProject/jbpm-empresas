@@ -20,6 +20,10 @@ public class HeaderData implements java.io.Serializable {
 
 	private java.lang.String companyName;
 
+	private java.lang.String agency;
+
+	private java.lang.String bdfOffice;
+
 	public HeaderData() {
 	}
 
@@ -63,14 +67,33 @@ public class HeaderData implements java.io.Serializable {
 		this.companyName = companyName;
 	}
 
+	public java.lang.String getAgency() {
+		return this.agency;
+	}
+
+	public void setAgency(java.lang.String agency) {
+		this.agency = agency;
+	}
+
+	public java.lang.String getBdfOffice() {
+		return this.bdfOffice;
+	}
+
+	public void setBdfOffice(java.lang.String bdfOffice) {
+		this.bdfOffice = bdfOffice;
+	}
+
 	public HeaderData(java.lang.Long id, java.lang.String bdfLogin,
 			java.lang.String bdfName, java.lang.String clientName,
-			java.lang.String companyName) {
+			java.lang.String companyName, java.lang.String agency,
+			java.lang.String bdfOffice) {
 		this.id = id;
 		this.bdfLogin = bdfLogin;
 		this.bdfName = bdfName;
 		this.clientName = clientName;
 		this.companyName = companyName;
+		this.agency = agency;
+		this.bdfOffice = bdfOffice;
 	}
 
 }
