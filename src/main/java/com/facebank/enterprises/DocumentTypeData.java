@@ -17,7 +17,7 @@ public class DocumentTypeData implements java.io.Serializable {
 
 	private java.lang.String fileName;
 
-	private java.lang.Boolean flagView;
+	private java.lang.Boolean flagView = false;
 
 	public DocumentTypeData() {
 	}
