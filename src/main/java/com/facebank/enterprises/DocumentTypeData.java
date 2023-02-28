@@ -17,6 +17,8 @@ public class DocumentTypeData implements java.io.Serializable {
 
 	private java.lang.String fileName;
 
+	private java.lang.Boolean flagView;
+
 	public DocumentTypeData() {
 	}
 
@@ -60,14 +62,24 @@ public class DocumentTypeData implements java.io.Serializable {
 		this.fileName = fileName;
 	}
 
+	public java.lang.Boolean getFlagView() {
+		return this.flagView;
+	}
+
+	public void setFlagView(java.lang.Boolean flagView) {
+		this.flagView = flagView;
+	}
+
 	public DocumentTypeData(java.lang.String nameDocument,
 			java.lang.String idDocument, java.lang.String reported,
-			java.lang.String idFolder, java.lang.String fileName) {
+			java.lang.String idFolder, java.lang.String fileName,
+			java.lang.Boolean flagView) {
 		this.nameDocument = nameDocument;
 		this.idDocument = idDocument;
 		this.reported = reported;
 		this.idFolder = idFolder;
 		this.fileName = fileName;
+		this.flagView = flagView;
 	}
 
 }
