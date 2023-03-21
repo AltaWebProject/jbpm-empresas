@@ -46,6 +46,16 @@ public class EnterpriseData implements java.io.Serializable {
 
 	private java.lang.Integer legalResponsibleCode;
 
+	private java.lang.String managerName;
+
+	private java.lang.String managerFirstSurname;
+
+	private java.lang.String managerSecondSurname;
+
+	private java.lang.String managerPosition;
+
+	private java.lang.String managerNationality;
+
 	public EnterpriseData() {
 	}
 
@@ -177,6 +187,46 @@ public class EnterpriseData implements java.io.Serializable {
 		this.legalResponsibleCode = legalResponsibleCode;
 	}
 
+	public java.lang.String getManagerName() {
+		return this.managerName;
+	}
+
+	public void setManagerName(java.lang.String managerName) {
+		this.managerName = managerName;
+	}
+
+	public java.lang.String getManagerFirstSurname() {
+		return this.managerFirstSurname;
+	}
+
+	public void setManagerFirstSurname(java.lang.String managerFirstSurname) {
+		this.managerFirstSurname = managerFirstSurname;
+	}
+
+	public java.lang.String getManagerSecondSurname() {
+		return this.managerSecondSurname;
+	}
+
+	public void setManagerSecondSurname(java.lang.String managerSecondSurname) {
+		this.managerSecondSurname = managerSecondSurname;
+	}
+
+	public java.lang.String getManagerPosition() {
+		return this.managerPosition;
+	}
+
+	public void setManagerPosition(java.lang.String managerPosition) {
+		this.managerPosition = managerPosition;
+	}
+
+	public java.lang.String getManagerNationality() {
+		return this.managerNationality;
+	}
+
+	public void setManagerNationality(java.lang.String managerNationality) {
+		this.managerNationality = managerNationality;
+	}
+
 	public EnterpriseData(java.lang.Long id, java.lang.String startDate,
 			java.lang.String nationality, java.lang.String patrimonialOrigin,
 			java.lang.String legalResponsible, java.lang.String nameCompany,
@@ -185,7 +235,11 @@ public class EnterpriseData implements java.io.Serializable {
 			java.lang.String typeCompany, java.lang.String abbreviation,
 			java.lang.String reasonOpening, java.lang.String sourceFound,
 			java.lang.Double lastReportedIncome,
-			java.lang.Integer legalResponsibleCode) {
+			java.lang.Integer legalResponsibleCode,
+			java.lang.String managerName, java.lang.String managerFirstSurname,
+			java.lang.String managerSecondSurname,
+			java.lang.String managerPosition,
+			java.lang.String managerNationality) {
 		this.id = id;
 		this.startDate = startDate;
 		this.nationality = nationality;
@@ -202,6 +256,11 @@ public class EnterpriseData implements java.io.Serializable {
 		this.sourceFound = sourceFound;
 		this.lastReportedIncome = lastReportedIncome;
 		this.legalResponsibleCode = legalResponsibleCode;
+		this.managerName = managerName;
+		this.managerFirstSurname = managerFirstSurname;
+		this.managerSecondSurname = managerSecondSurname;
+		this.managerPosition = managerPosition;
+		this.managerNationality = managerNationality;
 	}
 
 }
