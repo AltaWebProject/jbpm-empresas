@@ -8,84 +8,33 @@ public class SubstockholdersData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String idStockholder;
-	private java.lang.String nameStockholder;
-	private java.lang.String nationalityStockholder;
-
-	private java.lang.Integer number;
-
-	private java.lang.Double participationStockholder;
-
-	private java.lang.String positionStockholder;
-
-	private java.lang.String secondSurNameStockholder;
-
 	private java.lang.String signatory;
 
-	private java.lang.String surNameStockholder;
+	private java.lang.String idStockholderRelated;
 
-	private java.lang.String typeStockholder;
+	private java.lang.String nameBeneficiary;
+
+	private java.lang.String nationalityBeneficiary;
+
+	private java.lang.Double participationBeneficiary;
+
+	private java.lang.String positionBeneficiary;
+
+	private java.lang.String secondSurNameBeneficiary;
+
+	private java.lang.String surNameBeneficiary;
+
+	private java.lang.String typeBeneficiary;
+
+	private java.lang.String idBeneficiary;
+
+	private java.lang.String secondNameBeneficiary;
+
+	private java.lang.String nationalityValue;
+
+	private java.lang.String companyName;
 
 	public SubstockholdersData() {
-	}
-
-	public java.lang.String getIdStockholder() {
-		return this.idStockholder;
-	}
-
-	public void setIdStockholder(java.lang.String idStockholder) {
-		this.idStockholder = idStockholder;
-	}
-
-	public java.lang.String getNameStockholder() {
-		return this.nameStockholder;
-	}
-
-	public void setNameStockholder(java.lang.String nameStockholder) {
-		this.nameStockholder = nameStockholder;
-	}
-
-	public java.lang.String getNationalityStockholder() {
-		return this.nationalityStockholder;
-	}
-
-	public void setNationalityStockholder(
-			java.lang.String nationalityStockholder) {
-		this.nationalityStockholder = nationalityStockholder;
-	}
-
-	public java.lang.Integer getNumber() {
-		return this.number;
-	}
-
-	public void setNumber(java.lang.Integer number) {
-		this.number = number;
-	}
-
-	public java.lang.Double getParticipationStockholder() {
-		return this.participationStockholder;
-	}
-
-	public void setParticipationStockholder(
-			java.lang.Double participationStockholder) {
-		this.participationStockholder = participationStockholder;
-	}
-
-	public java.lang.String getPositionStockholder() {
-		return this.positionStockholder;
-	}
-
-	public void setPositionStockholder(java.lang.String positionStockholder) {
-		this.positionStockholder = positionStockholder;
-	}
-
-	public java.lang.String getSecondSurNameStockholder() {
-		return this.secondSurNameStockholder;
-	}
-
-	public void setSecondSurNameStockholder(
-			java.lang.String secondSurNameStockholder) {
-		this.secondSurNameStockholder = secondSurNameStockholder;
 	}
 
 	public java.lang.String getSignatory() {
@@ -96,40 +45,129 @@ public class SubstockholdersData implements java.io.Serializable {
 		this.signatory = signatory;
 	}
 
-	public java.lang.String getSurNameStockholder() {
-		return this.surNameStockholder;
+	public java.lang.String getIdStockholderRelated() {
+		return this.idStockholderRelated;
 	}
 
-	public void setSurNameStockholder(java.lang.String surNameStockholder) {
-		this.surNameStockholder = surNameStockholder;
+	public void setIdStockholderRelated(java.lang.String idStockholderRelated) {
+		this.idStockholderRelated = idStockholderRelated;
 	}
 
-	public java.lang.String getTypeStockholder() {
-		return this.typeStockholder;
+	public java.lang.String getNameBeneficiary() {
+		return this.nameBeneficiary;
 	}
 
-	public void setTypeStockholder(java.lang.String typeStockholder) {
-		this.typeStockholder = typeStockholder;
+	public void setNameBeneficiary(java.lang.String nameBeneficiary) {
+		this.nameBeneficiary = nameBeneficiary;
 	}
 
-	public SubstockholdersData(java.lang.String idStockholder,
-			java.lang.String nameStockholder,
-			java.lang.String nationalityStockholder, java.lang.Integer number,
-			java.lang.Double participationStockholder,
-			java.lang.String positionStockholder,
-			java.lang.String secondSurNameStockholder,
-			java.lang.String signatory, java.lang.String surNameStockholder,
-			java.lang.String typeStockholder) {
-		this.idStockholder = idStockholder;
-		this.nameStockholder = nameStockholder;
-		this.nationalityStockholder = nationalityStockholder;
-		this.number = number;
-		this.participationStockholder = participationStockholder;
-		this.positionStockholder = positionStockholder;
-		this.secondSurNameStockholder = secondSurNameStockholder;
+	public java.lang.String getNationalityBeneficiary() {
+		return this.nationalityBeneficiary;
+	}
+
+	public void setNationalityBeneficiary(
+			java.lang.String nationalityBeneficiary) {
+		this.nationalityBeneficiary = nationalityBeneficiary;
+	}
+
+	public java.lang.Double getParticipationBeneficiary() {
+		return this.participationBeneficiary;
+	}
+
+	public void setParticipationBeneficiary(
+			java.lang.Double participationBeneficiary) {
+		this.participationBeneficiary = participationBeneficiary;
+	}
+
+	public java.lang.String getPositionBeneficiary() {
+		return this.positionBeneficiary;
+	}
+
+	public void setPositionBeneficiary(java.lang.String positionBeneficiary) {
+		this.positionBeneficiary = positionBeneficiary;
+	}
+
+	public java.lang.String getSecondSurNameBeneficiary() {
+		return this.secondSurNameBeneficiary;
+	}
+
+	public void setSecondSurNameBeneficiary(
+			java.lang.String secondSurNameBeneficiary) {
+		this.secondSurNameBeneficiary = secondSurNameBeneficiary;
+	}
+
+	public java.lang.String getSurNameBeneficiary() {
+		return this.surNameBeneficiary;
+	}
+
+	public void setSurNameBeneficiary(java.lang.String surNameBeneficiary) {
+		this.surNameBeneficiary = surNameBeneficiary;
+	}
+
+	public java.lang.String getTypeBeneficiary() {
+		return this.typeBeneficiary;
+	}
+
+	public void setTypeBeneficiary(java.lang.String typeBeneficiary) {
+		this.typeBeneficiary = typeBeneficiary;
+	}
+
+	public java.lang.String getIdBeneficiary() {
+		return this.idBeneficiary;
+	}
+
+	public void setIdBeneficiary(java.lang.String idBeneficiary) {
+		this.idBeneficiary = idBeneficiary;
+	}
+
+	public java.lang.String getSecondNameBeneficiary() {
+		return this.secondNameBeneficiary;
+	}
+
+	public void setSecondNameBeneficiary(java.lang.String secondNameBeneficiary) {
+		this.secondNameBeneficiary = secondNameBeneficiary;
+	}
+
+	public java.lang.String getNationalityValue() {
+		return this.nationalityValue;
+	}
+
+	public void setNationalityValue(java.lang.String nationalityValue) {
+		this.nationalityValue = nationalityValue;
+	}
+
+	public java.lang.String getCompanyName() {
+		return this.companyName;
+	}
+
+	public void setCompanyName(java.lang.String companyName) {
+		this.companyName = companyName;
+	}
+
+	public SubstockholdersData(java.lang.String signatory,
+			java.lang.String idStockholderRelated,
+			java.lang.String nameBeneficiary,
+			java.lang.String nationalityBeneficiary,
+			java.lang.Double participationBeneficiary,
+			java.lang.String positionBeneficiary,
+			java.lang.String secondSurNameBeneficiary,
+			java.lang.String surNameBeneficiary,
+			java.lang.String typeBeneficiary, java.lang.String idBeneficiary,
+			java.lang.String secondNameBeneficiary,
+			java.lang.String nationalityValue, java.lang.String companyName) {
 		this.signatory = signatory;
-		this.surNameStockholder = surNameStockholder;
-		this.typeStockholder = typeStockholder;
+		this.idStockholderRelated = idStockholderRelated;
+		this.nameBeneficiary = nameBeneficiary;
+		this.nationalityBeneficiary = nationalityBeneficiary;
+		this.participationBeneficiary = participationBeneficiary;
+		this.positionBeneficiary = positionBeneficiary;
+		this.secondSurNameBeneficiary = secondSurNameBeneficiary;
+		this.surNameBeneficiary = surNameBeneficiary;
+		this.typeBeneficiary = typeBeneficiary;
+		this.idBeneficiary = idBeneficiary;
+		this.secondNameBeneficiary = secondNameBeneficiary;
+		this.nationalityValue = nationalityValue;
+		this.companyName = companyName;
 	}
 
 }
