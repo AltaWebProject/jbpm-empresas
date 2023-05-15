@@ -15,6 +15,8 @@ public class ValidData implements java.io.Serializable {
 
 	private java.lang.String idChild;
 
+	private java.lang.Boolean hasCorrection = false;
+
 	public ValidData() {
 	}
 
@@ -50,12 +52,22 @@ public class ValidData implements java.io.Serializable {
 		this.idChild = idChild;
 	}
 
+	public java.lang.Boolean getHasCorrection() {
+		return this.hasCorrection;
+	}
+
+	public void setHasCorrection(java.lang.Boolean hasCorrection) {
+		this.hasCorrection = hasCorrection;
+	}
+
 	public ValidData(java.lang.String showName, java.lang.String variableName,
-			java.lang.String idParent, java.lang.String idChild) {
+			java.lang.String idParent, java.lang.String idChild,
+			java.lang.Boolean hasCorrection) {
 		this.showName = showName;
 		this.variableName = variableName;
 		this.idParent = idParent;
 		this.idChild = idChild;
+		this.hasCorrection = hasCorrection;
 	}
 
 }
