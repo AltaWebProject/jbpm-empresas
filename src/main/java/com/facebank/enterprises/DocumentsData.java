@@ -18,6 +18,8 @@ public class DocumentsData implements java.io.Serializable {
 
 	private java.lang.Boolean finalizeFlag = true;
 
+	private com.facebank.enterprises.DocumentSignedDataList listOfSignedDocuments;
+
 	public DocumentsData() {
 	}
 
@@ -65,17 +67,28 @@ public class DocumentsData implements java.io.Serializable {
 		this.finalizeFlag = finalizeFlag;
 	}
 
+	public com.facebank.enterprises.DocumentSignedDataList getListOfSignedDocuments() {
+		return this.listOfSignedDocuments;
+	}
+
+	public void setListOfSignedDocuments(
+			com.facebank.enterprises.DocumentSignedDataList listOfSignedDocuments) {
+		this.listOfSignedDocuments = listOfSignedDocuments;
+	}
+
 	public DocumentsData(
 			com.facebank.enterprises.EnterpriseDocumentsData companyDocuments,
 			com.facebank.enterprises.StockholderDocumentsDataList stockholdersDocuments,
 			com.facebank.enterprises.DocumentFoldersData questysFoldersIds,
 			com.facebank.enterprises.AutomaticDocumentsData automaticDocuments,
-			java.lang.Boolean finalizeFlag) {
+			java.lang.Boolean finalizeFlag,
+			com.facebank.enterprises.DocumentSignedDataList listOfSignedDocuments) {
 		this.companyDocuments = companyDocuments;
 		this.stockholdersDocuments = stockholdersDocuments;
 		this.questysFoldersIds = questysFoldersIds;
 		this.automaticDocuments = automaticDocuments;
 		this.finalizeFlag = finalizeFlag;
+		this.listOfSignedDocuments = listOfSignedDocuments;
 	}
 
 }
