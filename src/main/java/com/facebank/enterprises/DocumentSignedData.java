@@ -6,12 +6,54 @@ package com.facebank.enterprises;
 
 public class DocumentSignedData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DocumentSignedData() {
-    }
+	private java.lang.String user;
+	private java.lang.String date;
+	private java.lang.String comment;
+	private java.lang.String documentType;
 
+	public DocumentSignedData() {
+	}
 
+	public java.lang.String getUser() {
+		return this.user;
+	}
 
+	public void setUser(java.lang.String user) {
+		this.user = user;
+	}
+
+	public java.lang.String getDate() {
+		return this.date;
+	}
+
+	public void setDate(java.lang.String date) {
+		this.date = date;
+	}
+
+	public java.lang.String getComment() {
+		return this.comment;
+	}
+
+	public void setComment(java.lang.String comment) {
+		this.comment = comment;
+	}
+
+	public java.lang.String getDocumentType() {
+		return this.documentType;
+	}
+
+	public void setDocumentType(java.lang.String documentType) {
+		this.documentType = documentType;
+	}
+
+	public DocumentSignedData(java.lang.String user, java.lang.String date,
+			java.lang.String comment, java.lang.String documentType) {
+		this.user = user;
+		this.date = date;
+		this.comment = comment;
+		this.documentType = documentType;
+	}
 
 }
