@@ -6,12 +6,25 @@ package com.facebank.enterprises;
 
 public class DocumentSignedDataList implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DocumentSignedDataList() {
-    }
+	private java.util.List<com.facebank.enterprises.DocumentSignedData> documentSignedData;
 
+	public DocumentSignedDataList() {
+	}
 
+	public java.util.List<com.facebank.enterprises.DocumentSignedData> getDocumentSignedData() {
+		return this.documentSignedData;
+	}
 
+	public void setDocumentSignedData(
+			java.util.List<com.facebank.enterprises.DocumentSignedData> documentSignedData) {
+		this.documentSignedData = documentSignedData;
+	}
+
+	public DocumentSignedDataList(
+			java.util.List<com.facebank.enterprises.DocumentSignedData> documentSignedData) {
+		this.documentSignedData = documentSignedData;
+	}
 
 }
