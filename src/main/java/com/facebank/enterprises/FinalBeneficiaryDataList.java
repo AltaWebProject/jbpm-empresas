@@ -6,12 +6,25 @@ package com.facebank.enterprises;
 
 public class FinalBeneficiaryDataList implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public FinalBeneficiaryDataList() {
-    }
+	private java.util.List<com.facebank.enterprises.FinalBeneficiaryData> finalBeneficiaryData;
 
+	public FinalBeneficiaryDataList() {
+	}
 
+	public java.util.List<com.facebank.enterprises.FinalBeneficiaryData> getFinalBeneficiaryData() {
+		return this.finalBeneficiaryData;
+	}
 
+	public void setFinalBeneficiaryData(
+			java.util.List<com.facebank.enterprises.FinalBeneficiaryData> finalBeneficiaryData) {
+		this.finalBeneficiaryData = finalBeneficiaryData;
+	}
+
+	public FinalBeneficiaryDataList(
+			java.util.List<com.facebank.enterprises.FinalBeneficiaryData> finalBeneficiaryData) {
+		this.finalBeneficiaryData = finalBeneficiaryData;
+	}
 
 }
