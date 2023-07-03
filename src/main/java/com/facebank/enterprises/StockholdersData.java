@@ -24,8 +24,6 @@ public class StockholdersData implements java.io.Serializable {
 
 	private java.lang.String secondSurNameStockholder;
 
-	private java.lang.String positionStockholder;
-
 	private java.lang.String idStockholder;
 
 	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
@@ -117,14 +115,6 @@ public class StockholdersData implements java.io.Serializable {
 	public void setSecondSurNameStockholder(
 			java.lang.String secondSurNameStockholder) {
 		this.secondSurNameStockholder = secondSurNameStockholder;
-	}
-
-	public java.lang.String getPositionStockholder() {
-		return this.positionStockholder;
-	}
-
-	public void setPositionStockholder(java.lang.String positionStockholder) {
-		this.positionStockholder = positionStockholder;
 	}
 
 	public java.lang.String getIdStockholder() {
@@ -226,7 +216,6 @@ public class StockholdersData implements java.io.Serializable {
 			java.lang.Double participationStockholder,
 			java.lang.String surNameStockholder,
 			java.lang.String secondSurNameStockholder,
-			java.lang.String positionStockholder,
 			java.lang.String idStockholder,
 			com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaries,
 			java.lang.String secondNameStockholder,
@@ -246,7 +235,6 @@ public class StockholdersData implements java.io.Serializable {
 		this.participationStockholder = participationStockholder;
 		this.surNameStockholder = surNameStockholder;
 		this.secondSurNameStockholder = secondSurNameStockholder;
-		this.positionStockholder = positionStockholder;
 		this.idStockholder = idStockholder;
 		this.finalBeneficiaries = finalBeneficiaries;
 		this.secondNameStockholder = secondNameStockholder;
