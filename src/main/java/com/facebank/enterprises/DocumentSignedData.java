@@ -13,6 +13,8 @@ public class DocumentSignedData implements java.io.Serializable {
 	private java.lang.String comment;
 	private java.lang.String documentType;
 
+	private java.lang.String ip;
+
 	public DocumentSignedData() {
 	}
 
@@ -48,12 +50,22 @@ public class DocumentSignedData implements java.io.Serializable {
 		this.documentType = documentType;
 	}
 
+	public java.lang.String getIp() {
+		return this.ip;
+	}
+
+	public void setIp(java.lang.String ip) {
+		this.ip = ip;
+	}
+
 	public DocumentSignedData(java.lang.String user, java.lang.String date,
-			java.lang.String comment, java.lang.String documentType) {
+			java.lang.String comment, java.lang.String documentType,
+			java.lang.String ip) {
 		this.user = user;
 		this.date = date;
 		this.comment = comment;
 		this.documentType = documentType;
+		this.ip = ip;
 	}
 
 }
