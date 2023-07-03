@@ -11,6 +11,8 @@ public class AutomaticDocumentsData implements java.io.Serializable {
 	private DocumentTypeData car;
 	private DocumentTypeData kyc;
 
+	private com.facebank.enterprises.DocumentTypeData affidavit;
+
 	public AutomaticDocumentsData() {
 	}
 
@@ -30,11 +32,21 @@ public class AutomaticDocumentsData implements java.io.Serializable {
 		this.kyc = kyc;
 	}
 
+	public com.facebank.enterprises.DocumentTypeData getAffidavit() {
+		return this.affidavit;
+	}
+
+	public void setAffidavit(com.facebank.enterprises.DocumentTypeData affidavit) {
+		this.affidavit = affidavit;
+	}
+
 	public AutomaticDocumentsData(
 			com.facebank.enterprises.DocumentTypeData car,
-			com.facebank.enterprises.DocumentTypeData kyc) {
+			com.facebank.enterprises.DocumentTypeData kyc,
+			com.facebank.enterprises.DocumentTypeData affidavit) {
 		this.car = car;
 		this.kyc = kyc;
+		this.affidavit = affidavit;
 	}
 
 }
