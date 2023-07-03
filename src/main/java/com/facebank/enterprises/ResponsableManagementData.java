@@ -7,29 +7,184 @@ package com.facebank.enterprises;
 @javax.persistence.Entity
 public class ResponsableManagementData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "RESPONSABLEMANAGEMENTDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "RESPONSABLEMANAGEMENTDATA_ID_SEQ", name = "RESPONSABLEMANAGEMENTDATA_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "RESPONSABLEMANAGEMENTDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "RESPONSABLEMANAGEMENTDATA_ID_SEQ", name = "RESPONSABLEMANAGEMENTDATA_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public ResponsableManagementData() {
-    }
-    
-    public ResponsableManagementData(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String nameResponsable;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String secondNameResponsable;
 
+	private java.lang.String surnameResponsable;
 
+	private java.lang.String secondSurnameResponsable;
 
+	private java.lang.String birthDateResponsable;
+
+	private java.lang.String emailResponsable;
+
+	private java.lang.String titleResponsable;
+
+	private java.lang.String addressResponsable;
+
+	private java.lang.String cityResponsable;
+
+	private java.lang.String stateResponsable;
+
+	private java.lang.String countryResponsable;
+
+	private Integer idNumberResponsable;
+
+	private java.lang.String issuingCountryResponsable;
+
+	public ResponsableManagementData() {
+	}
+
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.String getNameResponsable() {
+		return this.nameResponsable;
+	}
+
+	public void setNameResponsable(java.lang.String nameResponsable) {
+		this.nameResponsable = nameResponsable;
+	}
+
+	public java.lang.String getSecondNameResponsable() {
+		return this.secondNameResponsable;
+	}
+
+	public void setSecondNameResponsable(java.lang.String secondNameResponsable) {
+		this.secondNameResponsable = secondNameResponsable;
+	}
+
+	public java.lang.String getSurnameResponsable() {
+		return this.surnameResponsable;
+	}
+
+	public void setSurnameResponsable(java.lang.String surnameResponsable) {
+		this.surnameResponsable = surnameResponsable;
+	}
+
+	public java.lang.String getSecondSurnameResponsable() {
+		return this.secondSurnameResponsable;
+	}
+
+	public void setSecondSurnameResponsable(
+			java.lang.String secondSurnameResponsable) {
+		this.secondSurnameResponsable = secondSurnameResponsable;
+	}
+
+	public java.lang.String getBirthDateResponsable() {
+		return this.birthDateResponsable;
+	}
+
+	public void setBirthDateResponsable(java.lang.String birthDateResponsable) {
+		this.birthDateResponsable = birthDateResponsable;
+	}
+
+	public java.lang.String getEmailResponsable() {
+		return this.emailResponsable;
+	}
+
+	public void setEmailResponsable(java.lang.String emailResponsable) {
+		this.emailResponsable = emailResponsable;
+	}
+
+	public java.lang.String getTitleResponsable() {
+		return this.titleResponsable;
+	}
+
+	public void setTitleResponsable(java.lang.String titleResponsable) {
+		this.titleResponsable = titleResponsable;
+	}
+
+	public java.lang.String getAddressResponsable() {
+		return this.addressResponsable;
+	}
+
+	public void setAddressResponsable(java.lang.String addressResponsable) {
+		this.addressResponsable = addressResponsable;
+	}
+
+	public java.lang.String getCityResponsable() {
+		return this.cityResponsable;
+	}
+
+	public void setCityResponsable(java.lang.String cityResponsable) {
+		this.cityResponsable = cityResponsable;
+	}
+
+	public java.lang.String getStateResponsable() {
+		return this.stateResponsable;
+	}
+
+	public void setStateResponsable(java.lang.String stateResponsable) {
+		this.stateResponsable = stateResponsable;
+	}
+
+	public java.lang.String getCountryResponsable() {
+		return this.countryResponsable;
+	}
+
+	public void setCountryResponsable(java.lang.String countryResponsable) {
+		this.countryResponsable = countryResponsable;
+	}
+
+	public java.lang.String getIssuingCountryResponsable() {
+		return this.issuingCountryResponsable;
+	}
+
+	public void setIssuingCountryResponsable(
+			java.lang.String issuingCountryResponsable) {
+		this.issuingCountryResponsable = issuingCountryResponsable;
+	}
+
+	public java.lang.Integer getIdNumberResponsable() {
+		return this.idNumberResponsable;
+	}
+
+	public void setIdNumberResponsable(java.lang.Integer idNumberResponsable) {
+		this.idNumberResponsable = idNumberResponsable;
+	}
+
+	public ResponsableManagementData(java.lang.Long id,
+			java.lang.String nameResponsable,
+			java.lang.String secondNameResponsable,
+			java.lang.String surnameResponsable,
+			java.lang.String secondSurnameResponsable,
+			java.lang.String birthDateResponsable,
+			java.lang.String emailResponsable,
+			java.lang.String titleResponsable,
+			java.lang.String addressResponsable,
+			java.lang.String cityResponsable,
+			java.lang.String stateResponsable,
+			java.lang.String countryResponsable,
+			java.lang.Integer idNumberResponsable,
+			java.lang.String issuingCountryResponsable) {
+		this.id = id;
+		this.nameResponsable = nameResponsable;
+		this.secondNameResponsable = secondNameResponsable;
+		this.surnameResponsable = surnameResponsable;
+		this.secondSurnameResponsable = secondSurnameResponsable;
+		this.birthDateResponsable = birthDateResponsable;
+		this.emailResponsable = emailResponsable;
+		this.titleResponsable = titleResponsable;
+		this.addressResponsable = addressResponsable;
+		this.cityResponsable = cityResponsable;
+		this.stateResponsable = stateResponsable;
+		this.countryResponsable = countryResponsable;
+		this.idNumberResponsable = idNumberResponsable;
+		this.issuingCountryResponsable = issuingCountryResponsable;
+	}
 
 }
