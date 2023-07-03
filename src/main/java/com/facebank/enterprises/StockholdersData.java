@@ -10,9 +10,6 @@ public class StockholdersData implements java.io.Serializable {
 
 	private java.lang.Integer number;
 
-	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
-	private SubstockholdersDataList subStockholders;
-
 	private java.lang.String signatory;
 
 	private java.lang.String nameStockholder;
@@ -30,6 +27,27 @@ public class StockholdersData implements java.io.Serializable {
 	private java.lang.String positionStockholder;
 
 	private java.lang.String idStockholder;
+
+	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
+	private com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaries;
+
+	private java.lang.String secondNameStockholder;
+
+	private java.lang.String dateStockholder;
+
+	private java.lang.String emailStockholder;
+
+	private java.lang.String addressStockholder;
+
+	private java.lang.String cityStockholder;
+
+	private java.lang.String stateStockholder;
+
+	private java.lang.String countryStockholder;
+
+	private java.lang.Integer idNumberStockholder;
+
+	private java.lang.String issuingCountryStockholder;
 
 	public StockholdersData() {
 	}
@@ -117,26 +135,110 @@ public class StockholdersData implements java.io.Serializable {
 		this.idStockholder = idStockholder;
 	}
 
-	public com.facebank.enterprises.SubstockholdersDataList getSubStockholders() {
-		return this.subStockholders;
+	public com.facebank.enterprises.FinalBeneficiaryDataList getFinalBeneficiaries() {
+		return this.finalBeneficiaries;
 	}
 
-	public void setSubStockholders(
-			com.facebank.enterprises.SubstockholdersDataList subStockholders) {
-		this.subStockholders = subStockholders;
+	public void setFinalBeneficiaries(
+			com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaries) {
+		this.finalBeneficiaries = finalBeneficiaries;
 	}
 
-	public StockholdersData(java.lang.Integer number,
-			com.facebank.enterprises.SubstockholdersDataList subStockholders,
-			java.lang.String signatory, java.lang.String nameStockholder,
+	public java.lang.String getSecondNameStockholder() {
+		return this.secondNameStockholder;
+	}
+
+	public void setSecondNameStockholder(java.lang.String secondNameStockholder) {
+		this.secondNameStockholder = secondNameStockholder;
+	}
+
+	public java.lang.String getDateStockholder() {
+		return this.dateStockholder;
+	}
+
+	public void setDateStockholder(java.lang.String dateStockholder) {
+		this.dateStockholder = dateStockholder;
+	}
+
+	public java.lang.String getEmailStockholder() {
+		return this.emailStockholder;
+	}
+
+	public void setEmailStockholder(java.lang.String emailStockholder) {
+		this.emailStockholder = emailStockholder;
+	}
+
+	public java.lang.String getAddressStockholder() {
+		return this.addressStockholder;
+	}
+
+	public void setAddressStockholder(java.lang.String addressStockholder) {
+		this.addressStockholder = addressStockholder;
+	}
+
+	public java.lang.String getCityStockholder() {
+		return this.cityStockholder;
+	}
+
+	public void setCityStockholder(java.lang.String cityStockholder) {
+		this.cityStockholder = cityStockholder;
+	}
+
+	public java.lang.String getStateStockholder() {
+		return this.stateStockholder;
+	}
+
+	public void setStateStockholder(java.lang.String stateStockholder) {
+		this.stateStockholder = stateStockholder;
+	}
+
+	public java.lang.String getCountryStockholder() {
+		return this.countryStockholder;
+	}
+
+	public void setCountryStockholder(java.lang.String countryStockholder) {
+		this.countryStockholder = countryStockholder;
+	}
+
+	public java.lang.Integer getIdNumberStockholder() {
+		return this.idNumberStockholder;
+	}
+
+	public void setIdNumberStockholder(java.lang.Integer idNumberStockholder) {
+		this.idNumberStockholder = idNumberStockholder;
+	}
+
+	public java.lang.String getIssuingCountryStockholder() {
+		return this.issuingCountryStockholder;
+	}
+
+	public void setIssuingCountryStockholder(
+			java.lang.String issuingCountryStockholder) {
+		this.issuingCountryStockholder = issuingCountryStockholder;
+	}
+
+	public StockholdersData(
+			java.lang.Integer number,
+			java.lang.String signatory,
+			java.lang.String nameStockholder,
 			java.lang.String nationalityStockholder,
 			java.lang.String typeStockholder,
 			java.lang.Double participationStockholder,
 			java.lang.String surNameStockholder,
 			java.lang.String secondSurNameStockholder,
-			java.lang.String positionStockholder, java.lang.String idStockholder) {
+			java.lang.String positionStockholder,
+			java.lang.String idStockholder,
+			com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaries,
+			java.lang.String secondNameStockholder,
+			java.lang.String dateStockholder,
+			java.lang.String emailStockholder,
+			java.lang.String addressStockholder,
+			java.lang.String cityStockholder,
+			java.lang.String stateStockholder,
+			java.lang.String countryStockholder,
+			java.lang.Integer idNumberStockholder,
+			java.lang.String issuingCountryStockholder) {
 		this.number = number;
-		this.subStockholders = subStockholders;
 		this.signatory = signatory;
 		this.nameStockholder = nameStockholder;
 		this.nationalityStockholder = nationalityStockholder;
@@ -146,6 +248,16 @@ public class StockholdersData implements java.io.Serializable {
 		this.secondSurNameStockholder = secondSurNameStockholder;
 		this.positionStockholder = positionStockholder;
 		this.idStockholder = idStockholder;
+		this.finalBeneficiaries = finalBeneficiaries;
+		this.secondNameStockholder = secondNameStockholder;
+		this.dateStockholder = dateStockholder;
+		this.emailStockholder = emailStockholder;
+		this.addressStockholder = addressStockholder;
+		this.cityStockholder = cityStockholder;
+		this.stateStockholder = stateStockholder;
+		this.countryStockholder = countryStockholder;
+		this.idNumberStockholder = idNumberStockholder;
+		this.issuingCountryStockholder = issuingCountryStockholder;
 	}
 
 }
