@@ -6,12 +6,44 @@ package com.facebank.enterprises;
 
 public class InformationUploaderData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public InformationUploaderData() {
-    }
+	private java.lang.String nameUploader;
+	private java.lang.String surnameUploader;
+	private java.lang.String positionUploader;
 
+	public InformationUploaderData() {
+	}
 
+	public java.lang.String getNameUploader() {
+		return this.nameUploader;
+	}
 
+	public void setNameUploader(java.lang.String nameUploader) {
+		this.nameUploader = nameUploader;
+	}
+
+	public java.lang.String getSurnameUploader() {
+		return this.surnameUploader;
+	}
+
+	public void setSurnameUploader(java.lang.String surnameUploader) {
+		this.surnameUploader = surnameUploader;
+	}
+
+	public java.lang.String getPositionUploader() {
+		return this.positionUploader;
+	}
+
+	public void setPositionUploader(java.lang.String positionUploader) {
+		this.positionUploader = positionUploader;
+	}
+
+	public InformationUploaderData(java.lang.String nameUploader,
+			java.lang.String surnameUploader, java.lang.String positionUploader) {
+		this.nameUploader = nameUploader;
+		this.surnameUploader = surnameUploader;
+		this.positionUploader = positionUploader;
+	}
 
 }
