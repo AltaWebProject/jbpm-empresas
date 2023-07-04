@@ -8,23 +8,28 @@ public class SubstockholdersDataList implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<com.facebank.enterprises.SubstockholdersData> substockholdersData;
+	private java.util.List<com.facebank.enterprises.SubStockholdersData> subStockholdersData;
 
 	public SubstockholdersDataList() {
-	}
-
-	public java.util.List<com.facebank.enterprises.SubstockholdersData> getSubstockholdersData() {
-		return this.substockholdersData;
-	}
-
-	public void setSubstockholdersData(
-			java.util.List<com.facebank.enterprises.SubstockholdersData> substockholdersData) {
-		this.substockholdersData = substockholdersData;
 	}
 
 	public SubstockholdersDataList(
 			java.util.List<com.facebank.enterprises.SubstockholdersData> substockholdersData) {
 		this.substockholdersData = substockholdersData;
+	}
+
+	public java.util.List<com.facebank.enterprises.SubStockholdersData> getSubStockholdersData() {
+		return this.subStockholdersData;
+	}
+
+	public void setSubStockholdersData(
+			java.util.List<com.facebank.enterprises.SubStockholdersData> subStockholdersData) {
+		this.subStockholdersData = subStockholdersData;
+	}
+
+	public SubstockholdersDataList(
+			java.util.List<com.facebank.enterprises.SubStockholdersData> subStockholdersData) {
+		this.subStockholdersData = subStockholdersData;
 	}
 
 }
