@@ -24,7 +24,7 @@ public class SubstockholdersData implements java.io.Serializable {
 
 	private java.lang.String typeSubstockholder;
 
-	private java.lang.Integer idNumberSubstockholder;
+	private String idNumberSubstockholder;
 
 	private java.lang.String secondNameSubstockholder;
 
@@ -111,15 +111,6 @@ public class SubstockholdersData implements java.io.Serializable {
 		this.typeSubstockholder = typeSubstockholder;
 	}
 
-	public java.lang.Integer getIdNumberSubstockholder() {
-		return this.idNumberSubstockholder;
-	}
-
-	public void setIdNumberSubstockholder(
-			java.lang.Integer idNumberSubstockholder) {
-		this.idNumberSubstockholder = idNumberSubstockholder;
-	}
-
 	public java.lang.String getSecondNameSubstockholder() {
 		return this.secondNameSubstockholder;
 	}
@@ -187,6 +178,15 @@ public class SubstockholdersData implements java.io.Serializable {
 		this.issuingCountrySubstockholder = issuingCountrySubstockholder;
 	}
 
+	public java.lang.String getIdNumberSubstockholder() {
+		return this.idNumberSubstockholder;
+	}
+
+	public void setIdNumberSubstockholder(
+			java.lang.String idNumberSubstockholder) {
+		this.idNumberSubstockholder = idNumberSubstockholder;
+	}
+
 	public SubstockholdersData(java.lang.String signatory,
 			java.lang.String idStockholderRelated,
 			java.lang.String companyName, java.lang.String nameSubstockholder,
@@ -194,7 +194,7 @@ public class SubstockholdersData implements java.io.Serializable {
 			java.lang.String secondSurNameSubstockholder,
 			java.lang.String surNameSubstockholder,
 			java.lang.String typeSubstockholder,
-			java.lang.Integer idNumberSubstockholder,
+			java.lang.String idNumberSubstockholder,
 			java.lang.String secondNameSubstockholder,
 			java.lang.String birthDateSubstockholder,
 			java.lang.String emailSubstockholder,
