@@ -48,6 +48,8 @@ public class SubStockholdersData implements java.io.Serializable {
 
 	private java.lang.String idSubStockholder;
 
+	private java.lang.String stateSubStockholderValue;
+
 	public SubStockholdersData() {
 	}
 
@@ -219,6 +221,15 @@ public class SubStockholdersData implements java.io.Serializable {
 		this.idSubStockholder = idSubStockholder;
 	}
 
+	public java.lang.String getStateSubStockholderValue() {
+		return this.stateSubStockholderValue;
+	}
+
+	public void setStateSubStockholderValue(
+			java.lang.String stateSubStockholderValue) {
+		this.stateSubStockholderValue = stateSubStockholderValue;
+	}
+
 	public SubStockholdersData(java.lang.String signatory,
 			java.lang.String idStockholderRelated,
 			java.lang.String companyName, java.lang.String nameSubStockholder,
@@ -237,7 +248,8 @@ public class SubStockholdersData implements java.io.Serializable {
 			java.lang.String issuingCountrySubStockholder,
 			java.lang.String nationalitySubStockholderValue,
 			java.lang.String nationalitySubStockholder,
-			java.lang.String idSubStockholder) {
+			java.lang.String idSubStockholder,
+			java.lang.String stateSubStockholderValue) {
 		this.signatory = signatory;
 		this.idStockholderRelated = idStockholderRelated;
 		this.companyName = companyName;
@@ -258,6 +270,7 @@ public class SubStockholdersData implements java.io.Serializable {
 		this.nationalitySubStockholderValue = nationalitySubStockholderValue;
 		this.nationalitySubStockholder = nationalitySubStockholder;
 		this.idSubStockholder = idSubStockholder;
+		this.stateSubStockholderValue = stateSubStockholderValue;
 	}
 
 }
