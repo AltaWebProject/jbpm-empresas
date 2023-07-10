@@ -49,6 +49,10 @@ public class StockholdersData implements java.io.Serializable {
 
 	private com.facebank.enterprises.SubStockholdersDataList subStockholders;
 
+	private java.lang.String nationalityStockholderValue;
+
+	private java.lang.String stateStockholderValue;
+
 	public StockholdersData() {
 	}
 
@@ -218,6 +222,23 @@ public class StockholdersData implements java.io.Serializable {
 		this.subStockholders = subStockholders;
 	}
 
+	public java.lang.String getNationalityStockholderValue() {
+		return this.nationalityStockholderValue;
+	}
+
+	public void setNationalityStockholderValue(
+			java.lang.String nationalityStockholderValue) {
+		this.nationalityStockholderValue = nationalityStockholderValue;
+	}
+
+	public java.lang.String getStateStockholderValue() {
+		return this.stateStockholderValue;
+	}
+
+	public void setStateStockholderValue(java.lang.String stateStockholderValue) {
+		this.stateStockholderValue = stateStockholderValue;
+	}
+
 	public StockholdersData(
 			java.lang.Integer number,
 			java.lang.String signatory,
@@ -238,7 +259,9 @@ public class StockholdersData implements java.io.Serializable {
 			java.lang.String countryStockholder,
 			java.lang.Integer idNumberStockholder,
 			java.lang.String issuingCountryStockholder,
-			com.facebank.enterprises.SubStockholdersDataList subStockholders) {
+			com.facebank.enterprises.SubStockholdersDataList subStockholders,
+			java.lang.String nationalityStockholderValue,
+			java.lang.String stateStockholderValue) {
 		this.number = number;
 		this.signatory = signatory;
 		this.nameStockholder = nameStockholder;
@@ -259,6 +282,8 @@ public class StockholdersData implements java.io.Serializable {
 		this.idNumberStockholder = idNumberStockholder;
 		this.issuingCountryStockholder = issuingCountryStockholder;
 		this.subStockholders = subStockholders;
+		this.nationalityStockholderValue = nationalityStockholderValue;
+		this.stateStockholderValue = stateStockholderValue;
 	}
 
 }
