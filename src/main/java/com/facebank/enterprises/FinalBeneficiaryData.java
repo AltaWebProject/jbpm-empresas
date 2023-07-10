@@ -48,6 +48,8 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 
 	private java.lang.String nationalityBeneficiaryValue;
 
+	private java.lang.String stateBeneficiaryValue;
+
 	public FinalBeneficiaryData() {
 	}
 
@@ -216,6 +218,14 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 		this.nationalityBeneficiaryValue = nationalityBeneficiaryValue;
 	}
 
+	public java.lang.String getStateBeneficiaryValue() {
+		return this.stateBeneficiaryValue;
+	}
+
+	public void setStateBeneficiaryValue(java.lang.String stateBeneficiaryValue) {
+		this.stateBeneficiaryValue = stateBeneficiaryValue;
+	}
+
 	public FinalBeneficiaryData(java.lang.String signatory,
 			java.lang.String idStockholderRelated,
 			java.lang.String nameBeneficiary,
@@ -234,7 +244,8 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 			java.lang.String countryBeneficiary,
 			java.lang.String issuingCountryBeneficiary,
 			java.lang.String idNumberBeneficiary,
-			java.lang.String nationalityBeneficiaryValue) {
+			java.lang.String nationalityBeneficiaryValue,
+			java.lang.String stateBeneficiaryValue) {
 		this.signatory = signatory;
 		this.idStockholderRelated = idStockholderRelated;
 		this.nameBeneficiary = nameBeneficiary;
@@ -255,6 +266,7 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 		this.issuingCountryBeneficiary = issuingCountryBeneficiary;
 		this.idNumberBeneficiary = idNumberBeneficiary;
 		this.nationalityBeneficiaryValue = nationalityBeneficiaryValue;
+		this.stateBeneficiaryValue = stateBeneficiaryValue;
 	}
 
 }
