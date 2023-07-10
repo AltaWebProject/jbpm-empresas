@@ -42,6 +42,12 @@ public class SubStockholdersData implements java.io.Serializable {
 
 	private java.lang.String issuingCountrySubStockholder;
 
+	private java.lang.String nationalitySubStockholderValue;
+
+	private java.lang.String nationalitySubStockholder;
+
+	private java.lang.String idSubStockholder;
+
 	public SubStockholdersData() {
 	}
 
@@ -187,6 +193,32 @@ public class SubStockholdersData implements java.io.Serializable {
 		this.idNumberSubStockholder = idNumberSubStockholder;
 	}
 
+	public java.lang.String getNationalitySubStockholderValue() {
+		return this.nationalitySubStockholderValue;
+	}
+
+	public void setNationalitySubStockholderValue(
+			java.lang.String nationalitySubStockholderValue) {
+		this.nationalitySubStockholderValue = nationalitySubStockholderValue;
+	}
+
+	public java.lang.String getNationalitySubStockholder() {
+		return this.nationalitySubStockholder;
+	}
+
+	public void setNationalitySubStockholder(
+			java.lang.String nationalitySubStockholder) {
+		this.nationalitySubStockholder = nationalitySubStockholder;
+	}
+
+	public java.lang.String getIdSubStockholder() {
+		return this.idSubStockholder;
+	}
+
+	public void setIdSubStockholder(java.lang.String idSubStockholder) {
+		this.idSubStockholder = idSubStockholder;
+	}
+
 	public SubStockholdersData(java.lang.String signatory,
 			java.lang.String idStockholderRelated,
 			java.lang.String companyName, java.lang.String nameSubStockholder,
@@ -202,7 +234,10 @@ public class SubStockholdersData implements java.io.Serializable {
 			java.lang.String citySubStockholder,
 			java.lang.String stateSubStockholder,
 			java.lang.String countrySubStockholder,
-			java.lang.String issuingCountrySubStockholder) {
+			java.lang.String issuingCountrySubStockholder,
+			java.lang.String nationalitySubStockholderValue,
+			java.lang.String nationalitySubStockholder,
+			java.lang.String idSubStockholder) {
 		this.signatory = signatory;
 		this.idStockholderRelated = idStockholderRelated;
 		this.companyName = companyName;
@@ -220,6 +255,9 @@ public class SubStockholdersData implements java.io.Serializable {
 		this.stateSubStockholder = stateSubStockholder;
 		this.countrySubStockholder = countrySubStockholder;
 		this.issuingCountrySubStockholder = issuingCountrySubStockholder;
+		this.nationalitySubStockholderValue = nationalitySubStockholderValue;
+		this.nationalitySubStockholder = nationalitySubStockholder;
+		this.idSubStockholder = idSubStockholder;
 	}
 
 }
