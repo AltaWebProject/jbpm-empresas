@@ -8,8 +8,6 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String signatory;
-
 	private java.lang.String idStockholderRelated;
 
 	private java.lang.String nameBeneficiary;
@@ -48,15 +46,9 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 
 	private java.lang.String companyNameBeneficiary;
 
+	private java.lang.String signatoryBeneficiary;
+
 	public FinalBeneficiaryData() {
-	}
-
-	public java.lang.String getSignatory() {
-		return this.signatory;
-	}
-
-	public void setSignatory(java.lang.String signatory) {
-		this.signatory = signatory;
 	}
 
 	public java.lang.String getIdStockholderRelated() {
@@ -216,8 +208,15 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 		this.companyNameBeneficiary = companyNameBeneficiary;
 	}
 
-	public FinalBeneficiaryData(java.lang.String signatory,
-			java.lang.String idStockholderRelated,
+	public java.lang.String getSignatoryBeneficiary() {
+		return this.signatoryBeneficiary;
+	}
+
+	public void setSignatoryBeneficiary(java.lang.String signatoryBeneficiary) {
+		this.signatoryBeneficiary = signatoryBeneficiary;
+	}
+
+	public FinalBeneficiaryData(java.lang.String idStockholderRelated,
 			java.lang.String nameBeneficiary,
 			java.lang.Double participationBeneficiary,
 			java.lang.String secondSurNameBeneficiary,
@@ -234,8 +233,8 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 			java.lang.String idNumberBeneficiary,
 			java.lang.String stateBeneficiaryValue,
 			java.lang.String issuingCountryBeneficiaryValue,
-			java.lang.String companyNameBeneficiary) {
-		this.signatory = signatory;
+			java.lang.String companyNameBeneficiary,
+			java.lang.String signatoryBeneficiary) {
 		this.idStockholderRelated = idStockholderRelated;
 		this.nameBeneficiary = nameBeneficiary;
 		this.participationBeneficiary = participationBeneficiary;
@@ -255,6 +254,7 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 		this.stateBeneficiaryValue = stateBeneficiaryValue;
 		this.issuingCountryBeneficiaryValue = issuingCountryBeneficiaryValue;
 		this.companyNameBeneficiary = companyNameBeneficiary;
+		this.signatoryBeneficiary = signatoryBeneficiary;
 	}
 
 }
