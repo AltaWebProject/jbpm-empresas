@@ -24,9 +24,6 @@ public class StockholdersData implements java.io.Serializable {
 
 	private java.lang.String idStockholder;
 
-	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
-	private com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaries;
-
 	private java.lang.String secondNameStockholder;
 
 	private java.lang.String dateStockholder;
@@ -118,15 +115,6 @@ public class StockholdersData implements java.io.Serializable {
 
 	public void setIdStockholder(java.lang.String idStockholder) {
 		this.idStockholder = idStockholder;
-	}
-
-	public com.facebank.enterprises.FinalBeneficiaryDataList getFinalBeneficiaries() {
-		return this.finalBeneficiaries;
-	}
-
-	public void setFinalBeneficiaries(
-			com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaries) {
-		this.finalBeneficiaries = finalBeneficiaries;
 	}
 
 	public java.lang.String getSecondNameStockholder() {
@@ -228,16 +216,13 @@ public class StockholdersData implements java.io.Serializable {
 		this.issuingCountryStockholderValue = issuingCountryStockholderValue;
 	}
 
-	public StockholdersData(
-			java.lang.Integer number,
-			java.lang.String signatory,
-			java.lang.String nameStockholder,
+	public StockholdersData(java.lang.Integer number,
+			java.lang.String signatory, java.lang.String nameStockholder,
 			java.lang.String typeStockholder,
 			java.lang.Double participationStockholder,
 			java.lang.String surNameStockholder,
 			java.lang.String secondSurNameStockholder,
 			java.lang.String idStockholder,
-			com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaries,
 			java.lang.String secondNameStockholder,
 			java.lang.String dateStockholder,
 			java.lang.String emailStockholder,
@@ -258,7 +243,6 @@ public class StockholdersData implements java.io.Serializable {
 		this.surNameStockholder = surNameStockholder;
 		this.secondSurNameStockholder = secondSurNameStockholder;
 		this.idStockholder = idStockholder;
-		this.finalBeneficiaries = finalBeneficiaries;
 		this.secondNameStockholder = secondNameStockholder;
 		this.dateStockholder = dateStockholder;
 		this.emailStockholder = emailStockholder;
