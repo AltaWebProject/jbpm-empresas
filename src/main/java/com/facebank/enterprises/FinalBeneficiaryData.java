@@ -26,8 +26,6 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 
 	private java.lang.String secondNameBeneficiary;
 
-	private java.lang.String companyName;
-
 	private java.lang.String birthDateBeneficiary;
 
 	private java.lang.String emailBeneficiary;
@@ -47,6 +45,8 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 	private java.lang.String stateBeneficiaryValue;
 
 	private java.lang.String issuingCountryBeneficiaryValue;
+
+	private java.lang.String companyNameBeneficiary;
 
 	public FinalBeneficiaryData() {
 	}
@@ -123,14 +123,6 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 
 	public void setSecondNameBeneficiary(java.lang.String secondNameBeneficiary) {
 		this.secondNameBeneficiary = secondNameBeneficiary;
-	}
-
-	public java.lang.String getCompanyName() {
-		return this.companyName;
-	}
-
-	public void setCompanyName(java.lang.String companyName) {
-		this.companyName = companyName;
 	}
 
 	public java.lang.String getBirthDateBeneficiary() {
@@ -215,6 +207,15 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 		this.issuingCountryBeneficiaryValue = issuingCountryBeneficiaryValue;
 	}
 
+	public java.lang.String getCompanyNameBeneficiary() {
+		return this.companyNameBeneficiary;
+	}
+
+	public void setCompanyNameBeneficiary(
+			java.lang.String companyNameBeneficiary) {
+		this.companyNameBeneficiary = companyNameBeneficiary;
+	}
+
 	public FinalBeneficiaryData(java.lang.String signatory,
 			java.lang.String idStockholderRelated,
 			java.lang.String nameBeneficiary,
@@ -223,7 +224,6 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 			java.lang.String surNameBeneficiary,
 			java.lang.String typeBeneficiary, java.lang.String idBeneficiary,
 			java.lang.String secondNameBeneficiary,
-			java.lang.String companyName,
 			java.lang.String birthDateBeneficiary,
 			java.lang.String emailBeneficiary,
 			java.lang.String addressBeneficiary,
@@ -233,7 +233,8 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 			java.lang.String issuingCountryBeneficiary,
 			java.lang.String idNumberBeneficiary,
 			java.lang.String stateBeneficiaryValue,
-			java.lang.String issuingCountryBeneficiaryValue) {
+			java.lang.String issuingCountryBeneficiaryValue,
+			java.lang.String companyNameBeneficiary) {
 		this.signatory = signatory;
 		this.idStockholderRelated = idStockholderRelated;
 		this.nameBeneficiary = nameBeneficiary;
@@ -243,7 +244,6 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 		this.typeBeneficiary = typeBeneficiary;
 		this.idBeneficiary = idBeneficiary;
 		this.secondNameBeneficiary = secondNameBeneficiary;
-		this.companyName = companyName;
 		this.birthDateBeneficiary = birthDateBeneficiary;
 		this.emailBeneficiary = emailBeneficiary;
 		this.addressBeneficiary = addressBeneficiary;
@@ -254,6 +254,7 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 		this.idNumberBeneficiary = idNumberBeneficiary;
 		this.stateBeneficiaryValue = stateBeneficiaryValue;
 		this.issuingCountryBeneficiaryValue = issuingCountryBeneficiaryValue;
+		this.companyNameBeneficiary = companyNameBeneficiary;
 	}
 
 }
