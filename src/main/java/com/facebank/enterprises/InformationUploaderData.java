@@ -12,6 +12,14 @@ public class InformationUploaderData implements java.io.Serializable {
 	private java.lang.String surnameUploader;
 	private java.lang.String positionUploader;
 
+	private java.lang.Boolean finalBeneficiaryFlag;
+
+	private java.lang.String secondNameUploader;
+
+	private java.lang.String secondSurnameUploader;
+
+	private com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaryData;
+
 	public InformationUploaderData() {
 	}
 
@@ -39,11 +47,54 @@ public class InformationUploaderData implements java.io.Serializable {
 		this.positionUploader = positionUploader;
 	}
 
-	public InformationUploaderData(java.lang.String nameUploader,
-			java.lang.String surnameUploader, java.lang.String positionUploader) {
+	public java.lang.Boolean getFinalBeneficiaryFlag() {
+		return this.finalBeneficiaryFlag;
+	}
+
+	public void setFinalBeneficiaryFlag(java.lang.Boolean finalBeneficiaryFlag) {
+		this.finalBeneficiaryFlag = finalBeneficiaryFlag;
+	}
+
+	public java.lang.String getSecondNameUploader() {
+		return this.secondNameUploader;
+	}
+
+	public void setSecondNameUploader(java.lang.String secondNameUploader) {
+		this.secondNameUploader = secondNameUploader;
+	}
+
+	public java.lang.String getSecondSurnameUploader() {
+		return this.secondSurnameUploader;
+	}
+
+	public void setSecondSurnameUploader(java.lang.String secondSurnameUploader) {
+		this.secondSurnameUploader = secondSurnameUploader;
+	}
+
+	public com.facebank.enterprises.FinalBeneficiaryDataList getFinalBeneficiaryData() {
+		return this.finalBeneficiaryData;
+	}
+
+	public void setFinalBeneficiaryData(
+			com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaryData) {
+		this.finalBeneficiaryData = finalBeneficiaryData;
+	}
+
+	public InformationUploaderData(
+			java.lang.String nameUploader,
+			java.lang.String surnameUploader,
+			java.lang.String positionUploader,
+			java.lang.Boolean finalBeneficiaryFlag,
+			java.lang.String secondNameUploader,
+			java.lang.String secondSurnameUploader,
+			com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaryData) {
 		this.nameUploader = nameUploader;
 		this.surnameUploader = surnameUploader;
 		this.positionUploader = positionUploader;
+		this.finalBeneficiaryFlag = finalBeneficiaryFlag;
+		this.secondNameUploader = secondNameUploader;
+		this.secondSurnameUploader = secondSurnameUploader;
+		this.finalBeneficiaryData = finalBeneficiaryData;
 	}
 
 }
