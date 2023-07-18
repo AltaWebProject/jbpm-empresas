@@ -10,8 +10,6 @@ public class StockholdersDataList implements java.io.Serializable {
 
 	private java.util.List<com.facebank.enterprises.StockholdersData> stockholdersData;
 
-	private java.lang.Boolean beneficiaryFlag = false;
-
 	public StockholdersDataList() {
 	}
 
@@ -24,19 +22,9 @@ public class StockholdersDataList implements java.io.Serializable {
 		this.stockholdersData = stockholdersData;
 	}
 
-	public java.lang.Boolean getBeneficiaryFlag() {
-		return this.beneficiaryFlag;
-	}
-
-	public void setBeneficiaryFlag(java.lang.Boolean beneficiaryFlag) {
-		this.beneficiaryFlag = beneficiaryFlag;
-	}
-
 	public StockholdersDataList(
-			java.util.List<com.facebank.enterprises.StockholdersData> stockholdersData,
-			java.lang.Boolean beneficiaryFlag) {
+			java.util.List<com.facebank.enterprises.StockholdersData> stockholdersData) {
 		this.stockholdersData = stockholdersData;
-		this.beneficiaryFlag = beneficiaryFlag;
 	}
 
 }
