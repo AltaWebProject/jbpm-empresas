@@ -48,6 +48,10 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 
 	private java.lang.String signatoryBeneficiary;
 
+	private java.lang.String cityBeneficiaryValue;
+
+	private java.lang.String countryBeneficiaryValue;
+
 	public FinalBeneficiaryData() {
 	}
 
@@ -216,6 +220,23 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 		this.signatoryBeneficiary = signatoryBeneficiary;
 	}
 
+	public java.lang.String getCityBeneficiaryValue() {
+		return this.cityBeneficiaryValue;
+	}
+
+	public void setCityBeneficiaryValue(java.lang.String cityBeneficiaryValue) {
+		this.cityBeneficiaryValue = cityBeneficiaryValue;
+	}
+
+	public java.lang.String getCountryBeneficiaryValue() {
+		return this.countryBeneficiaryValue;
+	}
+
+	public void setCountryBeneficiaryValue(
+			java.lang.String countryBeneficiaryValue) {
+		this.countryBeneficiaryValue = countryBeneficiaryValue;
+	}
+
 	public FinalBeneficiaryData(java.lang.String idStockholderRelated,
 			java.lang.String nameBeneficiary,
 			java.lang.Double participationBeneficiary,
@@ -234,7 +255,9 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 			java.lang.String stateBeneficiaryValue,
 			java.lang.String issuingCountryBeneficiaryValue,
 			java.lang.String companyNameBeneficiary,
-			java.lang.String signatoryBeneficiary) {
+			java.lang.String signatoryBeneficiary,
+			java.lang.String cityBeneficiaryValue,
+			java.lang.String countryBeneficiaryValue) {
 		this.idStockholderRelated = idStockholderRelated;
 		this.nameBeneficiary = nameBeneficiary;
 		this.participationBeneficiary = participationBeneficiary;
@@ -255,6 +278,8 @@ public class FinalBeneficiaryData implements java.io.Serializable {
 		this.issuingCountryBeneficiaryValue = issuingCountryBeneficiaryValue;
 		this.companyNameBeneficiary = companyNameBeneficiary;
 		this.signatoryBeneficiary = signatoryBeneficiary;
+		this.cityBeneficiaryValue = cityBeneficiaryValue;
+		this.countryBeneficiaryValue = countryBeneficiaryValue;
 	}
 
 }
