@@ -18,7 +18,7 @@ public class BeneficiariesAndUploaderData implements java.io.Serializable {
 
 	private java.lang.String secondSurnameUploader;
 
-	private com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaryData;
+	private com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaryDataList;
 
 	public BeneficiariesAndUploaderData() {
 	}
@@ -71,13 +71,13 @@ public class BeneficiariesAndUploaderData implements java.io.Serializable {
 		this.secondSurnameUploader = secondSurnameUploader;
 	}
 
-	public com.facebank.enterprises.FinalBeneficiaryDataList getFinalBeneficiaryData() {
-		return this.finalBeneficiaryData;
+	public com.facebank.enterprises.FinalBeneficiaryDataList getFinalBeneficiaryDataList() {
+		return this.finalBeneficiaryDataList;
 	}
 
-	public void setFinalBeneficiaryData(
-			com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaryData) {
-		this.finalBeneficiaryData = finalBeneficiaryData;
+	public void setFinalBeneficiaryDataList(
+			com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaryDataList) {
+		this.finalBeneficiaryDataList = finalBeneficiaryDataList;
 	}
 
 	public BeneficiariesAndUploaderData(
@@ -87,14 +87,14 @@ public class BeneficiariesAndUploaderData implements java.io.Serializable {
 			java.lang.Boolean finalBeneficiaryFlag,
 			java.lang.String secondNameUploader,
 			java.lang.String secondSurnameUploader,
-			com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaryData) {
+			com.facebank.enterprises.FinalBeneficiaryDataList finalBeneficiaryDataList) {
 		this.nameUploader = nameUploader;
 		this.surnameUploader = surnameUploader;
 		this.positionUploader = positionUploader;
 		this.finalBeneficiaryFlag = finalBeneficiaryFlag;
 		this.secondNameUploader = secondNameUploader;
 		this.secondSurnameUploader = secondSurnameUploader;
-		this.finalBeneficiaryData = finalBeneficiaryData;
+		this.finalBeneficiaryDataList = finalBeneficiaryDataList;
 	}
 
 }
