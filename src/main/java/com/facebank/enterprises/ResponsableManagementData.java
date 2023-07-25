@@ -40,6 +40,14 @@ public class ResponsableManagementData implements java.io.Serializable {
 
 	private java.lang.String issuingCountryResponsable;
 
+	private java.lang.String cityResponsableValue;
+
+	private java.lang.String countryResponsableValue;
+
+	private java.lang.String issuingCountryResponsableValue;
+
+	private java.lang.String stateResponsableValue;
+
 	public ResponsableManagementData() {
 	}
 
@@ -157,6 +165,40 @@ public class ResponsableManagementData implements java.io.Serializable {
 		this.idNumberResponsable = idNumberResponsable;
 	}
 
+	public java.lang.String getCityResponsableValue() {
+		return this.cityResponsableValue;
+	}
+
+	public void setCityResponsableValue(java.lang.String cityResponsableValue) {
+		this.cityResponsableValue = cityResponsableValue;
+	}
+
+	public java.lang.String getCountryResponsableValue() {
+		return this.countryResponsableValue;
+	}
+
+	public void setCountryResponsableValue(
+			java.lang.String countryResponsableValue) {
+		this.countryResponsableValue = countryResponsableValue;
+	}
+
+	public java.lang.String getIssuingCountryResponsableValue() {
+		return this.issuingCountryResponsableValue;
+	}
+
+	public void setIssuingCountryResponsableValue(
+			java.lang.String issuingCountryResponsableValue) {
+		this.issuingCountryResponsableValue = issuingCountryResponsableValue;
+	}
+
+	public java.lang.String getStateResponsableValue() {
+		return this.stateResponsableValue;
+	}
+
+	public void setStateResponsableValue(java.lang.String stateResponsableValue) {
+		this.stateResponsableValue = stateResponsableValue;
+	}
+
 	public ResponsableManagementData(java.lang.Long id,
 			java.lang.String nameResponsable,
 			java.lang.String secondNameResponsable,
@@ -170,7 +212,11 @@ public class ResponsableManagementData implements java.io.Serializable {
 			java.lang.String stateResponsable,
 			java.lang.String countryResponsable,
 			java.lang.Integer idNumberResponsable,
-			java.lang.String issuingCountryResponsable) {
+			java.lang.String issuingCountryResponsable,
+			java.lang.String cityResponsableValue,
+			java.lang.String countryResponsableValue,
+			java.lang.String issuingCountryResponsableValue,
+			java.lang.String stateResponsableValue) {
 		this.id = id;
 		this.nameResponsable = nameResponsable;
 		this.secondNameResponsable = secondNameResponsable;
@@ -185,6 +231,10 @@ public class ResponsableManagementData implements java.io.Serializable {
 		this.countryResponsable = countryResponsable;
 		this.idNumberResponsable = idNumberResponsable;
 		this.issuingCountryResponsable = issuingCountryResponsable;
+		this.cityResponsableValue = cityResponsableValue;
+		this.countryResponsableValue = countryResponsableValue;
+		this.issuingCountryResponsableValue = issuingCountryResponsableValue;
+		this.stateResponsableValue = stateResponsableValue;
 	}
 
 }
