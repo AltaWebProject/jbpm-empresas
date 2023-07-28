@@ -28,6 +28,8 @@ public class TransactionalData implements java.io.Serializable {
 
 	private Double internalTransfersToReceiveAmount;
 
+	private java.lang.Boolean viewFlagTransactionalActivity = false;
+
 	public TransactionalData() {
 	}
 
@@ -119,6 +121,15 @@ public class TransactionalData implements java.io.Serializable {
 		this.internalTransfersToReceiveAmount = internalTransfersToReceiveAmount;
 	}
 
+	public java.lang.Boolean getViewFlagTransactionalActivity() {
+		return this.viewFlagTransactionalActivity;
+	}
+
+	public void setViewFlagTransactionalActivity(
+			java.lang.Boolean viewFlagTransactionalActivity) {
+		this.viewFlagTransactionalActivity = viewFlagTransactionalActivity;
+	}
+
 	public TransactionalData(
 			java.util.List<com.facebank.enterprises.SenderData> senderData,
 			java.util.List<com.facebank.enterprises.ReceiverData> receiverData,
@@ -129,7 +140,8 @@ public class TransactionalData implements java.io.Serializable {
 			java.lang.Long transfersToReceiveNumber,
 			java.lang.Double transfersToReceiveAmount,
 			java.lang.Long internalTransfersToReceiveNumber,
-			java.lang.Double internalTransfersToReceiveAmount) {
+			java.lang.Double internalTransfersToReceiveAmount,
+			java.lang.Boolean viewFlagTransactionalActivity) {
 		this.senderData = senderData;
 		this.receiverData = receiverData;
 		this.transfersToSentNumber = transfersToSentNumber;
@@ -140,6 +152,7 @@ public class TransactionalData implements java.io.Serializable {
 		this.transfersToReceiveAmount = transfersToReceiveAmount;
 		this.internalTransfersToReceiveNumber = internalTransfersToReceiveNumber;
 		this.internalTransfersToReceiveAmount = internalTransfersToReceiveAmount;
+		this.viewFlagTransactionalActivity = viewFlagTransactionalActivity;
 	}
 
 }
