@@ -48,6 +48,10 @@ public class SubStockholdersData implements java.io.Serializable {
 
 	private java.lang.String issuingCountrySubStockholderValue;
 
+	private java.lang.String citySubStockholderValue;
+
+	private java.lang.String countrySubStockholderValue;
+
 	public SubStockholdersData() {
 	}
 
@@ -219,6 +223,24 @@ public class SubStockholdersData implements java.io.Serializable {
 		this.issuingCountrySubStockholderValue = issuingCountrySubStockholderValue;
 	}
 
+	public java.lang.String getCitySubStockholderValue() {
+		return this.citySubStockholderValue;
+	}
+
+	public void setCitySubStockholderValue(
+			java.lang.String citySubStockholderValue) {
+		this.citySubStockholderValue = citySubStockholderValue;
+	}
+
+	public java.lang.String getCountrySubStockholderValue() {
+		return this.countrySubStockholderValue;
+	}
+
+	public void setCountrySubStockholderValue(
+			java.lang.String countrySubStockholderValue) {
+		this.countrySubStockholderValue = countrySubStockholderValue;
+	}
+
 	public SubStockholdersData(java.lang.String signatory,
 			java.lang.String idStockholderRelated,
 			java.lang.String companyName, java.lang.String nameSubStockholder,
@@ -237,7 +259,9 @@ public class SubStockholdersData implements java.io.Serializable {
 			java.lang.String issuingCountrySubStockholder,
 			java.lang.String idSubStockholder,
 			java.lang.String stateSubStockholderValue,
-			java.lang.String issuingCountrySubStockholderValue) {
+			java.lang.String issuingCountrySubStockholderValue,
+			java.lang.String citySubStockholderValue,
+			java.lang.String countrySubStockholderValue) {
 		this.signatory = signatory;
 		this.idStockholderRelated = idStockholderRelated;
 		this.companyName = companyName;
@@ -258,6 +282,8 @@ public class SubStockholdersData implements java.io.Serializable {
 		this.idSubStockholder = idSubStockholder;
 		this.stateSubStockholderValue = stateSubStockholderValue;
 		this.issuingCountrySubStockholderValue = issuingCountrySubStockholderValue;
+		this.citySubStockholderValue = citySubStockholderValue;
+		this.countrySubStockholderValue = countrySubStockholderValue;
 	}
 
 }
